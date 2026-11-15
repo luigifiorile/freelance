@@ -1,0 +1,55 @@
+:root {
+  /* Colori */
+  --inchiostro: #111111; /* tratto, testi, pulsanti */
+  --carta: #EDEDED;      /* fondo delle pagine */
+  --schiuma: #FFFFFF;    /* scritte giganti, card, interno dei disegni */
+  --mare: #0E6BA8;       /* accento: testo di apertura, link attivi, un pulsante per pagina */
+  --laguna: #9AD3DA;     /* solo forme */
+  --sabbia: #E6DFD0;     /* solo forme */
+  --scoglio: #5C5C5C;    /* testi secondari */
+  --linea: #CFCFCF;
+
+  /* Tipografia (Google Fonts) */
+  --font-titoli: "Bricolage Grotesque", "Arial Black", sans-serif; /* pesi 700, 800 */
+  --font-testi: "Inter", system-ui, sans-serif;                    /* pesi 400, 500, 600, 700 */
+  --titolo-gigante: 800 clamp(160px, 38vw, 540px)/1 var(--font-titoli);
+  --titolo-1: 800 64px/0.95 var(--font-titoli);
+  --titolo-2: 700 36px/1.05 var(--font-titoli);
+  --apertura: 500 27px/1.25 var(--font-testi); /* maiuscolo, colore --mare */
+  --testo: 400 18px/1.5 var(--font-testi);
+  --elenco: 600 17px/1.4 var(--font-testi);
+  --etichetta: 600 13px/1.2 var(--font-testi); /* maiuscolo, spaziatura 0.08em */
+
+  /* Forme */
+  --tratto: 2.5px;       /* bordi di pulsanti, campi, card */
+  --raggio-card: 16px;
+  --raggio-campo: 12px;
+  --raggio-pillola: 999px;
+  --altezza-pulsante: 48px;
+}
+
+/* Retino a puntini: le ombre non sono mai grigi pieni */
+.retino {
+  background-image: radial-gradient(var(--inchiostro) 1.6px, transparent 1.8px);
+  background-size: 7px 7px;
+}
+
+/* Fumetto sopra la testa */
+.fumetto {
+  position: relative;
+  background: var(--inchiostro);
+  color: var(--schiuma);
+  padding: 20px 26px;
+  font: 600 22px/1.28 var(--font-testi);
+  text-transform: uppercase;
+}
+.fumetto::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 12px solid transparent;
+  border-top: 16px solid var(--inchiostro);
+  border-bottom: 0;
+}
