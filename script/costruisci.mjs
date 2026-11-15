@@ -6,6 +6,8 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { home } from "../modelli/home.mjs";
 import { nonTrovata } from "../modelli/non-trovata.mjs";
+import { servizio } from "../modelli/servizio.mjs";
+import { demo } from "../modelli/demo.mjs";
 
 const radice = join(dirname(fileURLToPath(import.meta.url)), "..");
 const uscita = join(radice, "_sito");
@@ -17,6 +19,8 @@ const testi = JSON.parse(await readFile(join(radice, "contenuti", `${lingua}.jso
 const pagine = [
   { percorso: "", file: "index.html", genera: home, inMappa: true },
   { percorso: "", file: "404.html", genera: nonTrovata, inMappa: false },
+  ...testi.servizi.map((s) => ({ percorso: `servizi/${s.id}/`, file: "index.html", genera: (t) => servizio(t, s), inMappa: true })),
+  ...testi.servizi.map((s) => ({ percorso: `demo/${s.demo.id}/`, file: "index.html", genera: (t) => demo(t, s), inMappa: true })),
 ];
 
 async function scrivi(percorsoFile, contenuto) {
