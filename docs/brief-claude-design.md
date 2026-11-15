@@ -1,5 +1,7 @@
 # Brief per Claude Design — sito freelance di Luigi Fiorile
 
+> Brief originale, in parte superato. Dove non coincide valgono `CLAUDE.md` e `brand/LEGGIMI.md`. In particolare: dalla testa escono oggetti, non il mare; la palette è quella di `brand/tokens.css`; i nomi dei servizi sono quelli di LEGGIMI; le pagine servizio non mostrano prezzi né esempi; la sezione "Lavori e demo" è rimandata a progetto finito.
+
 ## 1. Cosa serve
 
 Un brand kit completo e le schermate chiave di un sito personale da freelance. Il sito verrà poi sviluppato con Claude Code e pubblicato su GitHub Pages (sito statico: HTML, CSS, JS). Le animazioni a scroll verranno realizzate in codice, quindi il design deve mostrare chiaramente gli stati di ogni animazione (inizio, metà, fine).

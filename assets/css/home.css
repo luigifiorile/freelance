@@ -1,0 +1,432 @@
+/* Home: apertura, percorso tra i servizi, come lavoro, chi sono, contatti. */
+
+/* =========================================================
+   APERTURA
+   Coordinate della testa: gli SVG della testa condividono lo stesso
+   sistema di coordinate. Il riquadro .testa corrisponde a quello di
+   testa-chiusa.svg (x 20–420, y 10–480: 400 × 470 unità) e ogni
+   livello è posizionato in percentuale rispetto a quel riquadro.
+   ========================================================= */
+.apertura { position: relative; }
+.apertura__scena {
+  position: relative;
+  height: calc(100vh - var(--altezza-testata));
+  height: calc(100svh - var(--altezza-testata));
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.apertura__scritta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 6%;
+  z-index: 0;
+  line-height: 0.85;
+}
+
+.apertura__titolo {
+  position: absolute;
+  z-index: 3;
+  left: var(--margine);
+  top: 24px;
+  max-width: min(22ch, calc(50% - min(200px, 15vw) - var(--margine) - 24px));
+}
+
+.apertura__palco { position: absolute; inset: 0; }
+
+/* Personaggio: fumetto e testa, centrati in basso */
+.apertura__personaggio {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 3%;
+  margin-inline: auto;
+  width: min(400px, 30vw, calc((100svh - var(--altezza-testata)) * 0.5));
+}
+.testa {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 400 / 470;
+}
+.testa__strato, .testa__aperta { position: absolute; left: 0; width: 100%; max-width: none; }
+.testa__chiusa { top: 0; }
+.testa__meta { top: -17.0213%; }            /* viewBox y -70: (-70 − 10) / 470 */
+.testa__strati {
+  position: absolute;
+  inset: 0;
+  transform-origin: 50.5% 51.06%;           /* punto (222, 250) del disegno */
+}
+.testa__aperta { top: 31.9149%; }           /* viewBox y 160: (160 − 10) / 470 */
+.testa__calotta {
+  position: absolute;
+  left: 5%;                                 /* viewBox x 40: (40 − 20) / 400 */
+  top: 2.1277%;                             /* viewBox y 20: (20 − 10) / 470 */
+  width: 92.5%;                             /* 370 / 400 */
+  transform-origin: 49.19% 54.17%;          /* punto (222, 150) del disegno */
+}
+/* Il riquadro di calotta.svg taglia la cima dei capelli: si mostra
+   anche ciò che esce dal riquadro, senza cambiare le forme. */
+.testa__calotta-svg { display: block; width: 100%; height: auto; overflow: visible; }
+
+.apertura__fumetto {
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  bottom: calc(100% + 22px);
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: min(340px, 80vw);
+  text-align: center;
+}
+.apertura__fumetto.segnaposto { text-decoration-color: var(--schiuma); }
+
+/* Campo degli oggetti: riquadro 680 × 500 da oggetti-insieme.svg */
+.apertura__campo {
+  position: absolute;
+  z-index: 2;
+  top: 9%;
+  bottom: 5%;
+  left: calc(var(--margine) + 300px);
+  right: var(--margine);
+  container-type: size;
+  pointer-events: none;
+}
+.apertura__area {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: min(100cqw, 100cqh * 1.36, 820px);
+  height: min(100cqh, 100cqw / 1.36, 603px);
+}
+.oggetto {
+  position: absolute;
+  translate: -50% -50%;
+}
+.oggetto__forma { position: relative; rotate: var(--r); }
+.oggetto img { width: 100%; height: auto; }
+.oggetto__logo {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font: 700 clamp(8px, 1.1cqw, 14px)/1.1 var(--font-testi);
+  text-transform: uppercase;
+}
+
+/* Elenco dei servizi in basso a sinistra */
+.apertura__servizi {
+  position: absolute;
+  z-index: 3;
+  left: var(--margine);
+  bottom: 24px;
+}
+.apertura__servizi .etichetta { color: var(--scoglio); margin-bottom: 4px; }
+.apertura__servizi ol { list-style: none; margin: 0; padding: 0; }
+.apertura__servizi a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--altezza-tocco);
+  font: var(--elenco);
+  text-decoration: none;
+}
+.apertura__num { font: var(--etichetta); letter-spacing: 0.08em; color: var(--scoglio); }
+.apertura__servizi a:hover .apertura__num { color: inherit; }
+
+/* Stato senza JS: testa chiusa, fumetto ed elenco visibili, oggetti nascosti */
+.testa__meta, .testa__strati { visibility: hidden; }
+.oggetto { visibility: hidden; }
+/* Con l'animazione attiva lo stato iniziale lo decide GSAP: qui si evita
+   solo che l'elenco compaia prima che lo script parta. */
+.movimento .apertura__servizi { visibility: hidden; }
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .apertura__titolo { font-size: 21px; }
+  .apertura__campo { left: calc(var(--margine) + 220px); }
+}
+
+/* Mobile: testo sopra la testa, elenco dei servizi sotto */
+@media (max-width: 767px) {
+  .apertura__scena {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+  }
+  .apertura__titolo {
+    position: relative;
+    top: auto;
+    left: auto;
+    max-width: none;
+    padding: 12px var(--margine) 0;
+  }
+  .apertura__palco { position: relative; flex: 1; }
+  .apertura__scritta { top: 18%; }
+  .apertura__personaggio {
+    width: min(62vw, 300px, calc((100svh - var(--altezza-testata)) * 0.36));
+    bottom: 4%;
+  }
+  .apertura__fumetto { font-size: 17px; padding: 14px 18px; }
+  .apertura__campo { left: var(--margine); right: var(--margine); top: 2%; bottom: 252px; }
+  .apertura__servizi { left: var(--margine); right: var(--margine); bottom: 8px; }
+  .apertura__servizi a { font-size: 16px; }
+}
+
+/* =========================================================
+   PERCORSO TRA I SERVIZI
+   ========================================================= */
+.percorso { padding-top: clamp(64px, 10vw, 120px); }
+.percorso__intro { margin-bottom: clamp(48px, 8vw, 96px); }
+.percorso__intro .titolo-1 { margin-bottom: 0.4em; }
+.percorso__intro .testo-grande { max-width: 32ch; }
+
+.percorso__griglia {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 0 clamp(32px, 4vw, 64px);
+  max-width: calc(var(--larghezza) + 2 * var(--margine));
+  margin-inline: auto;
+  padding-inline: var(--margine);
+}
+
+/* Elenco fisso a sinistra */
+.percorso__nav {
+  position: sticky;
+  top: calc(var(--altezza-testata) + 24px);
+  align-self: start;
+  z-index: 20;
+}
+.percorso__nav:focus { outline: none; }
+.percorso__nav ol { list-style: none; margin: 0; padding: 0; }
+.percorso__nav a {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  min-height: var(--altezza-tocco);
+  padding-block: 10px;
+  color: var(--scoglio);
+  font: var(--elenco);
+  text-decoration: none;
+}
+.percorso__num { font: var(--etichetta); letter-spacing: 0.08em; }
+.percorso__puntini {
+  flex: 1 1 16px;
+  min-width: 16px;
+  border-bottom: 2px dotted currentColor;
+  transform: translateY(-4px);
+}
+.percorso__nome { flex: 0 1 auto; text-align: right; }
+.percorso__nav a[aria-current="true"] { color: var(--inchiostro); }
+.percorso__nav a:hover { color: var(--mare); }
+
+/* Tappe */
+.percorso__tappe { position: relative; }
+.tappa {
+  position: relative;
+  z-index: var(--n);
+  background: var(--carta);
+  padding-top: clamp(40px, 6vw, 72px);
+  overflow-x: clip; /* la scheda ruotata non deve sporgere sotto la tappa successiva */
+}
+/* L'onda della tappa successiva sale e copre la precedente */
+.movimento .tappa { position: sticky; top: var(--tappa-top, 0px); }
+.tappa__onda {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(100% - 1px);
+  pointer-events: none;
+}
+.tappa__onda svg { position: absolute; left: 0; bottom: 0; width: 100%; height: auto; }
+.tappa__onda-fondo { color: var(--carta); }
+.tappa__onda-linea { color: var(--inchiostro); bottom: -1px !important; }
+.tappa:first-child .tappa__onda { display: none; }
+
+.tappa__testa { position: relative; }
+.tappa__numero {
+  font: var(--titolo-gigante);
+  font-size: clamp(140px, 22vw, 320px);
+  line-height: 0.8;
+  color: var(--schiuma);
+  user-select: none;
+}
+.tappa__titolo {
+  position: relative;
+  margin-top: -0.6em;
+  max-width: 16ch;
+}
+
+.tappa__corpo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px clamp(32px, 4vw, 64px);
+  margin-top: clamp(32px, 4vw, 48px);
+  align-items: start;
+}
+.tappa__sottotitolo { font: 700 17px/1.4 var(--font-testi); }
+.tappa__frase {
+  margin: 12px 0 28px;
+  font: 500 clamp(22px, 2.4vw, 30px)/1.25 var(--font-testi);
+  max-width: 24ch;
+}
+.tappa__visivo { display: grid; gap: 0; justify-items: start; }
+.tappa__interfaccia {
+  width: 94%;
+  max-width: 480px;
+  rotate: 3deg;
+}
+.tappa__visivo .scheda-demo { margin: -28px 0 0 24px; position: relative; }
+
+.tappa__fine {
+  display: grid;
+  gap: 8px;
+  padding-block: clamp(40px, 6vw, 64px) clamp(56px, 8vw, 96px);
+}
+.tappa__fine-onda { width: min(100%, 360px); height: auto; color: var(--inchiostro); }
+.tappa__torna {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-self: start;
+  min-height: var(--altezza-tocco);
+  font: var(--etichetta);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 1023px) {
+  .tappa__corpo { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Mobile: l'elenco diventa una riga di voci in alto che scorre in orizzontale */
+@media (max-width: 767px) {
+  .percorso__griglia { display: block; padding-inline: 0; }
+  .percorso__nav {
+    top: var(--altezza-testata);
+    background: var(--carta);
+    border-bottom: 1px solid var(--linea);
+    z-index: 30;
+  }
+  .percorso__nav ol {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding: 4px var(--margine);
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+  }
+  .percorso__nav ol::-webkit-scrollbar { display: none; }
+  .percorso__nav li { flex: none; scroll-snap-align: start; }
+  .percorso__nav a { padding: 0 10px; white-space: nowrap; align-items: center; }
+  .percorso__puntini { display: none; }
+  .percorso__tappe { padding-inline: var(--margine); }
+  .tappa__titolo { margin-top: -0.5em; }
+  .tappa__visivo .scheda-demo { margin: -20px 0 0 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tappa { position: relative; }
+}
+
+/* =========================================================
+   COME LAVORO
+   ========================================================= */
+.come-lavoro {
+  position: relative;
+  background: var(--schiuma);
+  margin-top: clamp(32px, 6vw, 80px);
+}
+.come-lavoro .sezione__onda { color: var(--schiuma); }
+.come-lavoro__intro { max-width: 40ch; font-size: clamp(20px, 2vw, 26px); line-height: 1.4; }
+.passi {
+  list-style: none;
+  margin: clamp(40px, 6vw, 72px) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 40px 28px;
+}
+.passo__immagine { width: 150px; height: auto; margin-bottom: 16px; }
+.passo__numero { color: var(--scoglio); margin-bottom: 6px; }
+.passo__nome { margin-bottom: 10px; font-size: clamp(24px, 2.2vw, 30px); }
+.passo__testo { font-size: 17px; }
+
+/* =========================================================
+   CHI SONO
+   ========================================================= */
+.chi-sono__griglia {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+.chi-sono__testo > * + * { margin-top: 1em; }
+.chi-sono__testo .titolo-1 { margin-bottom: 0.5em; }
+.chi-sono__testo p { max-width: 52ch; }
+.chi-sono__testo .testo-grande { max-width: 26ch; }
+.chi-sono__visivo { display: flex; align-items: flex-end; justify-content: center; gap: 8px; }
+.chi-sono__testa { width: min(300px, 60%); }
+.chi-sono__tavola { width: min(110px, 22%); }
+
+@media (max-width: 767px) {
+  .chi-sono__griglia { grid-template-columns: minmax(0, 1fr); }
+  .chi-sono__visivo { order: -1; justify-content: flex-start; }
+}
+
+/* =========================================================
+   CONTATTI
+   ========================================================= */
+.contatti__griglia {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+}
+.contatti__testo .titolo-1 { margin-bottom: 0.5em; }
+.contatti__testo .testo-grande { max-width: 24ch; }
+.contatti__bottiglia { width: min(360px, 100%); margin-top: 32px; }
+
+.modulo {
+  display: grid;
+  gap: 20px;
+  padding: clamp(20px, 3vw, 32px);
+  background: var(--schiuma);
+  border: var(--tratto) solid var(--inchiostro);
+  border-radius: var(--raggio-card);
+}
+.modulo__campo { display: grid; gap: 6px; }
+.modulo label { font: var(--elenco); }
+.modulo__aiuto { font-size: 15px; color: var(--scoglio); }
+.modulo input[type="text"],
+.modulo input[type="email"],
+.modulo textarea {
+  width: 100%;
+  min-height: var(--altezza-pulsante);
+  padding: 10px 14px;
+  border: var(--tratto) solid var(--inchiostro);
+  border-radius: var(--raggio-campo);
+  background: var(--schiuma);
+  font: var(--testo);
+}
+.modulo textarea { resize: vertical; min-height: 140px; }
+.modulo__scelta { display: flex; gap: 12px; align-items: flex-start; }
+.modulo__scelta input {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  margin: 2px 0 0;
+  accent-color: var(--inchiostro);
+}
+.modulo__scelta label { font: 400 16px/1.45 var(--font-testi); }
+.modulo .pillola { justify-self: start; cursor: pointer; }
+.modulo__stato:empty { display: none; }
+.modulo__stato { font: var(--elenco); color: var(--mare); }
+.modulo__alternativa { font-size: 16px; color: var(--scoglio); }
+.modulo__alternativa a { color: var(--inchiostro); }
+
+@media (max-width: 767px) {
+  .contatti__griglia { grid-template-columns: minmax(0, 1fr); }
+  .contatti__bottiglia { width: 240px; }
+}
