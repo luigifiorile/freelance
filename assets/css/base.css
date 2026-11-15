@@ -52,7 +52,7 @@ body {
 main { flex: 1 0 auto; }
 img, svg { display: block; max-width: 100%; height: auto; }
 h1, h2, h3, h4, p, ul, ol, figure { margin: 0; }
-ul[class], ol[class] { list-style: none; padding: 0; }
+:where(ul[class], ol[class]) { list-style: none; padding: 0; }
 button, input, textarea, select { font: inherit; color: inherit; }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -136,8 +136,6 @@ main:focus { outline: none; }
   text-decoration: none;
 }
 .pillola:hover { background: var(--inchiostro); color: var(--schiuma); }
-.pillola img { width: 20px; height: 20px; }
-.pillola:hover img { filter: invert(1); }
 /* Il pulsante principale della pagina (uno solo) usa l'accento */
 .pillola--mare { background: var(--mare); border-color: var(--mare); color: var(--schiuma); }
 .pillola--mare:hover { background: var(--inchiostro); border-color: var(--inchiostro); }
@@ -214,8 +212,6 @@ main:focus { outline: none; }
   user-select: none;
 }
 
-/* Apertura provvisoria (tappa a): sarà sostituita nella tappa b */
-.apertura-provvisoria { padding-block: 24px; overflow: hidden; }
 
 /* ---------- Segnaposto ---------- */
 /* Testi ancora da definire: restano leggibili, con una sottolineatura tratteggiata */
@@ -249,4 +245,33 @@ main:focus { outline: none; }
 .piede__brand img { background: var(--schiuma); border-radius: 50%; }
 .piede__descrizione { max-width: 46ch; }
 .piede__su { display: inline-flex; align-items: center; gap: 8px; min-height: var(--altezza-tocco); }
-.piede__su img { filter: invert(1); }
+
+/* ---------- Icone in currentColor (inserite nella pagina) ---------- */
+.icona { width: 20px; height: 20px; flex: none; }
+.icona--sinistra { transform: rotate(-90deg); }
+
+/* ---------- Scheda demo numerata ---------- */
+.scheda-demo {
+  display: grid;
+  gap: 6px;
+  max-width: 340px;
+  padding: 18px 22px;
+  background: var(--schiuma);
+  border: var(--tratto) solid var(--inchiostro);
+  border-radius: var(--raggio-card);
+  text-decoration: none;
+}
+.scheda-demo__numero { font: var(--etichetta); text-transform: uppercase; letter-spacing: 0.08em; color: var(--scoglio); }
+.scheda-demo__nome { font: 700 22px/1.15 var(--font-titoli); }
+.scheda-demo__azione { display: inline-flex; align-items: center; gap: 8px; min-height: var(--altezza-tocco); font: var(--elenco); }
+.scheda-demo:hover { border-color: var(--mare); color: var(--mare); }
+
+/* ---------- Divisore d'onda in cima a una sezione ---------- */
+.sezione__onda, .invito__onda {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: -1px;
+}
