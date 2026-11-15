@@ -8,6 +8,7 @@
     "urlBase": "https://luigifiorile.github.io/freelance/",
     "persona": "Luigi Fiorile",
     "citta": "Milano",
+    "paese": "IT",
     "email": "[EMAIL]",
     "partitaIva": "[PARTITA IVA]",
     "urlPrivacy": "[LINK PRIVACY]",
@@ -29,7 +30,8 @@
       "partitaIvaEtichetta": "P. IVA",
       "privacy": "Privacy",
       "torna": "Torna su"
-    }
+    },
+    "anteprimaSocialAlt": "Il marchio e il nome di Luigi Fiorile su fondo grigio chiaro"
   },
 
   "pagine": {
@@ -47,24 +49,90 @@
 
   "home": {
     "apertura": {
-      "titoloNascosto": "Luigi Fiorile, strumenti AI e digitali su misura"
+      "titolo": "Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese.",
+      "elencoEtichetta": "I cinque servizi",
+      "scorri": "Scorri"
     },
     "servizi": {
       "titolo": "Servizi",
-      "intro": "[TESTO DA SCRIVERE]"
+      "intro": "Cinque strumenti che posso costruire per il tuo lavoro. Ognuno parte da un problema concreto e ha una demo con dati di esempio.",
+      "navEtichetta": "Servizi",
+      "scopri": "Scopri il servizio",
+      "provaDemo": "Guarda la demo",
+      "tornaNav": "Torna alla navigazione"
     },
     "comeLavoro": {
       "titolo": "Come lavoro",
-      "intro": "[TESTO DA SCRIVERE]"
+      "intro": "Uno shaper costruisce la tavola da surf su misura per chi la userà: il suo peso, il suo livello, le onde che cavalca. Io lavoro allo stesso modo. L'onda è il tuo lavoro, che ha già la sua energia: io la leggo e costruisco lo strumento giusto per cavalcarla.",
+      "passi": [
+        { "nome": "Ascoltare", "immagine": "01-ascoltare", "testo": "Parto da una chiacchierata. Mi racconti il tuo lavoro, i tuoi clienti, gli strumenti che usi e cosa ti fa perdere tempo." },
+        { "nome": "Leggere il mare", "immagine": "02-leggere-il-mare", "testo": "Guardo i numeri e i passaggi del tuo lavoro. Capisco dove si perdono tempo e clienti, prima di proporti qualcosa." },
+        { "nome": "Costruire", "immagine": "03-costruire", "testo": "Costruisco lo strumento su misura, partendo da quello che usi già. Niente di più complicato del necessario." },
+        { "nome": "Mettere in acqua", "immagine": "04-mettere-in-acqua", "testo": "Provo lo strumento con te sul lavoro di tutti i giorni e ti mostro come usarlo. Lo sistemo finché non funziona come serve." },
+        { "nome": "Seguire nel tempo", "immagine": "05-seguire-nel-tempo", "testo": "Dopo la consegna resto a disposizione. Controllo che tutto funzioni e aggiorno lo strumento quando il tuo lavoro cambia." }
+      ]
     },
     "chiSono": {
       "titolo": "Chi sono",
-      "testo": "[TESTO DA SCRIVERE]"
+      "paragrafi": [
+        "Mi chiamo Luigi Fiorile e lavoro a Milano, come freelance.",
+        "Ho lavorato nella consulenza, in Accenture, e poi come Chief of Staff in una startup. Oggi costruisco strumenti AI e digitali per liberi professionisti e piccole imprese, e li affianco con consulenza su processi, vendite e marketing.",
+        "Quando posso, sono in acqua: faccio surf e kitesurf. Da lì viene l'idea dello shaper, che costruisce ogni tavola su misura."
+      ],
+      "ritrattoAlt": "Ritratto illustrato di Luigi, in stile fumetto, con capelli ricci, baffi e un auricolare"
     },
     "contatti": {
       "titolo": "Contatti",
-      "intro": "[TESTO DA SCRIVERE]"
+      "intro": "Raccontami in poche righe il tuo lavoro e cosa vorresti cambiare. Ti rispondo io, di persona.",
+      "bottigliaAlt": "",
+      "campi": {
+        "nome": "Nome",
+        "email": "Email",
+        "messaggio": "Di cosa hai bisogno?",
+        "messaggioAiuto": "Bastano poche righe: che lavoro fai e cosa vorresti migliorare.",
+        "privacyPrima": "Ho letto l'",
+        "privacyLink": "informativa sulla privacy",
+        "privacyDopo": " e accetto che i miei dati siano usati per rispondermi."
+      },
+      "invia": "Invia il messaggio",
+      "nonAttivo": "Il modulo non è ancora attivo. Nel frattempo puoi scrivermi via email.",
+      "oppure": "Oppure scrivimi a"
     }
+  },
+
+  "servizioPagina": {
+    "etichetta": "Servizio {n} di {tot}",
+    "tutti": "Tutti i servizi",
+    "problemaTitolo": "Il problema",
+    "costruiscoTitolo": "Cosa costruisco",
+    "offertaTitolo": "Come si lavora con me",
+    "offertaIntro": "Ogni progetto passa da tre fasi. Puoi fermarti alla prima, o andare avanti.",
+    "livelli": [
+      { "nome": "Diagnosi iniziale", "testo": "Guardo come lavori oggi, quali strumenti usi e dove si perde tempo. Alla fine hai un quadro chiaro e una proposta concreta." },
+      { "nome": "Progetto su misura", "testo": "Costruisco lo strumento sul tuo modo di lavorare, lo provo con te e ti mostro come usarlo." },
+      { "nome": "Manutenzione mensile", "testo": "Seguo lo strumento nel tempo: lo aggiorno, sistemo quello che non va e lo adatto quando il tuo lavoro cambia." }
+    ],
+    "demoTitolo": "Prova a vedere come funziona",
+    "demoTesto": "Una demo con dati di esempio, per farti un'idea dello strumento.",
+    "contattoTitolo": "Ne parliamo?",
+    "contattoTesto": "Raccontami il tuo lavoro: capisco se posso esserti utile e ti dico come.",
+    "contattoPulsante": "Scrivimi",
+    "prossimo": "Servizio successivo",
+    "titoloPagina": "{nome} — {brand}"
+  },
+
+  "demoPagina": {
+    "etichetta": "Demo",
+    "avvisoTitolo": "Dati di esempio",
+    "avvisoTesto": "Nomi, numeri e attività in questa pagina sono inventati. Servono solo a mostrare come funziona lo strumento.",
+    "servizio": "Fa parte del servizio",
+    "comeFunzionaTitolo": "Come funziona",
+    "schermataTitolo": "La schermata",
+    "tornaServizio": "Torna al servizio",
+    "contattoTitolo": "Ti serve qualcosa di simile?",
+    "contattoTesto": "Ogni strumento lo costruisco sul tuo lavoro. Raccontami cosa ti serve.",
+    "contattoPulsante": "Scrivimi",
+    "titoloPagina": "Demo: {nome} — {brand}"
   },
 
   "servizi": [
@@ -74,7 +142,43 @@
       "nome": "CRM e automazioni",
       "icona": "01-crm-e-automazioni",
       "interfaccia": "01-crm",
-      "demo": "crm-follow-up"
+      "interfacciaAlt": "Schema di un CRM con un elenco di contatti e un promemoria",
+      "sottotitolo": "Per chi perde lead tra email, telefono e fogli di calcolo",
+      "frase": "Collego i tuoi strumenti perché ogni lead arrivi nel CRM e riceva una risposta al momento giusto.",
+      "descrizione": "Collego sito, email e moduli a un CRM ordinato, con follow-up automatici. Per liberi professionisti e piccole imprese.",
+      "problema": "I contatti arrivano da posti diversi: il sito, le email, il telefono, i social. Finiscono in un foglio di calcolo o nella memoria di qualcuno. Così qualche lead si perde, e qualcun altro riceve la risposta troppo tardi.",
+      "costruisco": [
+        "Un CRM ordinato, con tutti i lead in un unico posto.",
+        "Automazioni che registrano i contatti in arrivo da sito, email e moduli.",
+        "Promemoria e follow-up che partono da soli.",
+        "Collegamenti tra gli strumenti che usi già."
+      ],
+      "demo": {
+        "id": "crm-follow-up",
+        "nome": "Follow-up dei lead",
+        "descrizione": "Una vista che mostra i lead in arrivo, da dove vengono e chi va ricontattato oggi.",
+        "passi": [
+          "Un nuovo contatto compila il modulo sul sito.",
+          "Il lead entra nel CRM con la sua provenienza.",
+          "Se nessuno risponde entro due giorni, parte un promemoria."
+        ],
+        "numeri": [
+          { "etichetta": "Lead nuovi questa settimana", "valore": "12" },
+          { "etichetta": "Follow-up da fare oggi", "valore": "4" },
+          { "etichetta": "Senza risposta da più di 2 giorni", "valore": "2" }
+        ],
+        "tabella": {
+          "didascalia": "Lead in arrivo (dati di esempio)",
+          "colonne": ["Lead", "Da dove arriva", "Ultimo contatto", "Prossimo passo"],
+          "righe": [
+            ["Giulia B.", "Modulo sul sito", "Oggi", "Chiamata conoscitiva"],
+            ["Marco T.", "Email", "Ieri", "Inviare preventivo"],
+            ["Sara L.", "Instagram", "3 giorni fa", "Promemoria inviato"],
+            ["Paolo R.", "Telefono", "Oggi", "Fissare appuntamento"],
+            ["Elena C.", "Modulo sul sito", "4 giorni fa", "Promemoria inviato"]
+          ]
+        }
+      }
     },
     {
       "numero": 2,
@@ -82,7 +186,42 @@
       "nome": "Gestionale interno",
       "icona": "02-gestionale-interno",
       "interfaccia": "02-gestionale",
-      "demo": "gestionale-report"
+      "interfacciaAlt": "Schema di un gestionale con tre riquadri, un grafico a barre e una linea di andamento",
+      "sottotitolo": "Per chi tiene l'attività in tanti fogli di calcolo",
+      "frase": "Costruisco con l'AI un gestionale sul tuo modo di lavorare, con i report che ti servono davvero.",
+      "descrizione": "Un gestionale costruito sul tuo lavoro, con report su vendite, costi e scadenze. Per liberi professionisti e piccole imprese.",
+      "problema": "Ordini, clienti, fatture e scadenze stanno in file diversi. Per sapere come sta andando il mese bisogna mettere insieme i numeri a mano, e ci vuole tempo ogni volta.",
+      "costruisco": [
+        "Un gestionale con le sezioni che usi ogni giorno, e solo quelle.",
+        "Report pronti su vendite, costi e scadenze.",
+        "Accessi diversi per te e per chi lavora con te.",
+        "Il passaggio dei dati che hai già, senza ricominciare da zero."
+      ],
+      "demo": {
+        "id": "gestionale-report",
+        "nome": "Report del mese",
+        "descrizione": "Un riepilogo che mette insieme incassi, costi e fatture da incassare, senza calcoli a mano.",
+        "passi": [
+          "Ordini e fatture vengono registrati nel gestionale.",
+          "Il report si aggiorna da solo, ogni giorno.",
+          "A fine mese hai i numeri pronti da leggere."
+        ],
+        "numeri": [
+          { "etichetta": "Incassato questo mese", "valore": "18.400 €" },
+          { "etichetta": "Ordini aperti", "valore": "23" },
+          { "etichetta": "Fatture da incassare", "valore": "6" }
+        ],
+        "tabella": {
+          "didascalia": "Andamento degli ultimi mesi (dati di esempio)",
+          "colonne": ["Mese", "Incassato", "Costi", "Margine"],
+          "righe": [
+            ["Gennaio", "15.200 €", "9.800 €", "5.400 €"],
+            ["Febbraio", "16.100 €", "10.200 €", "5.900 €"],
+            ["Marzo", "17.300 €", "10.900 €", "6.400 €"],
+            ["Aprile", "18.400 €", "11.300 €", "7.100 €"]
+          ]
+        }
+      }
     },
     {
       "numero": 3,
@@ -90,7 +229,43 @@
       "nome": "Vendite e assistenza clienti",
       "icona": "03-vendite-e-assistenza",
       "interfaccia": "03-vendite",
-      "demo": "vendite-whatsapp"
+      "interfacciaAlt": "Schema di una chat con messaggi del cliente e risposte",
+      "sottotitolo": "Per chi risponde ogni giorno alle stesse domande",
+      "frase": "Preparo automazioni che rispondono ai clienti, anche su WhatsApp, e passano a te solo le richieste che contano.",
+      "descrizione": "Risposte automatiche ai clienti su WhatsApp ed email, con passaggio a una persona quando serve. Per liberi professionisti e piccole imprese.",
+      "problema": "Le richieste arrivano a ogni ora e spesso sono le stesse: orari, prezzi, disponibilità. Rispondere a tutte toglie tempo al lavoro vero, ma non rispondere fa perdere clienti.",
+      "costruisco": [
+        "Risposte automatiche alle domande frequenti, su WhatsApp e via email.",
+        "Un assistente che raccoglie le informazioni prima di passarti la richiesta.",
+        "Il passaggio a una persona quando la domanda lo richiede.",
+        "Un riepilogo delle richieste, per capire cosa chiedono i clienti."
+      ],
+      "demo": {
+        "id": "vendite-whatsapp",
+        "nome": "Risposte su WhatsApp",
+        "descrizione": "Le richieste di una giornata: quali hanno avuto una risposta automatica e quali sono passate a una persona.",
+        "passi": [
+          "Il cliente scrive su WhatsApp.",
+          "L'assistente risponde alle domande frequenti.",
+          "Se la richiesta è particolare, la passa a te con un riassunto."
+        ],
+        "numeri": [
+          { "etichetta": "Messaggi ricevuti oggi", "valore": "37" },
+          { "etichetta": "Risposte automatiche", "valore": "29" },
+          { "etichetta": "Passati a una persona", "valore": "8" }
+        ],
+        "tabella": {
+          "didascalia": "Richieste di oggi (dati di esempio)",
+          "colonne": ["Ora", "Richiesta", "Risposta", "Gestita da"],
+          "righe": [
+            ["09:12", "Siete aperti il sabato?", "Orari inviati", "Assistente"],
+            ["10:40", "Quanto costa una consulenza?", "Listino inviato", "Assistente"],
+            ["11:05", "Vorrei spostare l'appuntamento", "Nuova data proposta", "Assistente"],
+            ["14:30", "Ho un problema con un ordine", "Passata con riassunto", "Persona"],
+            ["18:22", "Fate preventivi per aziende?", "Passata con riassunto", "Persona"]
+          ]
+        }
+      }
     },
     {
       "numero": 4,
@@ -98,7 +273,43 @@
       "nome": "Siti web e visibilità",
       "icona": "04-siti-web",
       "interfaccia": "04-siti",
-      "demo": "siti-visibilita"
+      "interfacciaAlt": "Schema di una pagina web con un'immagine, del testo e una lente di ricerca",
+      "sottotitolo": "Per chi ha un sito che nessuno trova",
+      "frase": "Costruisco o sistemo il tuo sito perché ti trovino su Google e nelle risposte degli assistenti AI.",
+      "descrizione": "Siti chiari e veloci, pensati per farsi trovare su Google e negli assistenti AI. Per liberi professionisti e piccole imprese.",
+      "problema": "Il sito c'è, ma porta poche richieste. Non compare quando qualcuno cerca quello che fai, e gli assistenti AI, quando qualcuno chiede un consiglio, citano altri.",
+      "costruisco": [
+        "Un sito chiaro e veloce, anche da telefono.",
+        "Testi e struttura pensati per i motori di ricerca (SEO).",
+        "Contenuti che gli assistenti AI riescono a leggere e citare (GEO).",
+        "Un modulo di contatto collegato agli strumenti che usi."
+      ],
+      "demo": {
+        "id": "siti-visibilita",
+        "nome": "Controllo della visibilità",
+        "descrizione": "Un controllo delle pagine del sito: cosa le rende difficili da trovare e cosa fare per prima cosa.",
+        "passi": [
+          "Analizzo le pagine del sito.",
+          "Segno i problemi che le nascondono a Google e agli assistenti AI.",
+          "Ordino le correzioni, dalla più utile alla meno urgente."
+        ],
+        "numeri": [
+          { "etichetta": "Pagine controllate", "valore": "14" },
+          { "etichetta": "Pagine con problemi", "valore": "5" },
+          { "etichetta": "Correzioni urgenti", "valore": "2" }
+        ],
+        "tabella": {
+          "didascalia": "Pagine da sistemare (dati di esempio)",
+          "colonne": ["Pagina", "Problema", "Cosa fare", "Priorità"],
+          "righe": [
+            ["Home", "Il titolo non dice cosa fai", "Riscrivere il titolo", "Alta"],
+            ["Servizi", "Pagina lenta da telefono", "Alleggerire le immagini", "Alta"],
+            ["Chi siamo", "Manca l'indirizzo", "Aggiungere città e contatti", "Media"],
+            ["Blog", "Articoli senza data", "Aggiungere le date", "Bassa"],
+            ["Contatti", "Modulo poco visibile", "Spostarlo in alto", "Media"]
+          ]
+        }
+      }
     },
     {
       "numero": 5,
@@ -106,7 +317,43 @@
       "nome": "Marketing",
       "icona": "05-marketing",
       "interfaccia": "05-marketing",
-      "demo": "marketing-funnel"
+      "interfacciaAlt": "Schema di un imbuto di vendita diviso in tre fasce",
+      "sottotitolo": "Per chi non sa dove perde i clienti",
+      "frase": "Analizzo il percorso dei tuoi clienti, dal primo contatto all'acquisto, e ti mostro dove si fermano.",
+      "descrizione": "Analisi del percorso dei clienti, dal primo contatto all'acquisto, per capire dove si perdono. Per liberi professionisti e piccole imprese.",
+      "problema": "Fai pubblicità, pubblichi sui social, mandi newsletter. Arrivano visite, ma poche diventano clienti, e non è chiaro in quale passaggio le persone si perdono.",
+      "costruisco": [
+        "Una mappa del percorso dei tuoi clienti, dal primo contatto all'acquisto.",
+        "I numeri di ogni passaggio, in un'unica vista.",
+        "I punti in cui si perdono più persone, con cosa cambiare.",
+        "Un controllo periodico per vedere se le modifiche funzionano."
+      ],
+      "demo": {
+        "id": "marketing-funnel",
+        "nome": "Dove si perdono i clienti",
+        "descrizione": "Il percorso dei clienti diviso in passaggi, con quante persone si fermano a ogni passaggio.",
+        "passi": [
+          "Raccolgo i numeri da sito, social e CRM.",
+          "Li metto in fila, passaggio per passaggio.",
+          "Segno dove si perdono più persone e cosa provare a cambiare."
+        ],
+        "numeri": [
+          { "etichetta": "Visite al sito in un mese", "valore": "2.000" },
+          { "etichetta": "Richieste di contatto", "valore": "80" },
+          { "etichetta": "Nuovi clienti", "valore": "12" }
+        ],
+        "tabella": {
+          "didascalia": "Il percorso in un mese (dati di esempio)",
+          "colonne": ["Passaggio", "Persone", "Proseguono", "Si fermano qui"],
+          "righe": [
+            ["Visitano il sito", "2.000", "15%", "1.700"],
+            ["Guardano i servizi", "300", "27%", "220"],
+            ["Chiedono un contatto", "80", "40%", "48"],
+            ["Ricevono un preventivo", "32", "38%", "20"],
+            ["Diventano clienti", "12", "—", "—"]
+          ]
+        }
+      }
     }
   ]
 }
