@@ -12,9 +12,10 @@ Quasi tutti i valori si cambiano in `contenuti/it.json`. Nel sito i segnaposto s
 | `scrittaGigante`: "LUIGI" | Scritta gigante dietro la testa | home, apertura; anteprima social | provvisorio |
 | `fumetto`: `[FRASE DEL FUMETTO]` | Frase sopra la testa chiusa | home, apertura | aperto |
 | `email`: `[EMAIL]` | Indirizzo email pubblico | piè di pagina, sezione Contatti | aperto |
-| `partitaIva`: `[PARTITA IVA]` | Partita IVA (obbligatoria per legge) | piè di pagina | aperto |
+| `partitaIva` | Partita IVA (obbligatoria per legge) | piè di pagina | fatto |
 | `urlPrivacy`: `[LINK PRIVACY]` | Informativa privacy (es. iubenda, a fine progetto) | piè di pagina, casella del form | aperto |
 | `urlForm`: `[URL_SERVIZIO_FORM]` | Indirizzo del servizio per il form (Formspree, Tally o calendario). Finché manca, il form mostra "non ancora attivo" | sezione Contatti | aperto |
+| `indicizzabile`: `false` | Blocca l'indicizzazione dei motori di ricerca (`noindex` su tutte le pagine). Va messo a `true` al lancio, quando i segnaposto sono completati | tutte le pagine | da cambiare al lancio |
 | `urlBase` | Indirizzo pubblico del sito. Va cambiato solo se cambia il dominio | canonical, sitemap, anteprima social, dati strutturati | ok |
 
 Dopo aver cambiato `brand`, `scrittaGigante` o `home.apertura.titolo`, rigenerare l'anteprima social con `node script/anteprima-social.mjs`.

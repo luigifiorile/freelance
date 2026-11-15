@@ -48,7 +48,7 @@ Pagina demo (modello unico): demo statica con dati di esempio, dichiarati come t
 
 ## Architettura
 
-- `contenuti/it.json`: tutti i testi. In `sito` ci sono i valori da cambiare in un punto solo: `brand` (nome), `scrittaGigante`, `fumetto`, `urlBase` (indirizzo pubblico, usato solo per canonical, sitemap e anteprima social). L'inglese sarà `contenuti/en.json` con le stesse chiavi.
+- `contenuti/it.json`: tutti i testi. In `sito` ci sono i valori da cambiare in un punto solo: `brand` (nome), `scrittaGigante`, `fumetto`, `urlBase` (indirizzo pubblico, usato solo per canonical, sitemap e anteprima social), `indicizzabile` (blocco dei motori di ricerca). L'inglese sarà `contenuti/en.json` con le stesse chiavi.
 - `modelli/*.mjs`: modelli delle pagine come funzioni JS che ricevono i testi e restituiscono HTML. Nessun testo scritto nei modelli.
 - `script/costruisci.mjs`: script Node senza dipendenze. Genera il sito in `_sito/` (ignorata da git): pagine, `sitemap.xml`, `robots.txt`, copia di `assets/`, di `brand/tokens.css` e degli SVG.
 - `script/anteprima.mjs`: server locale che serve `_sito/` sotto `/freelance/`, come su GitHub Pages.
@@ -130,6 +130,8 @@ Comandi:
 - La sezione "Lavori e demo" del brief non si fa ora: è un promemoria per quando il progetto sarà finito.
 - Privacy: alla fine si userà un servizio come iubenda (è uno script di terze parti, già approvato per quel momento). Fino ad allora link segnaposto. Partita IVA nel piè di pagina come segnaposto.
 - Anteprima social: un PNG 1200×630 generato una volta componendo SVG esistenti e testo (tappa g).
+- Finché ci sono segnaposto il sito non si fa indicizzare: `sito.indicizzabile` è `false` e tutte le pagine hanno `<meta name="robots" content="noindex">`. Al lancio va messo a `true`.
+- Il sito è pubblicato su GitHub Pages da un repository pubblico (Pages su repository privati richiede un piano a pagamento).
 - Su mobile i titoli con misura fissa nei token (`--titolo-1`, `--titolo-2`, `--apertura`) si riducono con `clamp()`; su desktop restano identici ai token.
 ## Come è fatta l'apertura
 
