@@ -60,7 +60,8 @@ Pagina demo (modello unico): demo statica con dati di esempio, dichiarati come t
 
 Comandi:
 - `node script/costruisci.mjs`: costruisce il sito.
-- `node script/anteprima.mjs`: costruisce e apre l'anteprima su `http://localhost:8080/freelance/`.
+- `node script/anteprima.mjs`: costruisce e apre l'anteprima su `http://localhost:4321/freelance/` (se la porta è occupata usa la successiva libera).
+- `node script/anteprima-social.mjs`: rigenera `assets/img/anteprima-social.png` (serve Playwright; da rilanciare quando cambiano nome, scritta gigante o frase di apertura).
 
 ## Regole di stile
 
@@ -130,6 +131,16 @@ Comandi:
 - Privacy: alla fine si userà un servizio come iubenda (è uno script di terze parti, già approvato per quel momento). Fino ad allora link segnaposto. Partita IVA nel piè di pagina come segnaposto.
 - Anteprima social: un PNG 1200×630 generato una volta componendo SVG esistenti e testo (tappa g).
 - Su mobile i titoli con misura fissa nei token (`--titolo-1`, `--titolo-2`, `--apertura`) si riducono con `clamp()`; su desktop restano identici ai token.
+## Come è fatta l'apertura
+
+- Gli SVG della testa condividono lo stesso sistema di coordinate. In `assets/css/home.css` il riquadro `.testa` corrisponde a `testa-chiusa.svg` (400 × 470 unità) e ogni livello è posizionato in percentuale. Livelli: testa chiusa, testa a metà, e il gruppo testa aperta + calotta.
+- Calma → sorpresa: dissolvenza da `testa-chiusa.svg` a `testa-a-meta.svg`. Sorpresa → felice: dissolvenza verso `testa-aperta.svg` + `calotta.svg`, con la calotta nella stessa posa di "a metà"; poi la calotta sale e la testa scende in modo continuo.
+- `calotta.svg` è inserita nella pagina con `overflow: visible`: il suo riquadro taglia la cima dei capelli, le forme non cambiano.
+- Gli oggetti finiscono nella disposizione di `oggetti-insieme.svg` (posizioni in `modelli/home.mjs`). I tre loghi sono `segnaposto-logo.svg` con il nome scritto sopra.
+- Su mobile la calotta esce dall'alto invece di fermarsi, per non coprire il testo.
+- La scritta gigante si riduce da sola se non entra nella larghezza (su mobile resta intera).
+- Senza JS: testa chiusa ferma, con fumetto ed elenco. Con "riduci animazioni": stato finale subito, senza pin.
+
 ## Decisioni aperte
 
 - Nome definitivo del brand.

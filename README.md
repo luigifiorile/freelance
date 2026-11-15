@@ -12,7 +12,7 @@ Serve solo Node (versione 20 o successiva), senza installare nulla:
 node script/anteprima.mjs
 ```
 
-Poi apri http://localhost:8080/freelance/ nel browser. I testi si cambiano in `contenuti/it.json`; dopo una modifica riavvia il comando.
+Poi apri http://localhost:4321/freelance/ nel browser (se la porta 4321 è occupata, il comando ne sceglie un'altra e la scrive nel terminale). I testi si cambiano in `contenuti/it.json`; dopo una modifica riavvia il comando.
 
 ## Pubblicazione
 
