@@ -6,11 +6,12 @@
     "scrittaGigante": "LUIGI",
     "fumetto": "[FRASE DEL FUMETTO]",
     "urlBase": "https://luigifiorile.github.io/freelance/",
+    "indicizzabile": false,
     "persona": "Luigi Fiorile",
     "citta": "Milano",
     "paese": "IT",
     "email": "[EMAIL]",
-    "partitaIva": "[PARTITA IVA]",
+    "partitaIva": "10521731215",
     "urlPrivacy": "[LINK PRIVACY]",
     "urlForm": "[URL_SERVIZIO_FORM]"
   },

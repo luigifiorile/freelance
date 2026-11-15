@@ -104,7 +104,8 @@ export function struttura(t, pagina) {
   ${base}<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>${esc(pagina.titolo)}</title>
   <meta name="description" content="${esc(pagina.descrizione)}">
-  ${pagina.base ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${esc(url)}">`}
+  ${pagina.base ? "" : `<link rel="canonical" href="${esc(url)}">`}
+  ${pagina.base || !t.sito.indicizzabile ? '<meta name="robots" content="noindex">' : ""}
   <meta property="og:type" content="website">
   <meta property="og:locale" content="${esc(t.sito.locale)}">
   <meta property="og:site_name" content="${esc(t.sito.brand)}">
