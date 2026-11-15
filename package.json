@@ -1,0 +1,9 @@
+{
+  "name": "sito-freelance",
+  "private": true,
+  "description": "Sito statico da freelance. Nessuna dipendenza: servono solo Node 20+.",
+  "scripts": {
+    "costruisci": "node script/costruisci.mjs",
+    "anteprima": "node script/anteprima.mjs"
+  }
+}

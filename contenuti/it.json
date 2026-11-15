@@ -1,0 +1,112 @@
+{
+  "sito": {
+    "lingua": "it",
+    "locale": "it_IT",
+    "brand": "Luigi Fiorile",
+    "scrittaGigante": "LUIGI",
+    "fumetto": "[FRASE DEL FUMETTO]",
+    "urlBase": "https://luigifiorile.github.io/freelance/",
+    "persona": "Luigi Fiorile",
+    "citta": "Milano",
+    "email": "[EMAIL]",
+    "partitaIva": "[PARTITA IVA]",
+    "urlPrivacy": "[LINK PRIVACY]",
+    "urlForm": "[URL_SERVIZIO_FORM]"
+  },
+
+  "comune": {
+    "saltaAlContenuto": "Vai al contenuto",
+    "homeLink": "Torna alla home",
+    "menuEtichetta": "Menu principale",
+    "menu": [
+      { "testo": "Servizi", "ancora": "servizi" },
+      { "testo": "Come lavoro", "ancora": "come-lavoro" },
+      { "testo": "Chi sono", "ancora": "chi-sono" },
+      { "testo": "Contatti", "ancora": "contatti" }
+    ],
+    "piede": {
+      "descrizione": "Strumenti AI e digitali su misura per liberi professionisti e piccole imprese.",
+      "partitaIvaEtichetta": "P. IVA",
+      "privacy": "Privacy",
+      "torna": "Torna su"
+    }
+  },
+
+  "pagine": {
+    "home": {
+      "titolo": "Luigi Fiorile — strumenti AI e digitali su misura per il tuo lavoro",
+      "descrizione": "Sono Luigi, freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese: CRM, gestionali, vendite, siti e marketing."
+    },
+    "nonTrovata": {
+      "titolo": "Pagina non trovata",
+      "descrizione": "Questa pagina non esiste o è stata spostata.",
+      "titoloPagina": "Questa pagina non c'è",
+      "testo": "Forse l'indirizzo è sbagliato, o la pagina è stata spostata."
+    }
+  },
+
+  "home": {
+    "apertura": {
+      "titoloNascosto": "Luigi Fiorile, strumenti AI e digitali su misura"
+    },
+    "servizi": {
+      "titolo": "Servizi",
+      "intro": "[TESTO DA SCRIVERE]"
+    },
+    "comeLavoro": {
+      "titolo": "Come lavoro",
+      "intro": "[TESTO DA SCRIVERE]"
+    },
+    "chiSono": {
+      "titolo": "Chi sono",
+      "testo": "[TESTO DA SCRIVERE]"
+    },
+    "contatti": {
+      "titolo": "Contatti",
+      "intro": "[TESTO DA SCRIVERE]"
+    }
+  },
+
+  "servizi": [
+    {
+      "numero": 1,
+      "id": "crm-e-automazioni",
+      "nome": "CRM e automazioni",
+      "icona": "01-crm-e-automazioni",
+      "interfaccia": "01-crm",
+      "demo": "crm-follow-up"
+    },
+    {
+      "numero": 2,
+      "id": "gestionale-interno",
+      "nome": "Gestionale interno",
+      "icona": "02-gestionale-interno",
+      "interfaccia": "02-gestionale",
+      "demo": "gestionale-report"
+    },
+    {
+      "numero": 3,
+      "id": "vendite-e-assistenza-clienti",
+      "nome": "Vendite e assistenza clienti",
+      "icona": "03-vendite-e-assistenza",
+      "interfaccia": "03-vendite",
+      "demo": "vendite-whatsapp"
+    },
+    {
+      "numero": 4,
+      "id": "siti-web-e-visibilita",
+      "nome": "Siti web e visibilità",
+      "icona": "04-siti-web",
+      "interfaccia": "04-siti",
+      "demo": "siti-visibilita"
+    },
+    {
+      "numero": 5,
+      "id": "marketing",
+      "nome": "Marketing",
+      "icona": "05-marketing",
+      "interfaccia": "05-marketing",
+      "demo": "marketing-funnel"
+    }
+  ]
+}
