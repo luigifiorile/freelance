@@ -27,7 +27,9 @@ Si lavora in italiano.
 4. Siti web e visibilità
 5. Marketing
 
-Ogni servizio ha una pagina (modello unico) e una demo statica (modello unico). Offerta su tre livelli: diagnosi iniziale, progetto su misura, manutenzione mensile. Prezzi: `[PREZZO]`.
+Ogni servizio ha una pagina (modello unico) e una demo statica (modello unico). Offerta su tre livelli: diagnosi iniziale, progetto su misura, manutenzione mensile. **Niente prezzi sul sito.**
+
+Demo (cartelle `demo/<nome>/`): `crm-follow-up`, `gestionale-report`, `vendite-whatsapp`, `siti-visibilita`, `marketing-funnel`.
 
 ## Struttura del sito
 
@@ -38,9 +40,27 @@ Home (pagina lunga):
 4. Chi sono: breve, con la testa e la tavola in piedi.
 5. Contatti: messaggio in bottiglia e form semplice.
 
-Altre pagine: cinque pagine servizio, cinque pagine demo.
+Altre pagine: cinque pagine servizio, cinque pagine demo, privacy, 404.
 
-La struttura dei file e la gestione dei testi sono descritte nella sezione "Architettura" (da completare dopo l'ok al piano).
+Pagina servizio (modello unico): il problema del cliente, cosa costruisco, l'offerta su tre livelli senza prezzi, link alla demo, contatto. Niente esempi per ora: si descrivono solo i servizi.
+
+Pagina demo (modello unico): demo statica con dati di esempio, dichiarati come tali sulla pagina.
+
+## Architettura
+
+- `contenuti/it.json`: tutti i testi. In `sito` ci sono i valori da cambiare in un punto solo: `brand` (nome), `scrittaGigante`, `fumetto`, `urlBase` (indirizzo pubblico, usato solo per canonical, sitemap e anteprima social). L'inglese sarà `contenuti/en.json` con le stesse chiavi.
+- `modelli/*.mjs`: modelli delle pagine come funzioni JS che ricevono i testi e restituiscono HTML. Nessun testo scritto nei modelli.
+- `script/costruisci.mjs`: script Node senza dipendenze. Genera il sito in `_sito/` (ignorata da git): pagine, `sitemap.xml`, `robots.txt`, copia di `assets/`, di `brand/tokens.css` e degli SVG.
+- `script/anteprima.mjs`: server locale che serve `_sito/` sotto `/freelance/`, come su GitHub Pages.
+- `assets/css/`, `assets/js/`, `assets/font/` (woff2 + licenze OFL), `assets/vendor/` (GSAP 3.15.0 e ScrollTrigger, copiati).
+- `.github/workflows/pubblica.yml`: a ogni push su `main` costruisce e pubblica su GitHub Pages. In Impostazioni → Pages la sorgente deve essere "GitHub Actions".
+- Percorsi: ogni pagina conosce la sua profondità e i modelli usano `prefisso()` (in `modelli/aiuti.mjs`) per costruire percorsi relativi. Unica eccezione: la pagina 404 usa `<base href>` con il percorso di `urlBase` (`/freelance/`), perché GitHub Pages la serve a qualsiasi profondità.
+- Segnaposto: un valore tra parentesi quadre in `it.json` viene sottolineato con un tratteggio e, se è un indirizzo, non diventa un link (`link()` in `modelli/aiuti.mjs`).
+- `robots.txt` non si genera: in una sottocartella i motori di ricerca lo ignorano. La mappa del sito va inviata a Google Search Console.
+
+Comandi:
+- `node script/costruisci.mjs`: costruisce il sito.
+- `node script/anteprima.mjs`: costruisce e apre l'anteprima su `http://localhost:8080/freelance/`.
 
 ## Regole di stile
 
@@ -102,7 +122,14 @@ La struttura dei file e la gestione dei testi sono descritte nella sezione "Arch
 - Font: Bricolage Grotesque per titoli e scritte giganti, Inter per i testi.
 - In design sono stati fatti solo gli elementi visivi: le pagine si compongono in codice.
 - Prima solo italiano; inglese in un secondo momento.
-
+- Testi separati dal codice con un piccolo build in Node (vedi "Architettura") e pubblicazione con GitHub Actions.
+- Niente prezzi sul sito. Le pagine servizio non contengono esempi: descrivono solo il servizio.
+- I testi possono essere scritti in bozza a partire dal brief: ogni bozza è segnata in `docs/da-completare.md`. Fatti, contatti e dati personali restano segnaposto.
+- Nomi delle demo: `crm-follow-up`, `gestionale-report`, `vendite-whatsapp`, `siti-visibilita`, `marketing-funnel`.
+- La sezione "Lavori e demo" del brief non si fa ora: è un promemoria per quando il progetto sarà finito.
+- Privacy: alla fine si userà un servizio come iubenda (è uno script di terze parti, già approvato per quel momento). Fino ad allora link segnaposto. Partita IVA nel piè di pagina come segnaposto.
+- Anteprima social: un PNG 1200×630 generato una volta componendo SVG esistenti e testo (tappa g).
+- Su mobile i titoli con misura fissa nei token (`--titolo-1`, `--titolo-2`, `--apertura`) si riducono con `clamp()`; su desktop restano identici ai token.
 ## Decisioni aperte
 
 - Nome definitivo del brand.
@@ -110,8 +137,9 @@ La struttura dei file e la gestione dei testi sono descritte nella sezione "Arch
 - Frase nel fumetto e testi definitivi delle sezioni.
 - Loghi ufficiali di Claude, n8n e HubSpot.
 - Servizio esterno per il form (Formspree, Tally o link a un calendario).
-- Prezzi dei tre livelli di offerta.
-- Nomi delle cinque demo (finora noto solo "crm-follow-up").
-- Sezione "Lavori e demo" prevista dal brief: non è nell'elenco attuale e non ci sono casi reali da mostrare.
-- Pagina privacy (necessaria con un form che raccoglie dati) e partita IVA nel piè di pagina.
-- Immagine di anteprima per i social.
+- Servizio per privacy e cookie (es. iubenda), da fare alla fine.
+
+## Promemoria per progetto finito
+
+- Valutare la sezione "Lavori e demo" del brief, quando ci saranno casi reali.
+- Versione inglese (`contenuti/en.json`, `hreflang`).

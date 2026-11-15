@@ -25,6 +25,8 @@ Questa cartella contiene solo gli elementi visivi. Il sito va costruito in codic
 - I disegni hanno contorno nero spesso e ombre a retino. Niente foto, niente sfumature.
 - Dietro la testa c'è una scritta gigante in `--schiuma` (segnaposto: "LUIGI").
 - I testi di interfaccia in evidenza sono in maiuscolo.
+- Dalla testa escono oggetti, non il mare (il brief diceva il contrario: è superato). Le onde restano un elemento del brand: linee, divisori di sezione, mare a fasce.
+- La palette marina del brief è superata: `--laguna` e `--sabbia` servono solo per forme e fondi.
 
 ## Animazione di apertura
 
