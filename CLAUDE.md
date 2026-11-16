@@ -73,7 +73,7 @@ Comandi:
 - Disegni: contorno nero spesso, ombre a retino. Niente foto, niente sfumature. Il retino di `tokens.css` (`.retino`) è un motivo a puntini, non una sfumatura: si può usare.
 - Solo gli SVG del repository. Non ridisegnarli: si possono inserire inline e aggiungere id o gruppi per animarli, senza cambiare le forme. Se manca un elemento visivo, chiederlo.
 - Le schede interfaccia non contengono testo (valgono per italiano e inglese).
-- Loghi di Claude, n8n e HubSpot: restano segnaposto (`brand/oggetti/segnaposto-logo.svg`) finché Luigi non li scarica dai kit stampa ufficiali.
+- Loghi di Claude, n8n, HubSpot e ChatGPT: restano segnaposto (`brand/oggetti/segnaposto-logo.svg`) finché Luigi non li scarica dai kit stampa ufficiali. Non si ridisegnano: il file ufficiale va dentro `brand/logo/cornice-logo-esterno.svg`, reso in nero via CSS.
 - Dai siti di riferimento (huyml.co/about, Shopify Editions Winter '26) si prende solo la struttura. Mai codice, immagini, font o testi.
 - I layout devono reggere testi più lunghi o più corti del 30%.
 
@@ -116,7 +116,9 @@ Comandi:
 - Dalla testa escono oggetti, non il mare (il brief diceva il contrario: vale questa decisione). Le onde restano un elemento del brand: linee, divisori di sezione, mare a fasce.
 - Testa: fumetto in bianco e nero, contorno spesso, ombre a retino, vista di tre quarti, solo testa senza collo, AirPod nell'orecchio. Forma approvata, non va modificata.
 - L'espressione cambia mentre la testa si apre: calma (`testa-chiusa.svg`), sorpresa (`testa-a-meta.svg`), felice (`testa-aperta.svg`: occhi a scintilla e sorriso largo).
-- Oggetti che escono: tavola da surf, kite, portatile, fumetto di chat, grafico, imbuto, ingranaggio, più i loghi di Claude, n8n e HubSpot (segnaposto).
+- Oggetti che escono: tavola da surf, kite, portatile, fumetto di chat, grafico, imbuto, ingranaggio, più i loghi di Claude, n8n, HubSpot e ChatGPT (segnaposto).
+- La testa resta senza occhiali (provati e scartati).
+- Set di dieci espressioni in `brand/espressioni/` (SVG e PNG), sulla testa approvata: servono per i post social e sono disponibili per il sito.
 - Animazione di apertura come in LEGGIMI.md: pin per circa tre schermate; 0–30% il fumetto sparisce e la testa passa a "a metà"; 30–80% la testa scende ed esce dal basso, la calotta sale in alto, gli oggetti escono uno alla volta ruotando; 80–100% compare a sinistra l'elenco dei servizi. Testa aperta e calotta sono due livelli separati, cambia solo l'espressione.
 - Scritta gigante ("LUIGI"), nome del brand ("Luigi Fiorile") e frase nel fumetto sono segnaposto, tenuti in un'unica variabile ciascuno.
 - Percorso tra i servizi: struttura di Shopify Editions Winter '26, non lo stile. Elenco fisso a sinistra con numero e riga di puntini (attiva in nero, le altre in grigio); tappe con numero gigante in `--schiuma` e titolo grande; sottotitolo in grassetto, frase grande, link a pillola con freccia esterna; scheda interfaccia ruotata di 3 gradi; scheda demo numerata ("1 / crm-follow-up"); a fine tappa linea d'onda e "Torna alla navigazione" con freccia su; il divisore d'onda della tappa successiva sale e copre la precedente.

@@ -6,6 +6,7 @@ Questa cartella contiene solo gli elementi visivi. Il sito va costruito in codic
 
 - `tokens.css`: colori, font, misure, più le classi `.retino` e `.fumetto`.
 - `logo/`: marchio su chiaro, marchio su scuro, favicon, avatar. Il nome accanto al marchio va scritto in testo con Bricolage Grotesque 800. Il nome "Luigi Fiorile" è provvisorio.
+- `espressioni/`: dieci espressioni della stessa testa (calma, sorriso, risata, sorpresa, idea, dubbio, concentrazione, occhiolino, ops, fatto), una per file. In `espressioni/png/` le stesse immagini in PNG con fondo trasparente, alte 1200 px, per i post social.
 - `testa/`: `testa-chiusa.svg`, `testa-a-meta.svg`, `testa-aperta.svg`, `calotta.svg`.
 - `oggetti/`: un file per oggetto, più `oggetti-insieme.svg` come riferimento per la disposizione.
 - `icone/`: le cinque icone dei servizi. Usano `currentColor`, quindi prendono il colore del testo.
@@ -17,7 +18,11 @@ Questa cartella contiene solo gli elementi visivi. Il sito va costruito in codic
 
 ## Loghi di terze parti
 
-`oggetti/segnaposto-logo.svg` è un cerchio vuoto. Dentro vanno i loghi ufficiali di Claude, n8n e HubSpot, scaricati dai kit stampa di ciascuna azienda e usati senza modifiche. In `oggetti-insieme.svg` i tre cerchi hanno solo il nome scritto.
+I loghi di Claude, n8n, HubSpot e ChatGPT non sono ridisegnati. Si usano i file ufficiali, scaricati dai kit stampa di ciascuna azienda, dentro `logo/cornice-logo-esterno.svg` (cerchio con contorno spesso e ombra a retino).
+
+Per portarli al colore del brand senza toccare il disegno, si rendono in nero via CSS: `filter: brightness(0);` sull'immagine del logo. Prima di pubblicare conviene controllare le linee guida di ciascun marchio: alcune ammettono solo le versioni monocromatiche fornite da loro.
+
+In `oggetti/oggetti-insieme.svg` i quattro cerchi hanno solo il nome scritto e `oggetti/segnaposto-logo.svg` è il cerchio vuoto.
 
 ## Regole di stile
 
