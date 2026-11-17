@@ -27,7 +27,7 @@ html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:var(--ca
 .frase{position:absolute;left:72px;top:190px;width:600px;font:500 38px/1.2 var(--font-testi);text-transform:uppercase;color:var(--mare)}
 .onda{position:absolute;left:0;bottom:0;width:1200px}
 </style></head><body>
-<div class="gigante">${esc(t.sito.scrittaGigante)}</div>
+${t.sito.scrittaGigante ? `<div class="gigante">${esc(t.sito.scrittaGigante)}</div>` : ""}
 <div class="marchio"><img src="${url("brand/logo/marchio.svg")}" alt=""><span>${esc(t.sito.brand)}</span></div>
 <p class="frase">${esc(t.home.apertura.titolo)}</p>
 <img class="onda" src="${url("brand/onde/mare-a-fasce.svg")}" alt="">
