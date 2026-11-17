@@ -63,7 +63,9 @@ function autore(t, g, r) {
   </aside>`;
 }
 
-function invito(t, g, r, servizioId) {
+// Invito finale informale: le varianti ruotano da un articolo all'altro (la pilastro usa la prima).
+function invito(t, g, r, servizioId, n = 0) {
+  const v = g.inviti[n % g.inviti.length];
   const s = t.servizi.find((x) => x.id === servizioId);
   const secondario = s
     ? `<a class="pillola" href="${r}servizi/${esc(s.id)}/">${esc(s.nome)} ${svg("icone-ui/freccia-esterna", "icona")}</a>`
@@ -72,10 +74,10 @@ function invito(t, g, r, servizioId) {
 <section class="sezione-pagina invito" aria-labelledby="invito-titolo">
   ${svg("onde/divisore", "invito__onda")}
   <div class="contenitore">
-    <h2 class="titolo-1" id="invito-titolo">${esc(g.invitoTitolo)}</h2>
-    <p class="testo-grande">${esc(g.invitoTesto)}</p>
+    <h2 class="titolo-1" id="invito-titolo">${esc(v.titolo)}</h2>
+    <p class="testo-grande">${esc(v.testo)}</p>
     <p class="invito__azioni">
-      <a class="pillola pillola--mare" href="${r}#contatti">${esc(g.invitoPulsante)}</a>
+      <a class="pillola pillola--mare" href="${r}#contatti">${esc(v.pulsante)}</a>
       ${secondario}
     </p>
   </div>
@@ -254,7 +256,7 @@ ${contenuto.html}
     </div>
   </div>
 </article>
-${invito(t, g, r, a.dati.servizio)}`;
+${invito(t, g, r, a.dati.servizio, Number(a.dati.ordine) || 0)}`;
 
   const briciole = [
     { nome: t.sito.brand, percorso: "" },

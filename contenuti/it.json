@@ -11,7 +11,7 @@
     "paese": "IT",
     "ruolo": "Consulente freelance per strumenti AI e digitali",
     "competenze": ["Intelligenza artificiale generativa", "Automazione dei processi", "CRM", "Marketing digitale", "Prompt engineering"],
-    "profili": ["https://www.linkedin.com/in/luigifiorile/", "[LINK SUBSTACK]"],
+    "profili": ["https://www.linkedin.com/in/luigifiorile/", "https://substack.com/@luigifiorile"],
     "email": "[EMAIL]",
     "partitaIva": "[PARTITA IVA]",
     "urlPrivacy": "[LINK PRIVACY]",
@@ -119,9 +119,13 @@
     "tornaPilastro": "Torna alla guida completa",
     "autoreEtichetta": "Chi scrive",
     "autoreBio": "Freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese. Prima ho lavorato in consulenza, in Accenture, e come Chief of Staff in una startup. Uso l'AI ogni giorno e ne scrivo da utilizzatore.",
-    "invitoTitolo": "Vuoi usarla nel tuo lavoro?",
-    "invitoTesto": "Se hai letto fin qui e ti chiedi da dove partire nella tua attività, raccontami come lavori. Ti dico con sincerità se e dove l'AI può aiutarti.",
-    "invitoPulsante": "Scrivimi",
+    "inviti": [
+      { "titolo": "Piaciuta questa guida?", "testo": "Ci hai capito effettivamente qualcosa? Se l'argomento ti incuriosisce, o hai bisogno di capire dove e come far entrare l'AI nel tuo lavoro, scrivimi.", "pulsante": "Scrivimi" },
+      { "titolo": "Arrivato fin qui? Allora parliamone.", "testo": "Se mentre leggevi ti è venuto in mente un pezzo del tuo lavoro che l'AI potrebbe alleggerire, raccontamelo. Ti dico se ha senso, e se non ce l'ha te lo dico lo stesso.", "pulsante": "Raccontamelo" },
+      { "titolo": "Ti è rimasto un dubbio?", "testo": "Capita, l'argomento è grosso. Scrivimi la domanda, oppure raccontami cosa fai: vediamo dove l'AI può darti una mano e dove è meglio lasciarla stare.", "pulsante": "Scrivimi" },
+      { "titolo": "Troppa teoria?", "testo": "Se preferisci vedere come funziona sul tuo lavoro, con i tuoi file e i tuoi clienti, scrivimi. Si parte da una chiacchierata.", "pulsante": "Scrivimi" },
+      { "titolo": "E adesso?", "testo": "Se hai voglia di provarci ma non sai da dove cominciare, scrivimi. Mi racconti come lavori e ti dico da dove partirei io.", "pulsante": "Scrivimi" }
+    ],
     "llmsIntro": "Guida in italiano all'uso dell'intelligenza artificiale per liberi professionisti e piccole imprese, scritta da Luigi Fiorile. Ogni articolo cita le fonti originali: paper, documentazione ufficiale dei produttori, dati Istat ed Eurostat.",
     "capitoli": [
       { "id": "capire", "nome": "Capire", "descrizione": "Cos'è un modello linguistico, perché sbaglia e dove funziona davvero." },
