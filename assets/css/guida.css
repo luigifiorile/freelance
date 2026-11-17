@@ -1,0 +1,169 @@
+/* Guida AI: pagina pilastro e articoli. Solo colori e font di tokens.css. */
+
+.articolo .pagina-testa .titolo-1 { max-width: 20ch; }
+.articolo .pagina-testa__frase { max-width: 34ch; }
+.articolo__meta {
+  margin-top: 20px;
+  font: 400 15px/1.5 var(--font-testi);
+  color: var(--scoglio);
+}
+
+/* Briciole */
+.briciole ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font: var(--etichetta);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.briciole li { display: inline-flex; align-items: center; }
+.briciole li + li::before { content: "/"; margin: 0 10px; color: var(--scoglio); }
+.briciole a { display: inline-flex; align-items: center; min-height: var(--altezza-tocco); }
+.briciole [aria-current] { color: var(--scoglio); max-width: 32ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Colonna di lettura */
+.articolo__griglia { padding-bottom: clamp(40px, 6vw, 72px); }
+.articolo__colonna { max-width: 760px; }
+
+/* In breve */
+.in-breve {
+  padding: 24px;
+  background: var(--schiuma);
+  border: var(--tratto) solid var(--inchiostro);
+  border-radius: var(--raggio-card);
+}
+.in-breve .etichetta { margin-bottom: 12px; }
+.in-breve ul { margin: 0; padding-left: 1.2em; display: grid; gap: 8px; }
+
+/* Indice dell'articolo */
+.indice-articolo {
+  margin-top: 20px;
+  border-top: var(--tratto) solid var(--inchiostro);
+  border-bottom: var(--tratto) solid var(--inchiostro);
+}
+.indice-articolo summary {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  cursor: pointer;
+}
+.indice-articolo ol { margin: 0 0 20px; padding-left: 1.4em; display: grid; gap: 4px; }
+.indice-articolo a { display: inline-block; padding: 8px 0; min-height: var(--altezza-tocco); }
+
+/* Testo dell'articolo */
+.prosa { margin-top: clamp(32px, 4vw, 48px); }
+.prosa > * + * { margin-top: 1em; }
+.prosa h2 {
+  font: var(--titolo-2);
+  margin-top: 2em;
+  scroll-margin-top: calc(var(--altezza-testata) + 16px);
+}
+.prosa h3 {
+  font: 700 clamp(21px, 2vw, 24px)/1.2 var(--font-titoli);
+  margin-top: 1.6em;
+  scroll-margin-top: calc(var(--altezza-testata) + 16px);
+}
+.prosa h2 + *, .prosa h3 + * { margin-top: 0.6em; }
+.prosa p, .prosa li { max-width: 68ch; }
+.prosa ul, .prosa ol { padding-left: 1.3em; }
+.prosa li + li { margin-top: 0.4em; }
+.prosa a { text-decoration: underline; text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+.prosa a:hover { color: var(--mare); }
+.prosa strong { font-weight: 700; }
+.prosa code { font: 500 0.92em/1 ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--schiuma); padding: 2px 6px; border-radius: 6px; }
+
+.prosa blockquote {
+  margin-inline: 0;
+  padding: 4px 0 4px 20px;
+  border-left: 6px solid var(--inchiostro);
+  font: 500 clamp(19px, 1.8vw, 21px)/1.5 var(--font-testi);
+}
+.prosa blockquote p + p { margin-top: 0.6em; }
+
+/* Esempi di prompt */
+.prompt {
+  margin-inline: 0;
+  background: var(--schiuma);
+  border: var(--tratto) solid var(--inchiostro);
+  border-radius: var(--raggio-card);
+  overflow: hidden;
+}
+.prompt figcaption { padding: 12px 18px; border-bottom: var(--tratto) solid var(--inchiostro); }
+.prompt pre {
+  margin: 0;
+  padding: 18px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: 400 16px/1.55 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* Tabelle dentro il testo (riusa .tabella di pagine.css) */
+.prosa .tabella-scorre { padding: 0; }
+.prosa .tabella { min-width: 520px; }
+.prosa .tabella th[scope="row"] { font-weight: 600; }
+
+/* Mappa dei capitoli nella pagina pilastro */
+.mappa-guida { margin-top: clamp(40px, 6vw, 64px); }
+.mappa-guida .titolo-2 { margin-bottom: 20px; }
+.capitoli { list-style: none; margin: 0; padding: 0; }
+.capitolo {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 16px;
+  padding: 20px 0;
+  border-top: var(--tratto) solid var(--inchiostro);
+}
+.capitolo:last-child { border-bottom: var(--tratto) solid var(--inchiostro); }
+.capitolo__numero { font: 800 48px/1 var(--font-titoli); color: var(--schiuma); -webkit-text-stroke: 1.5px var(--inchiostro); }
+.capitolo__nome { font: 700 26px/1.1 var(--font-titoli); }
+.capitolo .secondario { margin-top: 4px; }
+.capitolo__articoli { list-style: none; margin: 10px 0 0; padding: 0; }
+.capitolo__articoli a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--altezza-tocco);
+  font: var(--elenco);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+.capitolo__articoli a:hover { color: var(--mare); }
+
+/* Chi scrive */
+.autore {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: clamp(40px, 6vw, 64px);
+  padding: 20px;
+  border: var(--tratto) solid var(--inchiostro);
+  border-radius: var(--raggio-card);
+}
+.autore img { flex: none; background: var(--schiuma); border-radius: 50%; }
+.autore .etichetta { color: var(--scoglio); margin-bottom: 6px; }
+
+/* Continua a leggere */
+.continua { margin-top: clamp(40px, 6vw, 64px); }
+.continua .titolo-2 { margin-bottom: 12px; }
+.continua ul { list-style: none; margin: 0; padding: 0; }
+.continua li { border-top: 1px solid var(--linea); }
+.continua li:last-child { border-bottom: 1px solid var(--linea); }
+.continua a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 56px;
+  padding: 8px 0;
+  font: var(--elenco);
+}
+.continua a:hover { color: var(--mare); }
+
+@media (max-width: 767px) {
+  .capitolo { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .capitolo__numero { font-size: 36px; }
+  .autore { flex-direction: column; }
+}
