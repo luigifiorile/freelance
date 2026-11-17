@@ -2,31 +2,30 @@
 import { esc, link, segnaposto, svg } from "./aiuti.mjs";
 import { struttura, datiPersona, datiServizioProfessionale } from "./struttura.mjs";
 
-// Disposizione finale degli oggetti, presa da brand/oggetti/oggetti-insieme.svg
-// (riquadro di riferimento 680 × 500). Non è testo: vale per tutte le lingue.
+// Disposizione finale degli oggetti, presa da brand/oggetti/oggetti-insieme.svg.
+// I tre loghi (Claude, n8n, HubSpot) sono stati tolti: senza di loro gli oggetti
+// occupano solo la parte sinistra del disegno, quindi il riquadro di riferimento
+// è ristretto a 520 × 500 unità. Non è testo: vale per tutte le lingue.
 const OGGETTI = [
   { file: "tavola-da-surf", x: 110, y: 110, r: -30, s: 1 },
   { file: "portatile", x: 330, y: 90, r: 14, s: 1 },
-  { file: "segnaposto-logo", logo: "Claude", x: 520, y: 120, r: -10, s: 0.95 },
   { file: "fumetto-chat", x: 230, y: 250, r: -8, s: 1 },
   { file: "grafico", x: 80, y: 300, r: 12, s: 0.95 },
   { file: "imbuto", x: 420, y: 250, r: -14, s: 1 },
-  { file: "segnaposto-logo", logo: "n8n", x: 590, y: 290, r: 10, s: 0.95 },
   { file: "ingranaggio", x: 180, y: 400, r: 20, s: 0.8 },
   { file: "kite", x: 330, y: 410, r: -22, s: 0.9 },
-  { file: "segnaposto-logo", logo: "HubSpot", x: 500, y: 420, r: -6, s: 0.95 },
 ];
 
 const due = (n) => String(n).padStart(2, "0");
 
+const LARGHEZZA = 520;
+const ALTEZZA = 500;
+
 function oggetto(o) {
-  // Gli oggetti misurano 180 × 200 unità, i loghi 120 × 120.
-  const larghezza = ((o.logo ? 120 : 180) * o.s * 100) / 680;
-  const stile = `left:${((o.x * 100) / 680).toFixed(3)}%;top:${((o.y * 100) / 500).toFixed(3)}%;width:${larghezza.toFixed(3)}%;--r:${o.r}deg`;
-  const contenuto = o.logo
-    ? `<img src="brand/oggetti/segnaposto-logo.svg" alt="" width="120" height="120"><span class="oggetto__logo">Logo<br>${esc(o.logo)}</span>`
-    : `<img src="brand/oggetti/${o.file}.svg" alt="" width="180" height="200">`;
-  return `<div class="oggetto${o.logo ? " oggetto--logo" : ""}" style="${stile}"><div class="oggetto__forma">${contenuto}</div></div>`;
+  // Ogni oggetto misura 180 × 200 unità.
+  const larghezza = (180 * o.s * 100) / LARGHEZZA;
+  const stile = `left:${((o.x * 100) / LARGHEZZA).toFixed(3)}%;top:${((o.y * 100) / ALTEZZA).toFixed(3)}%;width:${larghezza.toFixed(3)}%;--r:${o.r}deg`;
+  return `<div class="oggetto" style="${stile}"><div class="oggetto__forma"><img src="brand/oggetti/${o.file}.svg" alt="" width="180" height="200"></div></div>`;
 }
 
 function apertura(t) {
@@ -39,7 +38,7 @@ function apertura(t) {
   return `
 <section class="apertura" id="apertura" aria-labelledby="apertura-titolo">
   <div class="apertura__scena">
-    <p class="scritta-gigante apertura__scritta" aria-hidden="true">${esc(t.sito.scrittaGigante)}</p>
+    ${t.sito.scrittaGigante ? `<p class="scritta-gigante apertura__scritta" aria-hidden="true">${esc(t.sito.scrittaGigante)}</p>` : ""}
     <h1 class="apertura__titolo testo-apertura" id="apertura-titolo">${esc(a.titolo)}</h1>
     <div class="apertura__palco">
       <div class="apertura__campo" aria-hidden="true">

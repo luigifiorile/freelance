@@ -82,7 +82,7 @@
 }
 .apertura__fumetto.segnaposto { text-decoration-color: var(--schiuma); }
 
-/* Campo degli oggetti: riquadro 680 × 500 da oggetti-insieme.svg */
+/* Campo degli oggetti: riquadro 520 × 500 (vedi modelli/home.mjs) */
 .apertura__campo {
   position: absolute;
   z-index: 2;
@@ -97,8 +97,8 @@
   position: absolute;
   inset: 0;
   margin: auto;
-  width: min(100cqw, 100cqh * 1.36, 820px);
-  height: min(100cqh, 100cqw / 1.36, 603px);
+  width: min(100cqw, 100cqh * 1.04, 640px);
+  height: min(100cqh, 100cqw / 1.04, 615px);
 }
 .oggetto {
   position: absolute;
@@ -106,15 +106,6 @@
 }
 .oggetto__forma { position: relative; rotate: var(--r); }
 .oggetto img { width: 100%; height: auto; }
-.oggetto__logo {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  font: 700 clamp(8px, 1.1cqw, 14px)/1.1 var(--font-testi);
-  text-transform: uppercase;
-}
 
 /* Elenco dei servizi in basso a sinistra */
 .apertura__servizi {
@@ -169,7 +160,7 @@
     bottom: 4%;
   }
   .apertura__fumetto { font-size: 17px; padding: 14px 18px; }
-  .apertura__campo { left: var(--margine); right: var(--margine); top: 2%; bottom: 252px; }
+  .apertura__campo { left: calc(var(--margine) + 12px); right: calc(var(--margine) + 28px); top: 2%; bottom: 252px; }
   .apertura__servizi { left: var(--margine); right: var(--margine); bottom: 8px; }
   .apertura__servizi a { font-size: 16px; }
 }
