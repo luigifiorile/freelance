@@ -53,7 +53,7 @@ Pagina pilastro e 14 articoli scritti da Claude come bozza, con fonti verificate
 
 | Segnaposto | Cosa serve | Dove |
 |---|---|---|
-| `sito.profili` | Link al profilo LinkedIn e alla newsletter Substack (vanno nei dati strutturati come `sameAs`, aiutano motori e assistenti a riconoscere l'autore) | `contenuti/it.json` |
+| `sito.profili` | Link alla newsletter Substack (LinkedIn inserito) (vanno nei dati strutturati come `sameAs`, aiutano motori e assistenti a riconoscere l'autore) | `contenuti/it.json` |
 
 Gli esempi personali (libri del padre, assistente finanziario su Claude, deep research sulle dogane per Spill) sono stati inseriti con le parole di Luigi. Le frasi in prima persona sono state approvate da Luigi il 17 novembre 2026.
 
