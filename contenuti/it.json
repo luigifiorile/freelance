@@ -357,39 +357,52 @@
       "icona": "05-marketing",
       "interfaccia": "05-marketing",
       "interfacciaAlt": "Schema di un imbuto di vendita diviso in tre fasce",
-      "sottotitolo": "Per chi non sa dove perde i clienti",
-      "frase": "Analizzo il percorso dei tuoi clienti, dal primo contatto all'acquisto, e ti mostro dove si fermano.",
-      "descrizione": "Analisi del percorso dei clienti, dal primo contatto all'acquisto, per capire dove si perdono. Per liberi professionisti e piccole imprese.",
-      "problema": "Fai pubblicità, pubblichi sui social, mandi newsletter. Arrivano visite, ma poche diventano clienti, e non è chiaro in quale passaggio le persone si perdono.",
+      "sottotitolo": "Per chi fa pubblicità e non sa cosa porta clienti",
+      "frase": "Ti mostro dove si perdono i clienti, dal primo annuncio alla richiesta di contatto, e preparo uno strumento che ogni mese lo controlla per te.",
+      "descrizione": "Analisi del funnel, campagne Google Ads e Meta Ads e un report mensile che incrocia Google Analytics, Google e Meta. Per liberi professionisti e piccole imprese.",
+      "problema": "Fai pubblicità su Google e su Meta, il sito riceve visite, ma i clienti sono pochi. Ogni piattaforma mostra i suoi numeri, e non coincidono mai. Così è difficile capire cosa funziona, in quale passaggio le persone si fermano e dove conviene spendere il prossimo euro.",
       "costruisco": [
-        "Una mappa del percorso dei tuoi clienti, dal primo contatto all'acquisto.",
-        "I numeri di ogni passaggio, in un'unica vista.",
-        "I punti in cui si perdono più persone, con cosa cambiare.",
-        "Un controllo periodico per vedere se le modifiche funzionano."
+        "Una mappa del percorso dei tuoi clienti (il funnel), dal primo contatto alla richiesta, con i numeri di ogni passaggio.",
+        "Il tracciamento sistemato su sito, Google Analytics 4 e Meta, perché i numeri siano affidabili.",
+        "Campagne Google Ads e Meta Ads: lavoro su quelle che hai già o le creo da zero, e ti insegno a gestirle in autonomia.",
+        "Uno strumento basato sull'AI (un agente) che ogni mese legge i dati di Google Analytics, Google Ads e Meta, li incrocia e ti dice dove si perdono i clienti e cosa provare a cambiare."
+      ],
+      "offerta": [
+        "Guardo le tue campagne, il sito e i dati che hai già. Ti dico dove si perdono i clienti e se i numeri sono affidabili. Alla fine hai un quadro chiaro e una proposta concreta.",
+        "Costruisco il funnel e sistemo il tracciamento. Lavoro sulle tue campagne Google e Meta, o le creo da zero, e ti mostro come gestirle. Poi preparo l'agente che farà l'analisi ogni mese.",
+        "Ogni mese l'agente prepara il report e io lo rivedo prima che arrivi a te. Se serve, ti aiuto a correggere le campagne. L'obiettivo è darti autonomia, non legarti a me."
       ],
       "demo": {
         "id": "marketing-funnel",
-        "nome": "Dove si perdono i clienti",
-        "descrizione": "Il percorso dei clienti diviso in passaggi, con quante persone si fermano a ogni passaggio.",
+        "nome": "Report mensile del funnel",
+        "descrizione": "Un esempio del report che l'agente prepara ogni mese: i numeri di Google Analytics, Google Ads e Meta messi in fila, con i punti in cui si perdono i clienti.",
         "passi": [
-          "Raccolgo i numeri da sito, social e CRM.",
-          "Li metto in fila, passaggio per passaggio.",
-          "Segno dove si perdono più persone e cosa provare a cambiare."
+          "All'inizio del mese l'agente legge i dati di Google Analytics 4, Google Ads e Meta Ads.",
+          "Li mette in fila, passaggio per passaggio, e li confronta con il mese prima.",
+          "Scrive un report con i punti in cui si perdono più persone e cosa provare. Lo rivedo io prima che arrivi a te."
         ],
         "numeri": [
-          { "etichetta": "Visite al sito in un mese", "valore": "2.000" },
-          { "etichetta": "Richieste di contatto", "valore": "80" },
-          { "etichetta": "Nuovi clienti", "valore": "12" }
+          { "etichetta": "Spesa pubblicitaria del mese", "valore": "1.200 €" },
+          { "etichetta": "Richieste di contatto", "valore": "64" },
+          { "etichetta": "Costo per richiesta", "valore": "18,75 €" }
         ],
         "tabella": {
-          "didascalia": "Il percorso in un mese (dati di esempio)",
-          "colonne": ["Passaggio", "Persone", "Proseguono", "Si fermano qui"],
+          "didascalia": "Il funnel di ottobre confrontato con settembre (dati di esempio)",
+          "colonne": ["Passaggio", "Ottobre", "Settembre", "Variazione"],
           "righe": [
-            ["Visitano il sito", "2.000", "15%", "1.700"],
-            ["Guardano i servizi", "300", "27%", "220"],
-            ["Chiedono un contatto", "80", "40%", "48"],
-            ["Ricevono un preventivo", "32", "38%", "20"],
-            ["Diventano clienti", "12", "—", "—"]
+            ["Persone raggiunte dagli annunci", "48.000", "52.000", "−8%"],
+            ["Clic sugli annunci", "1.150", "1.090", "+6%"],
+            ["Visite alla pagina dei servizi", "820", "790", "+4%"],
+            ["Richieste di contatto", "64", "71", "−10%"],
+            ["Nuovi clienti", "9", "9", "0%"]
+          ]
+        },
+        "osservazioni": {
+          "titolo": "Cosa dice il report",
+          "voci": [
+            "Gli annunci portano più clic di settembre, ma le richieste calano del 10%. Il punto debole è la pagina dei servizi, non gli annunci.",
+            "Da telefono arriva il 70% delle visite, ma solo il 40% delle richieste. Da provare: un modulo più corto e il pulsante di contatto in alto. Il mese prossimo guardo le richieste da telefono.",
+            "Google e Meta contano insieme 81 conversioni, Google Analytics 64. È normale: ogni piattaforma conta a modo suo. Per le decisioni uso il numero di Google Analytics."
           ]
         }
       }
