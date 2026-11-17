@@ -96,12 +96,12 @@ In ordine di priorità (ICE: impatto, fiducia, facilità). Ognuno ha un capitolo
 
 | # | Titolo di lavoro | Capitolo | Servizio | Note |
 |---|---|---|---|---|
-| 1 | Automazioni con l'AI: n8n, Make e Zapier per una piccola impresa | lavoro | crm-e-automazioni | Alta intenzione commerciale |
+| 1 | Automazioni con l'AI: n8n, Make e Zapier per una piccola impresa | lavoro | go-to-market-e-automazioni | Alta intenzione commerciale |
 | 2 | L'AI per l'assistenza clienti: chatbot, WhatsApp e risposte suggerite | lavoro | vendite-e-assistenza-clienti | Citare Brynjolfsson; obbligo art. 50 AI Act |
-| 3 | L'AI nelle vendite: preventivi, follow-up e CRM | lavoro | crm-e-automazioni | Anthropic Economic Index (uso per vendite B2B) |
+| 3 | L'AI nelle vendite: preventivi, follow-up e CRM | lavoro | go-to-market-e-automazioni | Anthropic Economic Index (uso per vendite B2B) |
 | 4 | Scrivere email e testi con l'AI senza sembrare un robot | usare | marketing | Lista dei segnali di testo da AI |
 | 5 | L'AI con Excel e i dati aziendali | usare | gestionale-interno | Analisi dati con esecuzione di codice |
-| 6 | Prompt injection e sicurezza: cosa sapere prima di collegare l'AI alla posta | regole | crm-e-automazioni | Simon Willison, "Agents Rule of Two" di Meta |
+| 6 | Prompt injection e sicurezza: cosa sapere prima di collegare l'AI alla posta | regole | go-to-market-e-automazioni | Simon Willison, "Agents Rule of Two" di Meta |
 | 7 | RAG spiegato semplice: far rispondere l'AI sui documenti aziendali | capire | gestionale-interno | |
 | 8 | Come formare il team sull'AI (e rispettare l'articolo 4 dell'AI Act) | regole | tutti | Corsi gratuiti, modello di regole interne |
 | 9 | SEO e GEO: farsi trovare da Google e dagli assistenti AI | lavoro | siti-web-e-visibilita | Paper GEO di Princeton |

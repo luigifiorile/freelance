@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: regole
 ordine: 12
-servizio: crm-e-automazioni
+servizio: go-to-market-e-automazioni
 correlati:
 - ai-act-piccole-imprese
 - quale-ai-scegliere

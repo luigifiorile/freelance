@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: capire
 ordine: 1
-servizio: crm-e-automazioni
+servizio: go-to-market-e-automazioni
 correlati:
 - allucinazioni-ai
 - frontiera-frastagliata

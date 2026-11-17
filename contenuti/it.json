@@ -177,20 +177,26 @@
   "servizi": [
     {
       "numero": 1,
-      "id": "crm-e-automazioni",
-      "nome": "CRM e automazioni",
+      "id": "go-to-market-e-automazioni",
+      "nome": "Go to market e automazioni",
       "icona": "01-crm-e-automazioni",
       "interfaccia": "01-crm",
       "interfacciaAlt": "Schema di un CRM con un elenco di contatti e un promemoria",
-      "sottotitolo": "Per chi perde lead tra email, telefono e fogli di calcolo",
-      "frase": "Collego i tuoi strumenti perché ogni lead arrivi nel CRM e riceva una risposta al momento giusto.",
-      "descrizione": "Collego sito, email e moduli a un CRM ordinato, con follow-up automatici. Per liberi professionisti e piccole imprese.",
-      "problema": "I contatti arrivano da posti diversi: il sito, le email, il telefono, i social. Finiscono in un foglio di calcolo o nella memoria di qualcuno. Così qualche lead si perde, e qualcun altro riceve la risposta troppo tardi.",
+      "sottotitolo": "Per chi trova clienti un po' per caso",
+      "frase": "Costruisco il sistema che ti porta i clienti giusti e li segue nel tempo: dal primo contatto alla vendita, fino a quando tornano da te.",
+      "descrizione": "Go to market su misura: liste di potenziali clienti, contatti personalizzati, CRM, follow-up automatici e misura della soddisfazione dei clienti. Per liberi professionisti e piccole imprese.",
+      "problema": "I clienti arrivano dal passaparola o da un contatto fortunato, ma non c'è un metodo per trovarne altri. I lead finiscono tra email e fogli di calcolo, i follow-up dipendono dalla memoria, e dopo la vendita nessuno chiede ai clienti come è andata. Così si perdono vendite a portata di mano, e clienti che potevano tornare.",
       "costruisco": [
-        "Un CRM ordinato, con tutti i lead in un unico posto.",
-        "Automazioni che registrano i contatti in arrivo da sito, email e moduli.",
-        "Promemoria e follow-up che partono da soli.",
-        "Collegamenti tra gli strumenti che usi già."
+        "Un piano di go to market, cioè il modo in cui arrivi ai clienti giusti: a chi ti rivolgi, con quale messaggio e su quali canali.",
+        "Liste di potenziali clienti completate in automatico con le informazioni utili, e primi contatti personalizzati con l'aiuto dell'AI.",
+        "Un CRM ordinato, con tutti i lead in un unico posto e i follow-up che partono da soli.",
+        "Collegamenti tra gli strumenti che usi già, perché i dati passino dall'uno all'altro senza copiarli a mano.",
+        "La misura della soddisfazione dei clienti: brevi questionari dopo l'acquisto, richieste di recensione e un avviso quando un cliente rischia di andarsene."
+      ],
+      "offerta": [
+        "Guardo come trovi e segui i clienti oggi: canali, strumenti, dati e cosa succede dopo la vendita. Alla fine hai un quadro chiaro di dove si perdono le occasioni e una proposta concreta.",
+        "Costruisco il sistema: liste di contatti, messaggi, CRM, automazioni e questionari di soddisfazione. Lo provo con te sul lavoro di tutti i giorni e ti mostro come usarlo.",
+        "Seguo il sistema nel tempo: controllo che i dati siano in ordine, aggiorno messaggi e automazioni e leggo con te i risultati e i commenti dei clienti."
       ],
       "demo": {
         "id": "crm-follow-up",
