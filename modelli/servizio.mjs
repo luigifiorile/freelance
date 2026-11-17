@@ -1,6 +1,7 @@
 // Modello unico per le cinque pagine servizio.
 // Contenuto: il problema del cliente, cosa costruisco, l'offerta su tre livelli
-// (senza prezzi), la demo e il contatto.
+// (senza prezzi), la demo e il contatto. I nomi dei tre livelli sono comuni;
+// un servizio può avere testi propri per ogni livello (campo facoltativo "offerta").
 import { esc, svg, compila, prefisso } from "./aiuti.mjs";
 import { struttura, datiPersona } from "./struttura.mjs";
 
@@ -17,7 +18,7 @@ export function servizio(t, s) {
       <li class="livello">
         <p class="livello__numero etichetta">${String(i + 1).padStart(2, "0")}</p>
         <h3 class="livello__nome titolo-2">${esc(l.nome)}</h3>
-        <p>${esc(l.testo)}</p>
+        <p>${esc((s.offerta && s.offerta[i]) || l.testo)}</p>
       </li>`
     )
     .join("");

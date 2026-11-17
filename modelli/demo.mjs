@@ -1,5 +1,6 @@
 // Modello unico per le cinque pagine demo.
 // Demo statica con dati di esempio, dichiarati come tali in cima alla pagina.
+// Campo facoltativo "osservazioni": un elenco di letture dei dati (es. il report mensile).
 import { esc, svg, compila, prefisso } from "./aiuti.mjs";
 import { struttura } from "./struttura.mjs";
 
@@ -49,6 +50,14 @@ export function demo(t, s) {
     </div>
   </section>
 
+${d.osservazioni ? `
+  <section class="sezione-pagina" aria-labelledby="osservazioni-titolo">
+    <div class="contenitore">
+      <h2 class="titolo-2" id="osservazioni-titolo">${esc(d.osservazioni.titolo)}</h2>
+      <ul class="elenco-onde">${d.osservazioni.voci.map((v) => `<li>${esc(v)}</li>`).join("")}</ul>
+    </div>
+  </section>
+` : ""}
   <section class="sezione-pagina" aria-labelledby="come-funziona-titolo">
     <div class="contenitore">
       <h2 class="titolo-2" id="come-funziona-titolo">${esc(p.comeFunzionaTitolo)}</h2>
