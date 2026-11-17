@@ -44,3 +44,32 @@ Testi scritti da Claude a partire dal brief, da approvare o riscrivere. Sono tut
 | Testi delle pagine demo e dati di esempio (dichiarati in pagina come inventati) | `demoPagina`, `servizi[].demo` | bozza |
 | Descrizione nel piè di pagina | `comune.piede.descrizione` | bozza |
 | Testi della pagina 404 | `pagine.nonTrovata` | bozza |
+
+## Guida AI (`contenuti/guida-ai/`)
+
+Pagina pilastro e 14 articoli scritti da Claude come bozza, con fonti verificate a novembre 2026. Strategia e piano dei prossimi articoli in `docs/guida-ai.md`.
+
+### Segnaposto negli articoli
+
+| Segnaposto | Cosa serve | Dove |
+|---|---|---|
+| `sito.profili` | Link al profilo LinkedIn e alla newsletter Substack (vanno nei dati strutturati come `sameAs`, aiutano motori e assistenti a riconoscere l'autore) | `contenuti/it.json` |
+
+Gli esempi personali (libri del padre, assistente finanziario su Claude, deep research sulle dogane per Spill) sono stati inseriti con le parole di Luigi. Le frasi in prima persona sono state approvate da Luigi il 17 novembre 2026.
+
+### Da verificare (fatti e numeri)
+
+Tutto è stato controllato su fonti pubbliche, ma questi punti vengono da fonti secondarie o hanno versioni diverse in circolazione.
+
+| Fatto | Dove | Nota |
+|---|---|---|
+| Studio BCG: qualità "oltre il 40% in più"; meno bravi +43%, più bravi +17%; 758 consulenti pari a circa il 7% di quelli individuali | `frontiera-frastagliata.md`, `ai-e-produttivita-studi.md` | Confermati 12,2% e 25,1% e 19 punti; controllare il resto sul PDF dello studio |
+| Brynjolfsson: 14% (working paper) contro 15% (versione pubblicata); 34% per i meno esperti | `ai-e-produttivita-studi.md`, pilastro | Nel testo scritto "circa 14-15%" |
+| Humlum e Vestergaard: sondaggi su 25.000 lavoratori, risparmio medio intorno al 3% | `ai-e-produttivita-studi.md` | Il paper è poi circolato con un altro titolo (2026) |
+| Digital Omnibus: Regolamento (UE) 2026/1744, in vigore dal 27 luglio 2026; nuova formulazione dell'art. 4; scadenze alto rischio 2/12/2027 e 2/8/2028; fine transitorio marcatura 2/12/2026 | `ai-act-piccole-imprese.md`, pilastro | Fonti: siti giuridici italiani; verificare su EUR-Lex |
+| Legge 132/2025: art. 11 (informativa ai lavoratori), consenso genitori sotto i 14 anni, reato di diffusione di deepfake | `ai-act-piccole-imprese.md` | Verificare sul testo in Normattiva |
+| Sanzione del Garante a OpenAI annullata dal Tribunale di Roma (2026) | `privacy-e-ai.md` | Data esatta della sentenza ed eventuale appello non confermati |
+| Prezzi degli abbonamenti "intorno ai 20 euro al mese", piani business "20-30 euro" | `quale-ai-scegliere.md`, `ai-per-piccole-imprese.md` | I prezzi cambiano spesso |
+| Osservatorio PoliMi: 1,8 miliardi nel 2025, +50% | pilastro | Da comunicati stampa, non dal rapporto completo |
+| Indirizzi di Anthropic Academy (forse spostata su academy.claude.com) e della newsletter di Narayanan e Kapoor (normaltech.ai) | `fonti-ai.md` | Controllare che i link portino alla pagina giusta |
+| Link a cybersecurity360.it, science.org, nber.org, arxiv.org | vari | Non raggiungibili dall'ambiente di lavoro: verificati tramite ricerca, conviene un clic di controllo |

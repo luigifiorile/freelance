@@ -22,6 +22,7 @@ A ogni push su `main` una GitHub Action costruisce il sito e lo pubblica. Una so
 
 - `contenuti/`: i testi del sito (`it.json`; poi `en.json`).
 - `modelli/`: i modelli delle pagine.
+- `contenuti/guida-ai/`: gli articoli della Guida AI, uno per file Markdown (vedi `docs/guida-ai.md`).
 - `assets/`: stili, script, font e GSAP.
 - `script/`: costruzione del sito e anteprima locale.
 

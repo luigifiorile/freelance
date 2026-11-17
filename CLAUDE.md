@@ -40,7 +40,9 @@ Home (pagina lunga):
 4. Chi sono: breve, con la testa e la tavola in piedi.
 5. Contatti: messaggio in bottiglia e form semplice.
 
-Altre pagine: cinque pagine servizio, cinque pagine demo, privacy, 404.
+Altre pagine: cinque pagine servizio, cinque pagine demo, Guida AI (pagina pilastro + articoli), privacy, 404.
+
+Guida AI (`guida-ai/`): pagina pilastro sull'uso dell'AI per professionisti e piccole imprese, con articoli satellite divisi in capitoli (Capire, Scegliere, Usare, Portarla nel lavoro, Regole e rischi, Risorse). Strategia SEO/GEO, mappa delle parole chiave e piano editoriale in `docs/guida-ai.md`.
 
 Pagina servizio (modello unico): il problema del cliente, cosa costruisco, l'offerta su tre livelli senza prezzi, link alla demo, contatto. Niente esempi per ora: si descrivono solo i servizi.
 
@@ -56,6 +58,8 @@ Pagina demo (modello unico): demo statica con dati di esempio, dichiarati come t
 - `.github/workflows/pubblica.yml`: a ogni push su `main` costruisce e pubblica su GitHub Pages. In Impostazioni → Pages la sorgente deve essere "GitHub Actions".
 - Percorsi: ogni pagina conosce la sua profondità e i modelli usano `prefisso()` (in `modelli/aiuti.mjs`) per costruire percorsi relativi. Unica eccezione: la pagina 404 usa `<base href>` con il percorso di `urlBase` (`/freelance/`), perché GitHub Pages la serve a qualsiasi profondità.
 - Segnaposto: un valore tra parentesi quadre in `it.json` viene sottolineato con un tratteggio e, se è un indirizzo, non diventa un link (`link()` in `modelli/aiuti.mjs`).
+- Guida AI: un file Markdown per articolo in `contenuti/guida-ai/` (`indice.md` è la pagina pilastro, i file che iniziano con `_` sono bozze). `modelli/markdown.mjs` converte il Markdown senza dipendenze; `modelli/guida.mjs` genera le pagine con "In breve", indice, domande frequenti, autore e dati strutturati (`Article`, `BreadcrumbList`, `FAQPage`). Link interni con `guida:slug`, `servizio:id`, `demo:id`, `home:#ancora`; segnaposto con `[[...]]`. Istruzioni complete in `docs/guida-ai.md`.
+- `llms.txt` si genera a ogni build: indice della guida e dei servizi per gli assistenti AI. Funziona solo alla radice del dominio, servirà con il dominio definitivo.
 - `robots.txt` non si genera: in una sottocartella i motori di ricerca lo ignorano. La mappa del sito va inviata a Google Search Console.
 
 Comandi:
@@ -130,6 +134,7 @@ Comandi:
 - La sezione "Lavori e demo" del brief non si fa ora: è un promemoria per quando il progetto sarà finito.
 - Privacy: alla fine si userà un servizio come iubenda (è uno script di terze parti, già approvato per quel momento). Fino ad allora link segnaposto. Partita IVA nel piè di pagina come segnaposto.
 - Anteprima social: un PNG 1200×630 generato una volta componendo SVG esistenti e testo (tappa g).
+- Guida AI (novembre 2026): pilastro + articoli satellite in `guida-ai/`, voce "Guida AI" nel menu. Ogni numero ha fonte primaria linkata (paper, Istat, Eurostat, documentazione di OpenAI, Anthropic, Google). Niente fonti come aggregatori di tool. Voce di Luigi in prima persona, ma episodi personali solo da lui (segnaposto `[[ESEMPIO DI LUIGI: ...]]`). Ogni articolo rimanda a un servizio.
 - Su mobile i titoli con misura fissa nei token (`--titolo-1`, `--titolo-2`, `--apertura`) si riducono con `clamp()`; su desktop restano identici ai token.
 ## Come è fatta l'apertura
 
@@ -142,6 +147,9 @@ Comandi:
 - Senza JS: testa chiusa ferma, con fumetto ed elenco. Con "riduci animazioni": stato finale subito, senza pin.
 
 ## Decisioni aperte
+
+- Dominio definitivo (cambiare solo `sito.urlBase`; `llms.txt` e `robots.txt` alla radice diventano utili).
+- Link ai profili LinkedIn e Substack (`sito.profili`).
 
 - Nome definitivo del brand.
 - Scritta gigante dietro la testa.
