@@ -9,7 +9,7 @@ Quasi tutti i valori si cambiano in `contenuti/it.json`. Nel sito i segnaposto s
 | Segnaposto | Cosa serve | Dove compare | Stato |
 |---|---|---|---|
 | `brand`: "Luigi Fiorile" | Nome definitivo del brand | testata, piè di pagina, titoli delle pagine, anteprima social | provvisorio |
-| `scrittaGigante`: vuota | Scritta gigante dietro la testa. Per ora nessuna; se si sceglie una parola, basta scriverla qui | home, apertura; anteprima social | in attesa |
+| `scrittaGigante`: "GTM" | Scritta gigante dietro la testa (in prova). Se si lascia vuota, non compare | home, apertura; anteprima social | in prova |
 | `fumetto`: `[FRASE DEL FUMETTO]` | Frase sopra la testa chiusa | home, apertura | aperto |
 | `email`: `[EMAIL]` | Indirizzo email pubblico | piè di pagina, sezione Contatti | aperto |
 | `partitaIva` | Partita IVA (obbligatoria per legge) | piè di pagina | fatto |

@@ -23,7 +23,7 @@ Decisione del 17/11/2026: i loghi non vengono usati nell'apertura. `oggetti/segn
 
 - Fondo `--carta`, tutto il resto in `--inchiostro` e `--schiuma`. `--mare` è l'unico accento.
 - I disegni hanno contorno nero spesso e ombre a retino. Niente foto, niente sfumature.
-- Dietro la testa può esserci una scritta gigante in `--schiuma`. Per ora nessuna (decisione del 17/11/2026).
+- Dietro la testa può esserci una scritta gigante in `--schiuma`. In prova: "GTM" (17/11/2026).
 - I testi di interfaccia in evidenza sono in maiuscolo.
 - Dalla testa escono oggetti, non il mare (il brief diceva il contrario: è superato). Le onde restano un elemento del brand: linee, divisori di sezione, mare a fasce.
 - La palette marina del brief è superata: `--laguna` e `--sabbia` servono solo per forme e fondi.

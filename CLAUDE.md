@@ -122,7 +122,7 @@ Comandi:
 - L'espressione cambia mentre la testa si apre: calma (`testa-chiusa.svg`), sorpresa (`testa-a-meta.svg`), felice (`testa-aperta.svg`: occhi a scintilla e sorriso largo).
 - Oggetti che escono: tavola da surf, kite, portatile, fumetto di chat, grafico, imbuto, ingranaggio. I loghi di Claude, n8n e HubSpot sono stati tolti (decisione del 17/11/2026).
 - Animazione di apertura come in LEGGIMI.md: pin per circa tre schermate; 0–30% il fumetto sparisce e la testa passa a "a metà"; 30–80% la testa scende ed esce dal basso, la calotta sale in alto, gli oggetti escono uno alla volta ruotando; 80–100% compare a sinistra l'elenco dei servizi. Testa aperta e calotta sono due livelli separati, cambia solo l'espressione.
-- Scritta gigante: per ora nessuna (`sito.scrittaGigante` vuoto, l'elemento non viene generato). Nome del brand ("Luigi Fiorile") e frase nel fumetto sono segnaposto. Ciascuno sta in un'unica variabile.
+- Scritta gigante: "GTM" (prova del 17/11/2026, prima era "LUIGI"). Se `sito.scrittaGigante` è vuoto l'elemento non viene generato. Nome del brand ("Luigi Fiorile") e frase nel fumetto sono segnaposto. Ciascuno sta in un'unica variabile.
 - Percorso tra i servizi: struttura di Shopify Editions Winter '26, non lo stile. Elenco fisso a sinistra con numero e riga di puntini (attiva in nero, le altre in grigio); tappe con numero gigante in `--schiuma` e titolo grande; sottotitolo in grassetto, frase grande, link a pillola con freccia esterna; scheda interfaccia ruotata di 3 gradi; scheda demo numerata ("1 / crm-follow-up"); a fine tappa linea d'onda e "Torna alla navigazione" con freccia su; il divisore d'onda della tappa successiva sale e copre la precedente.
 - Font: Bricolage Grotesque per titoli e scritte giganti, Inter per i testi.
 - In design sono stati fatti solo gli elementi visivi: le pagine si compongono in codice.
@@ -154,7 +154,7 @@ Comandi:
 - Link ai profili LinkedIn e Substack (`sito.profili`).
 
 - Nome definitivo del brand.
-- Scritta gigante dietro la testa (per ora nessuna).
+- Scritta gigante dietro la testa (in prova: "GTM").
 - Frase nel fumetto e testi definitivi delle sezioni.
 - Servizio esterno per il form (Formspree, Tally o link a un calendario).
 - Servizio per privacy e cookie (es. iubenda), da fare alla fine.
