@@ -176,6 +176,7 @@ main:focus { outline: none; }
   border-radius: var(--raggio-pillola);
 }
 .testata__nav a:hover { color: var(--mare); }
+.testata__nav a[aria-current="page"] { color: var(--mare); }
 .testata__menu {
   min-height: var(--altezza-tocco);
   padding: 0 18px;

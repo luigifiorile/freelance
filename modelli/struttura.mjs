@@ -1,10 +1,15 @@
 // Struttura comune a tutte le pagine: <head>, testata, piè di pagina.
 import { esc, prefisso, link, segnaposto, svg } from "./aiuti.mjs";
 
-function testata(t, r, inHome) {
+function testata(t, r, inHome, paginaAttiva) {
   const base = inHome ? "" : r || "./";
+  // Una voce ha un'ancora della home ("servizi") o un percorso ("guida-ai/").
   const voci = t.comune.menu
-    .map((v) => `<li><a href="${base}#${esc(v.ancora)}">${esc(v.testo)}</a></li>`)
+    .map((v) => {
+      const href = v.percorso ? `${r}${v.percorso}` : `${base}#${v.ancora}`;
+      const attiva = v.percorso && paginaAttiva && paginaAttiva.startsWith(v.percorso) ? ' aria-current="page"' : "";
+      return `<li><a href="${esc(href)}"${attiva}>${esc(v.testo)}</a></li>`;
+    })
     .join("");
   return `
 <header class="testata">
@@ -51,9 +56,15 @@ export function datiPersona(t) {
     "@id": `${t.sito.urlBase}#persona`,
     name: t.sito.persona,
     url: t.sito.urlBase,
+    jobTitle: t.sito.ruolo,
+    description: t.guida.autoreBio,
     workLocation: { "@type": "Place", name: t.sito.citta },
+    knowsAbout: t.sito.competenze,
   };
   if (!segnaposto(t.sito.email)) persona.email = `mailto:${t.sito.email}`;
+  // Profili pubblici (LinkedIn, Substack): aiutano motori e assistenti AI a riconoscere l'autore.
+  const profili = (t.sito.profili || []).filter((u) => !segnaposto(u));
+  if (profili.length) persona.sameAs = profili;
   return persona;
 }
 export function datiServizioProfessionale(t) {
@@ -106,7 +117,7 @@ export function struttura(t, pagina) {
   <meta name="description" content="${esc(pagina.descrizione)}">
   ${pagina.base ? "" : `<link rel="canonical" href="${esc(url)}">`}
   ${pagina.base || !t.sito.indicizzabile ? '<meta name="robots" content="noindex">' : ""}
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="${esc(pagina.ogTipo || "website")}">
   <meta property="og:locale" content="${esc(t.sito.locale)}">
   <meta property="og:site_name" content="${esc(t.sito.brand)}">
   <meta property="og:title" content="${esc(pagina.titolo)}">
@@ -116,7 +127,7 @@ export function struttura(t, pagina) {
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="${esc(t.comune.anteprimaSocialAlt)}">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:card" content="summary_large_image">${pagina.testaExtra ? "\n  " + pagina.testaExtra : ""}
   <meta name="theme-color" content="#EDEDED">
   <link rel="icon" href="${r}brand/logo/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="${r}assets/font/inter.woff2" as="font" type="font/woff2" crossorigin>
@@ -128,7 +139,7 @@ export function struttura(t, pagina) {
 </head>
 <body class="${esc(pagina.classe || "")}" id="inizio">
 <a class="salta" href="#contenuto">${esc(t.comune.saltaAlContenuto)}</a>
-${testata(t, r, pagina.inHome)}
+${testata(t, r, pagina.inHome, pagina.percorso)}
 <main id="contenuto" tabindex="-1">
 ${pagina.corpo}
 </main>

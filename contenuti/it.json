@@ -10,6 +10,9 @@
     "persona": "Luigi Fiorile",
     "citta": "Milano",
     "paese": "IT",
+    "ruolo": "Consulente freelance per strumenti AI e digitali",
+    "competenze": ["Intelligenza artificiale generativa", "Automazione dei processi", "CRM", "Marketing digitale", "Prompt engineering"],
+    "profili": ["https://www.linkedin.com/in/luigifiorile/", "https://substack.com/@luigifiorile"],
     "email": "[EMAIL]",
     "partitaIva": "10521731215",
     "urlPrivacy": "[LINK PRIVACY]",
@@ -22,6 +25,7 @@
     "menuEtichetta": "Menu principale",
     "menu": [
       { "testo": "Servizi", "ancora": "servizi" },
+      { "testo": "Guida AI", "percorso": "guida-ai/" },
       { "testo": "Come lavoro", "ancora": "come-lavoro" },
       { "testo": "Chi sono", "ancora": "chi-sono" },
       { "testo": "Contatti", "ancora": "contatti" }
@@ -99,6 +103,40 @@
       "nonAttivo": "Il modulo non è ancora attivo. Nel frattempo puoi scrivermi via email.",
       "oppure": "Oppure scrivimi a"
     }
+  },
+
+  "guida": {
+    "nomeBreve": "Guida AI",
+    "etichetta": "Guida all'intelligenza artificiale",
+    "titoloPagina": "{titolo} | {brand}",
+    "di": "Di {nome}",
+    "aggiornato": "aggiornato il",
+    "lettura": "{n} min di lettura",
+    "inBreve": "In breve",
+    "indice": "In questa pagina",
+    "briciole": "Sei qui",
+    "mappaTitolo": "La mappa della guida",
+    "continuaTitolo": "Continua a leggere",
+    "tornaPilastro": "Torna alla guida completa",
+    "autoreEtichetta": "Chi scrive",
+    "autoreBackground": "[BACKGROUND PROFESSIONALE DA DEFINIRE]",
+    "autoreBio": "Freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese. Uso l'AI ogni giorno e ne scrivo da utilizzatore.",
+    "inviti": [
+      { "titolo": "Piaciuta questa guida?", "testo": "Ci hai capito effettivamente qualcosa? Se l'argomento ti incuriosisce, o hai bisogno di capire dove e come far entrare l'AI nel tuo lavoro, scrivimi.", "pulsante": "Scrivimi" },
+      { "titolo": "Arrivato fin qui? Allora parliamone.", "testo": "Se mentre leggevi ti è venuto in mente un pezzo del tuo lavoro che l'AI potrebbe alleggerire, raccontamelo. Ti dico se ha senso, e se non ce l'ha te lo dico lo stesso.", "pulsante": "Raccontamelo" },
+      { "titolo": "Ti è rimasto un dubbio?", "testo": "Capita, l'argomento è grosso. Scrivimi la domanda, oppure raccontami cosa fai: vediamo dove l'AI può darti una mano e dove è meglio lasciarla stare.", "pulsante": "Scrivimi" },
+      { "titolo": "Troppa teoria?", "testo": "Se preferisci vedere come funziona sul tuo lavoro, con i tuoi file e i tuoi clienti, scrivimi. Si parte da una chiacchierata.", "pulsante": "Scrivimi" },
+      { "titolo": "E adesso?", "testo": "Se hai voglia di provarci ma non sai da dove cominciare, scrivimi. Mi racconti come lavori e ti dico da dove partirei io.", "pulsante": "Scrivimi" }
+    ],
+    "llmsIntro": "Guida in italiano all'uso dell'intelligenza artificiale per liberi professionisti e piccole imprese, scritta da Luigi Fiorile. Ogni articolo cita le fonti originali: paper, documentazione ufficiale dei produttori, dati Istat ed Eurostat.",
+    "capitoli": [
+      { "id": "capire", "nome": "Capire", "descrizione": "Cos'è un modello linguistico, perché sbaglia e dove funziona davvero." },
+      { "id": "scegliere", "nome": "Scegliere", "descrizione": "Quale assistente usare e come confrontarli senza perderci settimane." },
+      { "id": "usare", "nome": "Usare", "descrizione": "Come chiedere le cose, dare il contesto giusto e fare ricerche affidabili." },
+      { "id": "lavoro", "nome": "Portarla nel lavoro", "descrizione": "Da dove partire in una piccola impresa, cosa dicono gli studi, agenti e automazioni." },
+      { "id": "regole", "nome": "Regole e rischi", "descrizione": "AI Act, legge italiana, privacy e sicurezza, spiegati a chi non fa l'avvocato." },
+      { "id": "risorse", "nome": "Risorse", "descrizione": "Il glossario e le fonti da seguire per restare aggiornati." }
+    ]
   },
 
   "servizioPagina": {
