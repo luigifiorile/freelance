@@ -17,13 +17,13 @@ Questa cartella contiene solo gli elementi visivi. Il sito va costruito in codic
 
 ## Loghi di terze parti
 
-`oggetti/segnaposto-logo.svg` è un cerchio vuoto. Dentro vanno i loghi ufficiali di Claude, n8n e HubSpot, scaricati dai kit stampa di ciascuna azienda e usati senza modifiche. In `oggetti-insieme.svg` i tre cerchi hanno solo il nome scritto.
+Decisione del 17/11/2026: i loghi non vengono usati nell'apertura. `oggetti/segnaposto-logo.svg` è un cerchio vuoto. Dentro vanno i loghi ufficiali di Claude, n8n e HubSpot, scaricati dai kit stampa di ciascuna azienda e usati senza modifiche. In `oggetti-insieme.svg` i tre cerchi hanno solo il nome scritto.
 
 ## Regole di stile
 
 - Fondo `--carta`, tutto il resto in `--inchiostro` e `--schiuma`. `--mare` è l'unico accento.
 - I disegni hanno contorno nero spesso e ombre a retino. Niente foto, niente sfumature.
-- Dietro la testa c'è una scritta gigante in `--schiuma` (segnaposto: "LUIGI").
+- Dietro la testa può esserci una scritta gigante in `--schiuma`. Per ora nessuna (decisione del 17/11/2026).
 - I testi di interfaccia in evidenza sono in maiuscolo.
 - Dalla testa escono oggetti, non il mare (il brief diceva il contrario: è superato). Le onde restano un elemento del brand: linee, divisori di sezione, mare a fasce.
 - La palette marina del brief è superata: `--laguna` e `--sabbia` servono solo per forme e fondi.

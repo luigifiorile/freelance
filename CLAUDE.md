@@ -77,7 +77,7 @@ Comandi:
 - Disegni: contorno nero spesso, ombre a retino. Niente foto, niente sfumature. Il retino di `tokens.css` (`.retino`) è un motivo a puntini, non una sfumatura: si può usare.
 - Solo gli SVG del repository. Non ridisegnarli: si possono inserire inline e aggiungere id o gruppi per animarli, senza cambiare le forme. Se manca un elemento visivo, chiederlo.
 - Le schede interfaccia non contengono testo (valgono per italiano e inglese).
-- Loghi di Claude, n8n e HubSpot: restano segnaposto (`brand/oggetti/segnaposto-logo.svg`) finché Luigi non li scarica dai kit stampa ufficiali.
+- Loghi di Claude, n8n e HubSpot: tolti dall'apertura. `brand/oggetti/segnaposto-logo.svg` resta nel repository ma non è usato.
 - Dai siti di riferimento (huyml.co/about, Shopify Editions Winter '26) si prende solo la struttura. Mai codice, immagini, font o testi.
 - I layout devono reggere testi più lunghi o più corti del 30%.
 
@@ -120,9 +120,9 @@ Comandi:
 - Dalla testa escono oggetti, non il mare (il brief diceva il contrario: vale questa decisione). Le onde restano un elemento del brand: linee, divisori di sezione, mare a fasce.
 - Testa: fumetto in bianco e nero, contorno spesso, ombre a retino, vista di tre quarti, solo testa senza collo, AirPod nell'orecchio. Forma approvata, non va modificata.
 - L'espressione cambia mentre la testa si apre: calma (`testa-chiusa.svg`), sorpresa (`testa-a-meta.svg`), felice (`testa-aperta.svg`: occhi a scintilla e sorriso largo).
-- Oggetti che escono: tavola da surf, kite, portatile, fumetto di chat, grafico, imbuto, ingranaggio, più i loghi di Claude, n8n e HubSpot (segnaposto).
+- Oggetti che escono: tavola da surf, kite, portatile, fumetto di chat, grafico, imbuto, ingranaggio. I loghi di Claude, n8n e HubSpot sono stati tolti (decisione del 17/11/2026).
 - Animazione di apertura come in LEGGIMI.md: pin per circa tre schermate; 0–30% il fumetto sparisce e la testa passa a "a metà"; 30–80% la testa scende ed esce dal basso, la calotta sale in alto, gli oggetti escono uno alla volta ruotando; 80–100% compare a sinistra l'elenco dei servizi. Testa aperta e calotta sono due livelli separati, cambia solo l'espressione.
-- Scritta gigante ("LUIGI"), nome del brand ("Luigi Fiorile") e frase nel fumetto sono segnaposto, tenuti in un'unica variabile ciascuno.
+- Scritta gigante: per ora nessuna (`sito.scrittaGigante` vuoto, l'elemento non viene generato). Nome del brand ("Luigi Fiorile") e frase nel fumetto sono segnaposto. Ciascuno sta in un'unica variabile.
 - Percorso tra i servizi: struttura di Shopify Editions Winter '26, non lo stile. Elenco fisso a sinistra con numero e riga di puntini (attiva in nero, le altre in grigio); tappe con numero gigante in `--schiuma` e titolo grande; sottotitolo in grassetto, frase grande, link a pillola con freccia esterna; scheda interfaccia ruotata di 3 gradi; scheda demo numerata ("1 / crm-follow-up"); a fine tappa linea d'onda e "Torna alla navigazione" con freccia su; il divisore d'onda della tappa successiva sale e copre la precedente.
 - Font: Bricolage Grotesque per titoli e scritte giganti, Inter per i testi.
 - In design sono stati fatti solo gli elementi visivi: le pagine si compongono in codice.
@@ -143,9 +143,9 @@ Comandi:
 - Gli SVG della testa condividono lo stesso sistema di coordinate. In `assets/css/home.css` il riquadro `.testa` corrisponde a `testa-chiusa.svg` (400 × 470 unità) e ogni livello è posizionato in percentuale. Livelli: testa chiusa, testa a metà, e il gruppo testa aperta + calotta.
 - Calma → sorpresa: dissolvenza da `testa-chiusa.svg` a `testa-a-meta.svg`. Sorpresa → felice: dissolvenza verso `testa-aperta.svg` + `calotta.svg`, con la calotta nella stessa posa di "a metà"; poi la calotta sale e la testa scende in modo continuo.
 - `calotta.svg` è inserita nella pagina con `overflow: visible`: il suo riquadro taglia la cima dei capelli, le forme non cambiano.
-- Gli oggetti finiscono nella disposizione di `oggetti-insieme.svg` (posizioni in `modelli/home.mjs`). I tre loghi sono `segnaposto-logo.svg` con il nome scritto sopra.
+- Gli oggetti finiscono nella disposizione di `oggetti-insieme.svg` (posizioni in `modelli/home.mjs`), senza i tre loghi: il riquadro di riferimento è ristretto a 520 × 500 unità.
 - Su mobile la calotta esce dall'alto invece di fermarsi, per non coprire il testo.
-- La scritta gigante si riduce da sola se non entra nella larghezza (su mobile resta intera).
+- La scritta gigante, se c'è, si riduce da sola se non entra nella larghezza (su mobile resta intera). Se è vuota non viene generata.
 - Senza JS: testa chiusa ferma, con fumetto ed elenco. Con "riduci animazioni": stato finale subito, senza pin.
 
 ## Decisioni aperte
@@ -154,9 +154,8 @@ Comandi:
 - Link ai profili LinkedIn e Substack (`sito.profili`).
 
 - Nome definitivo del brand.
-- Scritta gigante dietro la testa.
+- Scritta gigante dietro la testa (per ora nessuna).
 - Frase nel fumetto e testi definitivi delle sezioni.
-- Loghi ufficiali di Claude, n8n e HubSpot.
 - Servizio esterno per il form (Formspree, Tally o link a un calendario).
 - Servizio per privacy e cookie (es. iubenda), da fare alla fine.
 
