@@ -21,7 +21,7 @@ Si lavora in italiano.
 
 ## Servizi (nomi da LEGGIMI.md)
 
-1. CRM e automazioni
+1. Go to market e automazioni (prima "CRM e automazioni", rinominato il 17/11/2026)
 2. Gestionale interno
 3. Vendite e assistenza clienti
 4. Siti web e visibilità
@@ -135,6 +135,7 @@ Comandi:
 - Privacy: alla fine si userà un servizio come iubenda (è uno script di terze parti, già approvato per quel momento). Fino ad allora link segnaposto. Partita IVA nel piè di pagina come segnaposto.
 - Anteprima social: un PNG 1200×630 generato una volta componendo SVG esistenti e testo (tappa g).
 - Servizio Marketing (17/11/2026), dai metodi del master (skill `competenze-marketing-luigi`): analisi del funnel, tracciamento (GA4, Meta), campagne Google Ads e Meta Ads, e un unico agente AI che ogni mese incrocia GA4, Google Ads e Meta e produce un report rivisto da Luigi. Sulle campagne: si lavora su quelle esistenti o si creano da zero, con l'obiettivo di dare autonomia al cliente (non gestione continua). Grafica e social esclusi. I tre livelli: diagnosi = analisi; progetto = funnel + tracciamento + campagne + agente; manutenzione = report mensile rivisto. La demo `marketing-funnel` è un esempio di report mensile.
+- Servizio 1 rinominato "Go to market e automazioni" (17/11/2026), indirizzo `servizi/go-to-market-e-automazioni/`. È il centro del lavoro di Luigi, sul modello del ruolo di GTM engineer: piano di go to market, liste di potenziali clienti arricchite in automatico, primi contatti personalizzati con l'AI, CRM e follow-up, collegamenti tra strumenti, misura della soddisfazione dei clienti (questionari, recensioni, avviso di abbandono). Divisione con il servizio 3: la soddisfazione si misura nel servizio 1, le risposte ai clienti (WhatsApp, assistenza) restano nel servizio 3. La demo resta `crm-follow-up`.
 - SEO e GEO restano nel servizio "Siti web e visibilità", non in Marketing.
 - Modelli unici con campi facoltativi: `servizi[].offerta` (testi propri dei tre livelli, nomi invariati) e `servizi[].demo.osservazioni` (elenco di letture dei dati nella demo).
 - Finché ci sono segnaposto il sito non si fa indicizzare: `sito.indicizzabile` è `false` e tutte le pagine hanno `<meta name="robots" content="noindex">`. Al lancio va messo a `true`.

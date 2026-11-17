@@ -63,7 +63,7 @@ Tra una tappa e l'altra, il divisore d'onda della tappa successiva sale dal bass
 
 ## Servizi
 
-1. CRM e automazioni
+1. Go to market e automazioni (prima "CRM e automazioni", rinominato il 17/11/2026)
 2. Gestionale interno
 3. Vendite e assistenza clienti
 4. Siti web e visibilità
