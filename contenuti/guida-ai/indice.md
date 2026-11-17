@@ -15,7 +15,7 @@ inBreve:
 
 Questa guida esiste per un motivo abbastanza semplice. Le guide migliori sull'intelligenza artificiale sono in inglese e sono scritte per chi lavora in grandi aziende americane: quella di [Ethan Mollick](https://www.oneusefulthing.org/p/using-ai-right-now-a-quick-guide), professore a Wharton, i corsi di [Google](https://ai.google/learn-ai-skills/), le risorse di [OpenAI per le aziende](https://openai.com/it-IT/business/learn/). Sono ottime. Ma se hai uno studio di cinque persone a Bergamo, o fai la commercialista da sola, o gestisci un negozio con un e-commerce che va avanti a fatica, ti lasciano con una domanda: sì, ma io da dove comincio?
 
-Io lavoro con liberi professionisti e piccole imprese e costruisco strumenti AI su misura per loro. Prima ho fatto il consulente e il Chief of Staff in una startup, che è un modo elegante per dire che mi sono occupato di tutto quello che stava in mezzo. L'AI la uso ogni giorno (anche per cose poco nobili, come l'asta del fantacalcio di un amico) e ne scrivo da utilizzatore, senza farne una religione.
+Io lavoro con liberi professionisti e piccole imprese e costruisco strumenti AI su misura per loro. [[BACKGROUND PROFESSIONALE DA DEFINIRE]] L'AI la uso ogni giorno (anche per cose poco nobili, come l'asta del fantacalcio di un amico) e ne scrivo da utilizzatore, senza farne una religione.
 
 Ogni capitolo qui sotto ha un riassunto e un link all'articolo che lo approfondisce. Ogni numero ha una fonte, quasi sempre quella originale: il paper, il comunicato Istat, la documentazione di chi i modelli li costruisce. Quando una cosa non la so, o gli studi non sono d'accordo, lo scrivo.
 

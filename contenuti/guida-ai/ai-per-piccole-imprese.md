@@ -88,7 +88,7 @@ I costi salgono quando si passa a strumenti collegati ai dati e ai software azie
 
 ## La parte che non si vede nei corsi
 
-Una cosa che ho imparato lavorando dentro le aziende, prima in consulenza e poi in una startup: gli strumenti si adottano quando le persone ne vedono il vantaggio nel proprio lavoro, non quando il titolare li annuncia in riunione. La strada più efficace che conosco è far sperimentare chi ha più compiti ripetitivi, lasciare che racconti ai colleghi cosa funziona, e trasformare in regola solo quello che è stato provato.
+Una cosa che ho imparato lavorando dentro le aziende [[BACKGROUND PROFESSIONALE DA DEFINIRE]]: gli strumenti si adottano quando le persone ne vedono il vantaggio nel proprio lavoro, non quando il titolare li annuncia in riunione. La strada più efficace che conosco è far sperimentare chi ha più compiti ripetitivi, lasciare che racconti ai colleghi cosa funziona, e trasformare in regola solo quello che è stato provato.
 
 E un'ultima cosa, controcorrente: non serve un "responsabile AI" in un'azienda di otto persone. Serve una persona curiosa con un'ora a settimana per provare, e un titolare che quella ora la protegga.
 
