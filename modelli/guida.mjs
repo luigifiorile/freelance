@@ -1,6 +1,6 @@
 // Guida all'AI: pagina pilastro (guida-ai/) e articoli (guida-ai/<slug>/).
 // I testi sono in contenuti/guida-ai/*.md; le etichette in it.json → guida.
-import { esc, svg, compila, prefisso } from "./aiuti.mjs";
+import { esc, svg, compila, prefisso, segnaposto } from "./aiuti.mjs";
 import { struttura, datiPersona } from "./struttura.mjs";
 import { markdown } from "./markdown.mjs";
 
@@ -58,7 +58,7 @@ function autore(t, g, r) {
     <img src="${r}brand/logo/marchio.svg" alt="" width="56" height="56">
     <div>
       <p class="etichetta">${esc(g.autoreEtichetta)}</p>
-      <p><strong>${esc(t.sito.persona)}</strong>. ${esc(g.autoreBio)}</p>
+      <p><strong>${esc(t.sito.persona)}</strong>. ${esc(g.autoreBio)}${g.autoreBackground ? " " + (segnaposto(g.autoreBackground) ? `<span class="segnaposto">${esc(g.autoreBackground)}</span>` : esc(g.autoreBackground)) : ""}</p>
     </div>
   </aside>`;
 }

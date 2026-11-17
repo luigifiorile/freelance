@@ -54,6 +54,8 @@ Pagina pilastro e 14 articoli scritti da Claude come bozza, con fonti verificate
 | Segnaposto | Cosa serve | Dove |
 |---|---|---|
 | `sito.profili` | Fatto: LinkedIn e Substack (@luigifiorile). La newsletter è da creare, partendo dalla guida | `contenuti/it.json` |
+| `[[BACKGROUND PROFESSIONALE DA DEFINIRE]]` | Come raccontare il tuo percorso prima del lavoro da freelance (sostituisce "consulenza in Accenture e Chief of Staff in una startup") | `indice.md` (introduzione), `ai-per-piccole-imprese.md` (ultima sezione) |
+| `guida.autoreBackground` | Stessa frase, nel riquadro "Chi scrive" in fondo a ogni articolo | `contenuti/it.json` |
 
 Gli esempi personali (libri del padre, assistente finanziario su Claude, deep research sulle dogane per Spill) sono stati inseriti con le parole di Luigi. Le frasi in prima persona sono state approvate da Luigi il 17 novembre 2026.
 

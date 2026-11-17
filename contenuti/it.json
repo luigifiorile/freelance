@@ -118,7 +118,8 @@
     "continuaTitolo": "Continua a leggere",
     "tornaPilastro": "Torna alla guida completa",
     "autoreEtichetta": "Chi scrive",
-    "autoreBio": "Freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese. Prima ho lavorato in consulenza, in Accenture, e come Chief of Staff in una startup. Uso l'AI ogni giorno e ne scrivo da utilizzatore.",
+    "autoreBackground": "[BACKGROUND PROFESSIONALE DA DEFINIRE]",
+    "autoreBio": "Freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese. Uso l'AI ogni giorno e ne scrivo da utilizzatore.",
     "inviti": [
       { "titolo": "Piaciuta questa guida?", "testo": "Ci hai capito effettivamente qualcosa? Se l'argomento ti incuriosisce, o hai bisogno di capire dove e come far entrare l'AI nel tuo lavoro, scrivimi.", "pulsante": "Scrivimi" },
       { "titolo": "Arrivato fin qui? Allora parliamone.", "testo": "Se mentre leggevi ti è venuto in mente un pezzo del tuo lavoro che l'AI potrebbe alleggerire, raccontamelo. Ti dico se ha senso, e se non ce l'ha te lo dico lo stesso.", "pulsante": "Raccontamelo" },
