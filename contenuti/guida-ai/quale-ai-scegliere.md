@@ -95,7 +95,9 @@ Di solito alla fine non c'è un vincitore assoluto, ma uno con cui ti trovi megl
 
 Se parti da zero e non hai vincoli di ecosistema: prendi un abbonamento a uno dei tre principali, usalo per tutto per un mese, e solo dopo valuta se ti serve altro. Cambiare strumento costa poco, ma imparare a usarne bene uno vale più di provarli tutti male.
 
-Se invece hai già un'azienda organizzata su Google o Microsoft, parti dall'assistente integrato e affiancagli uno strumento autonomo solo per i compiti in cui senti il limite. [[ESEMPIO DI LUIGI: quali assistenti usi tu e per cosa, in una o due righe]]
+Se invece hai già un'azienda organizzata su Google o Microsoft, parti dall'assistente integrato e affiancagli uno strumento autonomo solo per i compiti in cui senti il limite.
+
+E quando hai preso confidenza, l'assistente diventa un posto dove costruire strumenti piccoli per te. Un esempio mio: su Claude ho messo in piedi un assistente finanziario personale fatto di più agenti, ognuno costruito con un'idea diversa su come gestire i soldi, che mi aiutano a capire dove metterli. Non decide al posto mio (e per fortuna, visto che i soldi sono i miei), ma mi fa guardare la stessa scelta da punti di vista diversi.
 
 ## Domande frequenti
 

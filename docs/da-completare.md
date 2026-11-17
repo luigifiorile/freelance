@@ -53,24 +53,9 @@ Pagina pilastro e 14 articoli scritti da Claude come bozza, con fonti verificate
 
 | Segnaposto | Cosa serve | Dove |
 |---|---|---|
-| `[[ESEMPIO DI LUIGI: ...]]` | Un'allucinazione che ti è capitata davvero e come te ne sei accorto | `allucinazioni-ai.md` |
-| `[[ESEMPIO DI LUIGI: ...]]` | Quali assistenti usi tu e per cosa, in una o due righe | `quale-ai-scegliere.md` |
-| `[[ESEMPIO DI LUIGI: ...]]` | Una ricerca vera fatta con la deep research, per lavoro o per un cliente | `ricerca-con-l-ai.md` |
 | `sito.profili` | Link al profilo LinkedIn e alla newsletter Substack (vanno nei dati strutturati come `sameAs`, aiutano motori e assistenti a riconoscere l'autore) | `contenuti/it.json` |
 
-### Affermazioni in prima persona da confermare
-
-Frasi scritte con la tua voce che descrivono abitudini o esperienze. Sono plausibili ma non le ho verificate con te: confermale, correggile o toglile.
-
-| Articolo | Frase |
-|---|---|
-| `indice.md` | "L'AI la uso ogni giorno (anche per cose poco nobili, come l'asta del fantacalcio di un amico)" |
-| `indice.md` | La sezione "La mia opinione, per quel che vale" (opinioni tue, in bozza) |
-| `allucinazioni-ai.md` | "Dalla mia esperienza, e da quello che dicono le ricerche, il rischio sale..." e "La soluzione che uso io è ragionare per tipo di compito" |
-| `quale-ai-scegliere.md` | "Trovi i criteri che uso io quando qualcuno mi chiede quale devo prendere" e "Le prendo dalla mia esperienza" |
-| `ai-per-piccole-imprese.md` | "di quelli che vedo funzionare più spesso", "il percorso che seguo nella fase di diagnosi con i clienti", "Una cosa che ho imparato lavorando dentro le aziende" |
-| `agenti-ai.md` | "La mia esperienza è che nove volte su dieci... la risposta giusta è un flusso semplice" |
-| `fonti-ai.md` | La lista stessa è una selezione a tuo nome: controlla che ti rappresenti |
+Gli esempi personali (libri del padre, assistente finanziario su Claude, deep research sulle dogane per Spill) sono stati inseriti con le parole di Luigi. Le frasi in prima persona sono state approvate da Luigi il 17 novembre 2026.
 
 ### Da verificare (fatti e numeri)
 

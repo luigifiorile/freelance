@@ -87,7 +87,11 @@ Se un'informazione non è nel documento o non sei sicuro, scrivi "non lo so" inv
 
 C'è un effetto collaterale delle allucinazioni di cui si parla poco. Chi ne incontra una grossa all'inizio spesso smette di usare l'AI per tutto, anche per le cose in cui funziona benissimo. Chi non ne incontra nessuna per settimane, invece, smette di controllare. Il secondo caso è quello che porta in tribunale.
 
-La soluzione che uso io è ragionare per tipo di compito. Su riscrivere, riassumere un documento che ho davanti, trovare idee, strutturare una bozza, l'errore è raro e facile da vedere. Su fatti puntuali, numeri e riferimenti normativi, controllo sempre. [[ESEMPIO DI LUIGI: un'allucinazione che ti è capitata davvero e come te ne sei accorto]]
+La soluzione che uso io è ragionare per tipo di compito. Su riscrivere, riassumere un documento che ho davanti, trovare idee, strutturare una bozza, l'errore è raro e facile da vedere. Su fatti puntuali, numeri e riferimenti normativi, controllo sempre.
+
+Poi ci sono allucinazioni più sottili, che non riguardano un fatto ma un ragionamento. Me ne è capitata una mentre lavoravo al sito per i libri di mio padre, che fa il cameriere e scrive da sempre e che voglio aiutare a far arrivare il suo sogno a più persone. Chiedevo a Claude di aiutarmi a presentare i suoi tre libri, e Claude si era fissata su un'idea: doveva trovare a tutti i costi un filo comune tra i tre. Quando il filo non c'era, lo inventava. Temi ricorrenti, simboli, collegamenti tra personaggi che nei libri non esistono.
+
+Il punto è che i tre libri non hanno bisogno di un filo. Sono scritti da una persona che in momenti diversi aveva voglia di raccontare cose diverse, ed è anche il bello. Un modello addestrato a dare risposte ordinate e coerenti fa fatica ad accettarlo: se gli chiedi di spiegare qualcosa, una spiegazione la trova, anche quando la risposta giusta sarebbe "non c'è una logica, e va bene così". Per questo, quando l'AI trova uno schema troppo bello per essere vero, conviene chiederle dove lo vede esattamente.
 
 ## Domande frequenti
 

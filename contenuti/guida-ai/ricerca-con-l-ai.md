@@ -21,7 +21,7 @@ inBreve:
 - Per lavorare su documenti tuoi, strumenti come NotebookLM rispondono solo a partire da quello che carichi.
 ---
 
-Capire un mercato, un concorrente o una normativa voleva dire, fino a poco tempo fa, un pomeriggio con venti schede aperte nel browser. Oggi si può far partire una ricerca approfondita e ritrovarsi dopo pochi minuti con un rapporto di dieci pagine, ordinato e pieno di link. [[ESEMPIO DI LUIGI: una ricerca vera che hai fatto così, per lavoro o per un cliente]]
+Capire un mercato, un concorrente o una normativa voleva dire, fino a poco tempo fa, un pomeriggio con venti schede aperte nel browser. Oggi si può far partire una ricerca approfondita e ritrovarsi dopo pochi minuti con un rapporto di dieci pagine, ordinato e pieno di link. A me è servito, per esempio, quando in Spill, la startup di bevande di Milano, ho dovuto capire tutto quello che riguardava le dogane: regole, documenti, passaggi, chi fa cosa. Con una ricerca approfondita ho messo in fila tutto l'argomento, con le fonti da andare poi a controllare.
 
 Il problema è che quel rapporto è scritto benissimo anche quando sbaglia. E sbaglia più spesso di quanto sembri.
 
