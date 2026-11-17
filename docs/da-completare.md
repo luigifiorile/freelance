@@ -33,6 +33,8 @@ Testi scritti da Claude a partire dal brief, da approvare o riscrivere. Sono tut
 | Per ogni servizio: sottotitolo, frase, descrizione, problema, cosa costruisco | `servizi[].sottotitolo` … `servizi[].costruisco` | bozza |
 | Introduzione Come lavoro (metafora dello shaper) e testi dei cinque passi | `home.comeLavoro` | bozza |
 | Chi sono (fatti dal brief: Milano, Accenture, Chief of Staff, surf e kitesurf) | `home.chiSono.paragrafi` | bozza |
+| Servizio Marketing riscritto il 17/11/2026: sottotitolo, frase, problema, cosa costruisco, testi dei tre livelli (`offerta`) | `servizi[4]` | bozza |
+| Demo Marketing come report mensile: numeri, tabella e osservazioni inventati e dichiarati | `servizi[4].demo` | bozza |
 | Testi della sezione Contatti e del form | `home.contatti` | bozza |
 | Testi delle pagine servizio (titoli di sezione, tre livelli dell'offerta, invito) | `servizioPagina` | bozza |
 | Testi delle pagine demo e dati di esempio (dichiarati in pagina come inventati) | `demoPagina`, `servizi[].demo` | bozza |
