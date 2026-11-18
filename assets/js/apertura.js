@@ -15,6 +15,7 @@
   // La scritta gigante si riduce solo se non entra nella larghezza
   // (la parola è un segnaposto e può cambiare lunghezza).
   function adattaScritta() {
+    if (!scritta) return; // la scritta gigante può essere vuota
     scritta.style.fontSize = "";
     var margine = parseFloat(getComputedStyle(radice).getPropertyValue("--margine")) || 16;
     var disponibile = scena.clientWidth - 2 * margine;

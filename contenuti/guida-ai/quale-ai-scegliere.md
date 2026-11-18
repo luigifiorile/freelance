@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: scegliere
 ordine: 4
-servizio: crm-e-automazioni
+servizio: go-to-market-e-automazioni
 correlati:
 - come-scrivere-un-prompt
 - privacy-e-ai

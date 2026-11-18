@@ -17,13 +17,13 @@ Questa cartella contiene solo gli elementi visivi. Il sito va costruito in codic
 
 ## Loghi di terze parti
 
-`oggetti/segnaposto-logo.svg` è un cerchio vuoto. Dentro vanno i loghi ufficiali di Claude, n8n e HubSpot, scaricati dai kit stampa di ciascuna azienda e usati senza modifiche. In `oggetti-insieme.svg` i tre cerchi hanno solo il nome scritto.
+Decisione del 17/11/2026: i loghi non vengono usati nell'apertura. `oggetti/segnaposto-logo.svg` è un cerchio vuoto. Dentro vanno i loghi ufficiali di Claude, n8n e HubSpot, scaricati dai kit stampa di ciascuna azienda e usati senza modifiche. In `oggetti-insieme.svg` i tre cerchi hanno solo il nome scritto.
 
 ## Regole di stile
 
 - Fondo `--carta`, tutto il resto in `--inchiostro` e `--schiuma`. `--mare` è l'unico accento.
 - I disegni hanno contorno nero spesso e ombre a retino. Niente foto, niente sfumature.
-- Dietro la testa c'è una scritta gigante in `--schiuma` (segnaposto: "LUIGI").
+- Dietro la testa può esserci una scritta gigante in `--schiuma`. Per ora nessuna (18/11/2026).
 - I testi di interfaccia in evidenza sono in maiuscolo.
 - Dalla testa escono oggetti, non il mare (il brief diceva il contrario: è superato). Le onde restano un elemento del brand: linee, divisori di sezione, mare a fasce.
 - La palette marina del brief è superata: `--laguna` e `--sabbia` servono solo per forme e fondi.
@@ -55,15 +55,17 @@ Tra una tappa e l'altra, il divisore d'onda della tappa successiva sale dal bass
 
 ## Come lavoro
 
-1. Ascoltare
-2. Leggere il mare
-3. Costruire
-4. Mettere in acqua
-5. Seguire nel tempo
+1. Ascoltare (`01-ascoltare.svg`)
+2. Leggere i dati (`02-leggere-il-mare.svg`)
+3. Costruire (`03-costruire.svg`)
+4. Testare (`04-mettere-in-acqua.svg`)
+5. Formare, finché il cliente non diventa indipendente (`05-seguire-nel-tempo.svg`)
+
+Nomi aggiornati il 18/11/2026; le illustrazioni restano le stesse.
 
 ## Servizi
 
-1. CRM e automazioni
+1. Go to market e automazioni (prima "CRM e automazioni", rinominato il 17/11/2026)
 2. Gestionale interno
 3. Vendite e assistenza clienti
 4. Siti web e visibilità

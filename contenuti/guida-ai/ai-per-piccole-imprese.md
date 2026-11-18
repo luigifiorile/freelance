@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: lavoro
 ordine: 8
-servizio: crm-e-automazioni
+servizio: go-to-market-e-automazioni
 correlati:
 - frontiera-frastagliata
 - ai-act-piccole-imprese

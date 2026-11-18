@@ -3,19 +3,20 @@
     "lingua": "it",
     "locale": "it_IT",
     "brand": "Luigi Fiorile",
-    "scrittaGigante": "LUIGI",
-    "fumetto": "[FRASE DEL FUMETTO]",
+    "scrittaGigante": "",
+    "fumetto": "Scorri per scoprire cosa ho in testa",
     "urlBase": "https://luigifiorile.github.io/freelance/",
+    "indicizzabile": false,
     "persona": "Luigi Fiorile",
     "citta": "Milano",
     "paese": "IT",
     "ruolo": "Consulente freelance per strumenti AI e digitali",
     "competenze": ["Intelligenza artificiale generativa", "Automazione dei processi", "CRM", "Marketing digitale", "Prompt engineering"],
     "profili": ["https://www.linkedin.com/in/luigifiorile/", "https://substack.com/@luigifiorile"],
-    "email": "[EMAIL]",
-    "partitaIva": "[PARTITA IVA]",
+    "email": "luigi.fiorile@gmail.com",
+    "partitaIva": "10521731215",
     "urlPrivacy": "[LINK PRIVACY]",
-    "urlForm": "[URL_SERVIZIO_FORM]"
+    "urlCalendly": "[LINK PUBBLICO CALENDLY]"
   },
 
   "comune": {
@@ -67,40 +68,31 @@
     },
     "comeLavoro": {
       "titolo": "Come lavoro",
-      "intro": "Uno shaper costruisce la tavola da surf su misura per chi la userà: il suo peso, il suo livello, le onde che cavalca. Io lavoro allo stesso modo. L'onda è il tuo lavoro, che ha già la sua energia: io la leggo e costruisco lo strumento giusto per cavalcarla.",
       "passi": [
         { "nome": "Ascoltare", "immagine": "01-ascoltare", "testo": "Parto da una chiacchierata. Mi racconti il tuo lavoro, i tuoi clienti, gli strumenti che usi e cosa ti fa perdere tempo." },
-        { "nome": "Leggere il mare", "immagine": "02-leggere-il-mare", "testo": "Guardo i numeri e i passaggi del tuo lavoro. Capisco dove si perdono tempo e clienti, prima di proporti qualcosa." },
+        { "nome": "Leggere i dati", "immagine": "02-leggere-il-mare", "testo": "Guardo i numeri e i passaggi del tuo lavoro. Capisco dove si perdono tempo e clienti, prima di proporti qualcosa." },
         { "nome": "Costruire", "immagine": "03-costruire", "testo": "Costruisco lo strumento su misura, partendo da quello che usi già. Niente di più complicato del necessario." },
-        { "nome": "Mettere in acqua", "immagine": "04-mettere-in-acqua", "testo": "Provo lo strumento con te sul lavoro di tutti i giorni e ti mostro come usarlo. Lo sistemo finché non funziona come serve." },
-        { "nome": "Seguire nel tempo", "immagine": "05-seguire-nel-tempo", "testo": "Dopo la consegna resto a disposizione. Controllo che tutto funzioni e aggiorno lo strumento quando il tuo lavoro cambia." }
+        { "nome": "Testare", "immagine": "04-mettere-in-acqua", "testo": "Provo lo strumento con te sul lavoro di tutti i giorni e lo sistemo finché non funziona come serve." },
+        { "nome": "Formare", "immagine": "05-seguire-nel-tempo", "testo": "Ti insegno a usare lo strumento e a cambiarlo da solo, finché non diventi indipendente." }
       ]
     },
     "chiSono": {
       "titolo": "Chi sono",
       "paragrafi": [
-        "Mi chiamo Luigi Fiorile e lavoro a Milano, come freelance.",
-        "Ho lavorato nella consulenza, in Accenture, e poi come Chief of Staff in una startup. Oggi costruisco strumenti AI e digitali per liberi professionisti e piccole imprese, e li affianco con consulenza su processi, vendite e marketing.",
-        "Quando posso, sono in acqua: faccio surf e kitesurf. Da lì viene l'idea dello shaper, che costruisce ogni tavola su misura."
+        "Mi chiamo Luigi, e mi piace capire cosa non funziona e lavorarci per migliorarlo.",
+        "Sono partito dalla consulenza, per poi passare a lavorare come indipendente e per startup.",
+        "Con l'AI sono riuscito a identificare i colli di bottiglia del mio lavoro. Sono passato dal burnout e da più di 10 ore di lavoro al giorno a gestire più cose, spendendo meno tempo e con più qualità. Voglio fare lo stesso con chi si affida a me.",
+        "Quando non lavoro sono in natura: surf, kitesurf, trekking e qualsiasi cosa mi permetta di stare in mezzo al blu o al verde."
       ],
       "ritrattoAlt": "Ritratto illustrato di Luigi, in stile fumetto, con capelli ricci, baffi e un auricolare"
     },
     "contatti": {
       "titolo": "Contatti",
-      "intro": "Raccontami in poche righe il tuo lavoro e cosa vorresti cambiare. Ti rispondo io, di persona.",
+      "intro": "Prenota una chiamata nel momento che ti è più comodo. Mi racconti il tuo lavoro e cosa vorresti cambiare, e ti dico se e come posso aiutarti.",
       "bottigliaAlt": "",
-      "campi": {
-        "nome": "Nome",
-        "email": "Email",
-        "messaggio": "Di cosa hai bisogno?",
-        "messaggioAiuto": "Bastano poche righe: che lavoro fai e cosa vorresti migliorare.",
-        "privacyPrima": "Ho letto l'",
-        "privacyLink": "informativa sulla privacy",
-        "privacyDopo": " e accetto che i miei dati siano usati per rispondermi."
-      },
-      "invia": "Invia il messaggio",
-      "nonAttivo": "Il modulo non è ancora attivo. Nel frattempo puoi scrivermi via email.",
-      "oppure": "Oppure scrivimi a"
+      "prenota": "Prenota una chiamata",
+      "prenotaNota": "Si apre Calendly, il servizio che uso per gli appuntamenti.",
+      "oppure": "Preferisci scrivere? La mia email è"
     }
   },
 
@@ -176,20 +168,26 @@
   "servizi": [
     {
       "numero": 1,
-      "id": "crm-e-automazioni",
-      "nome": "CRM e automazioni",
+      "id": "go-to-market-e-automazioni",
+      "nome": "Go to market e automazioni",
       "icona": "01-crm-e-automazioni",
       "interfaccia": "01-crm",
       "interfacciaAlt": "Schema di un CRM con un elenco di contatti e un promemoria",
-      "sottotitolo": "Per chi perde lead tra email, telefono e fogli di calcolo",
-      "frase": "Collego i tuoi strumenti perché ogni lead arrivi nel CRM e riceva una risposta al momento giusto.",
-      "descrizione": "Collego sito, email e moduli a un CRM ordinato, con follow-up automatici. Per liberi professionisti e piccole imprese.",
-      "problema": "I contatti arrivano da posti diversi: il sito, le email, il telefono, i social. Finiscono in un foglio di calcolo o nella memoria di qualcuno. Così qualche lead si perde, e qualcun altro riceve la risposta troppo tardi.",
+      "sottotitolo": "Per chi trova clienti un po' per caso",
+      "frase": "Costruisco il sistema che ti porta i clienti giusti e li segue nel tempo: dal primo contatto alla vendita, fino a quando tornano da te.",
+      "descrizione": "Go to market su misura: liste di potenziali clienti, contatti personalizzati, CRM, follow-up automatici e misura della soddisfazione dei clienti. Per liberi professionisti e piccole imprese.",
+      "problema": "I clienti arrivano dal passaparola o da un contatto fortunato, ma non c'è un metodo per trovarne altri. I lead finiscono tra email e fogli di calcolo, i follow-up dipendono dalla memoria, e dopo la vendita nessuno chiede ai clienti come è andata. Così si perdono vendite a portata di mano, e clienti che potevano tornare.",
       "costruisco": [
-        "Un CRM ordinato, con tutti i lead in un unico posto.",
-        "Automazioni che registrano i contatti in arrivo da sito, email e moduli.",
-        "Promemoria e follow-up che partono da soli.",
-        "Collegamenti tra gli strumenti che usi già."
+        "Un piano di go to market, cioè il modo in cui arrivi ai clienti giusti: a chi ti rivolgi, con quale messaggio e su quali canali.",
+        "Liste di potenziali clienti completate in automatico con le informazioni utili, e primi contatti personalizzati con l'aiuto dell'AI.",
+        "Un CRM ordinato, con tutti i lead in un unico posto e i follow-up che partono da soli.",
+        "Collegamenti tra gli strumenti che usi già, perché i dati passino dall'uno all'altro senza copiarli a mano.",
+        "La misura della soddisfazione dei clienti: brevi questionari dopo l'acquisto, richieste di recensione e un avviso quando un cliente rischia di andarsene."
+      ],
+      "offerta": [
+        "Guardo come trovi e segui i clienti oggi: canali, strumenti, dati e cosa succede dopo la vendita. Alla fine hai un quadro chiaro di dove si perdono le occasioni e una proposta concreta.",
+        "Costruisco il sistema: liste di contatti, messaggi, CRM, automazioni e questionari di soddisfazione. Lo provo con te sul lavoro di tutti i giorni e ti mostro come usarlo.",
+        "Seguo il sistema nel tempo: controllo che i dati siano in ordine, aggiorno messaggi e automazioni e leggo con te i risultati e i commenti dei clienti."
       ],
       "demo": {
         "id": "crm-follow-up",
@@ -356,39 +354,52 @@
       "icona": "05-marketing",
       "interfaccia": "05-marketing",
       "interfacciaAlt": "Schema di un imbuto di vendita diviso in tre fasce",
-      "sottotitolo": "Per chi non sa dove perde i clienti",
-      "frase": "Analizzo il percorso dei tuoi clienti, dal primo contatto all'acquisto, e ti mostro dove si fermano.",
-      "descrizione": "Analisi del percorso dei clienti, dal primo contatto all'acquisto, per capire dove si perdono. Per liberi professionisti e piccole imprese.",
-      "problema": "Fai pubblicità, pubblichi sui social, mandi newsletter. Arrivano visite, ma poche diventano clienti, e non è chiaro in quale passaggio le persone si perdono.",
+      "sottotitolo": "Per chi fa pubblicità e non sa cosa porta clienti",
+      "frase": "Ti mostro dove si perdono i clienti, dal primo annuncio alla richiesta di contatto, e preparo uno strumento che ogni mese lo controlla per te.",
+      "descrizione": "Analisi del funnel, campagne Google Ads e Meta Ads e un report mensile che incrocia Google Analytics, Google e Meta. Per liberi professionisti e piccole imprese.",
+      "problema": "Fai pubblicità su Google e su Meta, il sito riceve visite, ma i clienti sono pochi. Ogni piattaforma mostra i suoi numeri, e non coincidono mai. Così è difficile capire cosa funziona, in quale passaggio le persone si fermano e dove conviene spendere il prossimo euro.",
       "costruisco": [
-        "Una mappa del percorso dei tuoi clienti, dal primo contatto all'acquisto.",
-        "I numeri di ogni passaggio, in un'unica vista.",
-        "I punti in cui si perdono più persone, con cosa cambiare.",
-        "Un controllo periodico per vedere se le modifiche funzionano."
+        "Una mappa del percorso dei tuoi clienti (il funnel), dal primo contatto alla richiesta, con i numeri di ogni passaggio.",
+        "Il tracciamento sistemato su sito, Google Analytics 4 e Meta, perché i numeri siano affidabili.",
+        "Campagne Google Ads e Meta Ads: lavoro su quelle che hai già o le creo da zero, e ti insegno a gestirle in autonomia.",
+        "Uno strumento basato sull'AI (un agente) che ogni mese legge i dati di Google Analytics, Google Ads e Meta, li incrocia e ti dice dove si perdono i clienti e cosa provare a cambiare."
+      ],
+      "offerta": [
+        "Guardo le tue campagne, il sito e i dati che hai già. Ti dico dove si perdono i clienti e se i numeri sono affidabili. Alla fine hai un quadro chiaro e una proposta concreta.",
+        "Costruisco il funnel e sistemo il tracciamento. Lavoro sulle tue campagne Google e Meta, o le creo da zero, e ti mostro come gestirle. Poi preparo l'agente che farà l'analisi ogni mese.",
+        "Ogni mese l'agente prepara il report e io lo rivedo prima che arrivi a te. Se serve, ti aiuto a correggere le campagne. L'obiettivo è darti autonomia, non legarti a me."
       ],
       "demo": {
         "id": "marketing-funnel",
-        "nome": "Dove si perdono i clienti",
-        "descrizione": "Il percorso dei clienti diviso in passaggi, con quante persone si fermano a ogni passaggio.",
+        "nome": "Report mensile del funnel",
+        "descrizione": "Un esempio del report che l'agente prepara ogni mese: i numeri di Google Analytics, Google Ads e Meta messi in fila, con i punti in cui si perdono i clienti.",
         "passi": [
-          "Raccolgo i numeri da sito, social e CRM.",
-          "Li metto in fila, passaggio per passaggio.",
-          "Segno dove si perdono più persone e cosa provare a cambiare."
+          "All'inizio del mese l'agente legge i dati di Google Analytics 4, Google Ads e Meta Ads.",
+          "Li mette in fila, passaggio per passaggio, e li confronta con il mese prima.",
+          "Scrive un report con i punti in cui si perdono più persone e cosa provare. Lo rivedo io prima che arrivi a te."
         ],
         "numeri": [
-          { "etichetta": "Visite al sito in un mese", "valore": "2.000" },
-          { "etichetta": "Richieste di contatto", "valore": "80" },
-          { "etichetta": "Nuovi clienti", "valore": "12" }
+          { "etichetta": "Spesa pubblicitaria del mese", "valore": "1.200 €" },
+          { "etichetta": "Richieste di contatto", "valore": "64" },
+          { "etichetta": "Costo per richiesta", "valore": "18,75 €" }
         ],
         "tabella": {
-          "didascalia": "Il percorso in un mese (dati di esempio)",
-          "colonne": ["Passaggio", "Persone", "Proseguono", "Si fermano qui"],
+          "didascalia": "Il funnel di ottobre confrontato con settembre (dati di esempio)",
+          "colonne": ["Passaggio", "Ottobre", "Settembre", "Variazione"],
           "righe": [
-            ["Visitano il sito", "2.000", "15%", "1.700"],
-            ["Guardano i servizi", "300", "27%", "220"],
-            ["Chiedono un contatto", "80", "40%", "48"],
-            ["Ricevono un preventivo", "32", "38%", "20"],
-            ["Diventano clienti", "12", "—", "—"]
+            ["Persone raggiunte dagli annunci", "48.000", "52.000", "−8%"],
+            ["Clic sugli annunci", "1.150", "1.090", "+6%"],
+            ["Visite alla pagina dei servizi", "820", "790", "+4%"],
+            ["Richieste di contatto", "64", "71", "−10%"],
+            ["Nuovi clienti", "9", "9", "0%"]
+          ]
+        },
+        "osservazioni": {
+          "titolo": "Cosa dice il report",
+          "voci": [
+            "Gli annunci portano più clic di settembre, ma le richieste calano del 10%. Il punto debole è la pagina dei servizi, non gli annunci.",
+            "Da telefono arriva il 70% delle visite, ma solo il 40% delle richieste. Da provare: un modulo più corto e il pulsante di contatto in alto. Il mese prossimo guardo le richieste da telefono.",
+            "Google e Meta contano insieme 81 conversioni, Google Analytics 64. È normale: ogni piattaforma conta a modo suo. Per le decisioni uso il numero di Google Analytics."
           ]
         }
       }

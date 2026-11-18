@@ -16,12 +16,12 @@ Si lavora in italiano.
 - Luigi Fiorile, freelance con sede a Milano. Costruisce strumenti AI e digitali su misura per il business del cliente, più consulenza su processi, vendite e marketing.
 - Background: consulenza (Accenture) e Chief of Staff in una startup.
 - Clienti: liberi professionisti e PMI italiane, comprese micro imprese e startup. Persone pratiche, spesso non tecniche, con poco tempo. Devono capire in pochi secondi cosa faccio e come posso aiutarle.
-- Metafora del brand: lo shaper, l'artigiano che costruisce la tavola su misura. L'onda è il business del cliente: io la leggo e costruisco lo strumento per cavalcarla.
+- Brand personale: "Luigi Fiorile" (deciso il 18/11/2026). Niente racconto legato al surf o allo shaper nei testi (tolto il 18/11/2026): onde, tavola e illustrazioni restano solo come elementi visivi. Il surf compare solo tra le passioni in "Chi sono".
 - Personalità: umana, calma, concreta. Il protagonista è il cliente. Una persona, non un'agenzia.
 
 ## Servizi (nomi da LEGGIMI.md)
 
-1. CRM e automazioni
+1. Go to market e automazioni (prima "CRM e automazioni", rinominato il 17/11/2026)
 2. Gestionale interno
 3. Vendite e assistenza clienti
 4. Siti web e visibilità
@@ -36,9 +36,9 @@ Demo (cartelle `demo/<nome>/`): `crm-follow-up`, `gestionale-report`, `vendite-w
 Home (pagina lunga):
 1. Apertura: la testa che si apre (GSAP ScrollTrigger, pin e scrub).
 2. Percorso tra i cinque servizi (struttura Shopify Editions Winter '26, non lo stile).
-3. Come lavoro: ascoltare, leggere il mare, costruire, mettere in acqua, seguire nel tempo.
+3. Come lavoro: ascoltare, leggere i dati, costruire, testare, formare (finché il cliente non diventa indipendente). Nessuna introduzione, solo i cinque passi con le illustrazioni di `brand/metodo/`.
 4. Chi sono: breve, con la testa e la tavola in piedi.
-5. Contatti: messaggio in bottiglia e form semplice.
+5. Contatti: messaggio in bottiglia, pulsante per prenotare una chiamata su Calendly ed email.
 
 Altre pagine: cinque pagine servizio, cinque pagine demo, Guida AI (pagina pilastro + articoli), privacy, 404.
 
@@ -50,7 +50,7 @@ Pagina demo (modello unico): demo statica con dati di esempio, dichiarati come t
 
 ## Architettura
 
-- `contenuti/it.json`: tutti i testi. In `sito` ci sono i valori da cambiare in un punto solo: `brand` (nome), `scrittaGigante`, `fumetto`, `urlBase` (indirizzo pubblico, usato solo per canonical, sitemap e anteprima social). L'inglese sarà `contenuti/en.json` con le stesse chiavi.
+- `contenuti/it.json`: tutti i testi. In `sito` ci sono i valori da cambiare in un punto solo: `brand` (nome), `scrittaGigante`, `fumetto`, `urlBase` (indirizzo pubblico, usato solo per canonical, sitemap e anteprima social), `indicizzabile` (blocco dei motori di ricerca). L'inglese sarà `contenuti/en.json` con le stesse chiavi.
 - `modelli/*.mjs`: modelli delle pagine come funzioni JS che ricevono i testi e restituiscono HTML. Nessun testo scritto nei modelli.
 - `script/costruisci.mjs`: script Node senza dipendenze. Genera il sito in `_sito/` (ignorata da git): pagine, `sitemap.xml`, `robots.txt`, copia di `assets/`, di `brand/tokens.css` e degli SVG.
 - `script/anteprima.mjs`: server locale che serve `_sito/` sotto `/freelance/`, come su GitHub Pages.
@@ -77,7 +77,7 @@ Comandi:
 - Disegni: contorno nero spesso, ombre a retino. Niente foto, niente sfumature. Il retino di `tokens.css` (`.retino`) è un motivo a puntini, non una sfumatura: si può usare.
 - Solo gli SVG del repository. Non ridisegnarli: si possono inserire inline e aggiungere id o gruppi per animarli, senza cambiare le forme. Se manca un elemento visivo, chiederlo.
 - Le schede interfaccia non contengono testo (valgono per italiano e inglese).
-- Loghi di Claude, n8n e HubSpot: restano segnaposto (`brand/oggetti/segnaposto-logo.svg`) finché Luigi non li scarica dai kit stampa ufficiali.
+- Loghi di Claude, n8n e HubSpot: tolti dall'apertura. `brand/oggetti/segnaposto-logo.svg` resta nel repository ma non è usato.
 - Dai siti di riferimento (huyml.co/about, Shopify Editions Winter '26) si prende solo la struttura. Mai codice, immagini, font o testi.
 - I layout devono reggere testi più lunghi o più corti del 30%.
 
@@ -95,7 +95,7 @@ Comandi:
 - Sito statico HTML, CSS, JS. Niente framework pesanti. Pubblicato su GitHub Pages in sottocartella (`luigifiorile.github.io/freelance/`): solo percorsi relativi per pagine, stili, script e immagini. Gli URL assoluti servono solo dove li richiede lo standard (canonical, sitemap, anteprima social) e partono da un'unica variabile.
 - Font ospitati nel repository, non collegati a Google Fonts.
 - Una sola libreria esterna: GSAP con ScrollTrigger, copiata nel repository. Altre librerie solo dopo aver chiesto.
-- Form contatti: nessuna funzione lato server, servizio esterno con segnaposto. Nessuna chiave o credenziale nel repository.
+- Contatti: link pubblico a Calendly (`sito.urlCalendly`), senza script né form sul sito. Nessuna chiave o credenziale nel repository.
 - Nessun tracciamento, nessun cookie, nessuno script di terze parti senza chiedere.
 - "Riduci animazioni": nessun blocco dello scroll, stato aperto subito.
 - Accessibilità WCAG AA, tutto navigabile da tastiera, testo alternativo per le illustrazioni che portano significato (le decorative hanno `alt=""` o `aria-hidden`).
@@ -120,9 +120,13 @@ Comandi:
 - Dalla testa escono oggetti, non il mare (il brief diceva il contrario: vale questa decisione). Le onde restano un elemento del brand: linee, divisori di sezione, mare a fasce.
 - Testa: fumetto in bianco e nero, contorno spesso, ombre a retino, vista di tre quarti, solo testa senza collo, AirPod nell'orecchio. Forma approvata, non va modificata.
 - L'espressione cambia mentre la testa si apre: calma (`testa-chiusa.svg`), sorpresa (`testa-a-meta.svg`), felice (`testa-aperta.svg`: occhi a scintilla e sorriso largo).
-- Oggetti che escono: tavola da surf, kite, portatile, fumetto di chat, grafico, imbuto, ingranaggio, più i loghi di Claude, n8n e HubSpot (segnaposto).
+- Oggetti che escono: tavola da surf, kite, portatile, fumetto di chat, grafico, imbuto, ingranaggio. I loghi di Claude, n8n e HubSpot sono stati tolti (decisione del 17/11/2026).
 - Animazione di apertura come in LEGGIMI.md: pin per circa tre schermate; 0–30% il fumetto sparisce e la testa passa a "a metà"; 30–80% la testa scende ed esce dal basso, la calotta sale in alto, gli oggetti escono uno alla volta ruotando; 80–100% compare a sinistra l'elenco dei servizi. Testa aperta e calotta sono due livelli separati, cambia solo l'espressione.
-- Scritta gigante ("LUIGI"), nome del brand ("Luigi Fiorile") e frase nel fumetto sono segnaposto, tenuti in un'unica variabile ciascuno.
+- Scritta gigante: nessuna (18/11/2026; prima "LUIGI", poi "GTM" in prova). `sito.scrittaGigante` è vuoto e l'elemento non viene generato.
+- Frase nel fumetto: "Scorri per scoprire cosa ho in testa" (18/11/2026).
+- Email pubblica: luigi.fiorile@gmail.com (18/11/2026). Prima di pubblicare su un dominio proprio si valuta un indirizzo sul dominio.
+- Contatti con Calendly al posto del form (18/11/2026): niente dati raccolti dal sito. Serve il link pubblico di prenotazione (`calendly.com/<nome>/<evento>`), non quello dell'area di amministrazione.
+- "Chi sono" con il testo di Luigi del 18/11/2026 (solo piccole correzioni di grammatica).
 - Percorso tra i servizi: struttura di Shopify Editions Winter '26, non lo stile. Elenco fisso a sinistra con numero e riga di puntini (attiva in nero, le altre in grigio); tappe con numero gigante in `--schiuma` e titolo grande; sottotitolo in grassetto, frase grande, link a pillola con freccia esterna; scheda interfaccia ruotata di 3 gradi; scheda demo numerata ("1 / crm-follow-up"); a fine tappa linea d'onda e "Torna alla navigazione" con freccia su; il divisore d'onda della tappa successiva sale e copre la precedente.
 - Font: Bricolage Grotesque per titoli e scritte giganti, Inter per i testi.
 - In design sono stati fatti solo gli elementi visivi: le pagine si compongono in codice.
@@ -134,6 +138,13 @@ Comandi:
 - La sezione "Lavori e demo" del brief non si fa ora: è un promemoria per quando il progetto sarà finito.
 - Privacy: alla fine si userà un servizio come iubenda (è uno script di terze parti, già approvato per quel momento). Fino ad allora link segnaposto. Partita IVA nel piè di pagina come segnaposto.
 - Anteprima social: un PNG 1200×630 generato una volta componendo SVG esistenti e testo (tappa g).
+- Servizio Marketing (17/11/2026), dai metodi del master (skill `competenze-marketing-luigi`): analisi del funnel, tracciamento (GA4, Meta), campagne Google Ads e Meta Ads, e un unico agente AI che ogni mese incrocia GA4, Google Ads e Meta e produce un report rivisto da Luigi. Sulle campagne: si lavora su quelle esistenti o si creano da zero, con l'obiettivo di dare autonomia al cliente (non gestione continua). Grafica e social esclusi. I tre livelli: diagnosi = analisi; progetto = funnel + tracciamento + campagne + agente; manutenzione = report mensile rivisto. La demo `marketing-funnel` è un esempio di report mensile.
+- Servizio 1 rinominato "Go to market e automazioni" (17/11/2026), indirizzo `servizi/go-to-market-e-automazioni/`. Contenuti ispirati al ruolo di GTM engineer: piano di go to market, liste di potenziali clienti arricchite in automatico, primi contatti personalizzati con l'AI, CRM e follow-up, collegamenti tra strumenti, misura della soddisfazione dei clienti (questionari, recensioni, avviso di abbandono). Divisione con il servizio 3: la soddisfazione si misura nel servizio 1, le risposte ai clienti (WhatsApp, assistenza) restano nel servizio 3. La demo resta `crm-follow-up`.
+- Il posizionamento generale di Luigi non va costruito attorno al GTM: la comunicazione complessiva verrà definita a parte. Go to market è uno dei cinque servizi.
+- SEO e GEO restano nel servizio "Siti web e visibilità", non in Marketing.
+- Modelli unici con campi facoltativi: `servizi[].offerta` (testi propri dei tre livelli, nomi invariati) e `servizi[].demo.osservazioni` (elenco di letture dei dati nella demo).
+- Finché ci sono segnaposto il sito non si fa indicizzare: `sito.indicizzabile` è `false` e tutte le pagine hanno `<meta name="robots" content="noindex">`. Al lancio va messo a `true`.
+- Il sito è pubblicato su GitHub Pages da un repository pubblico (Pages su repository privati richiede un piano a pagamento).
 - Guida AI (novembre 2026): pilastro + articoli satellite in `guida-ai/`, voce "Guida AI" nel menu. Ogni numero ha fonte primaria linkata (paper, Istat, Eurostat, documentazione di OpenAI, Anthropic, Google). Niente fonti come aggregatori di tool. Voce di Luigi in prima persona, ma episodi personali solo da lui (segnaposto `[[ESEMPIO DI LUIGI: ...]]`). Ogni articolo rimanda a un servizio.
 - Su mobile i titoli con misura fissa nei token (`--titolo-1`, `--titolo-2`, `--apertura`) si riducono con `clamp()`; su desktop restano identici ai token.
 ## Come è fatta l'apertura
@@ -141,9 +152,9 @@ Comandi:
 - Gli SVG della testa condividono lo stesso sistema di coordinate. In `assets/css/home.css` il riquadro `.testa` corrisponde a `testa-chiusa.svg` (400 × 470 unità) e ogni livello è posizionato in percentuale. Livelli: testa chiusa, testa a metà, e il gruppo testa aperta + calotta.
 - Calma → sorpresa: dissolvenza da `testa-chiusa.svg` a `testa-a-meta.svg`. Sorpresa → felice: dissolvenza verso `testa-aperta.svg` + `calotta.svg`, con la calotta nella stessa posa di "a metà"; poi la calotta sale e la testa scende in modo continuo.
 - `calotta.svg` è inserita nella pagina con `overflow: visible`: il suo riquadro taglia la cima dei capelli, le forme non cambiano.
-- Gli oggetti finiscono nella disposizione di `oggetti-insieme.svg` (posizioni in `modelli/home.mjs`). I tre loghi sono `segnaposto-logo.svg` con il nome scritto sopra.
+- Gli oggetti finiscono nella disposizione di `oggetti-insieme.svg` (posizioni in `modelli/home.mjs`), senza i tre loghi: il riquadro di riferimento è ristretto a 520 × 500 unità.
 - Su mobile la calotta esce dall'alto invece di fermarsi, per non coprire il testo.
-- La scritta gigante si riduce da sola se non entra nella larghezza (su mobile resta intera).
+- La scritta gigante, se c'è, si riduce da sola se non entra nella larghezza (su mobile resta intera). Se è vuota non viene generata.
 - Senza JS: testa chiusa ferma, con fumetto ed elenco. Con "riduci animazioni": stato finale subito, senza pin.
 
 ## Decisioni aperte
@@ -151,11 +162,9 @@ Comandi:
 - Dominio definitivo (cambiare solo `sito.urlBase`; `llms.txt` e `robots.txt` alla radice diventano utili).
 - Link ai profili LinkedIn e Substack (`sito.profili`).
 
-- Nome definitivo del brand.
-- Scritta gigante dietro la testa.
-- Frase nel fumetto e testi definitivi delle sezioni.
-- Loghi ufficiali di Claude, n8n e HubSpot.
-- Servizio esterno per il form (Formspree, Tally o link a un calendario).
+- Testi definitivi delle sezioni.
+- Link pubblico di Calendly.
+- Email su dominio proprio, da valutare prima di pubblicare su un dominio.
 - Servizio per privacy e cookie (es. iubenda), da fare alla fine.
 
 ## Promemoria per progetto finito

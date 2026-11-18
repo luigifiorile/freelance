@@ -2,31 +2,30 @@
 import { esc, link, segnaposto, svg } from "./aiuti.mjs";
 import { struttura, datiPersona, datiServizioProfessionale } from "./struttura.mjs";
 
-// Disposizione finale degli oggetti, presa da brand/oggetti/oggetti-insieme.svg
-// (riquadro di riferimento 680 × 500). Non è testo: vale per tutte le lingue.
+// Disposizione finale degli oggetti, presa da brand/oggetti/oggetti-insieme.svg.
+// I tre loghi (Claude, n8n, HubSpot) sono stati tolti: senza di loro gli oggetti
+// occupano solo la parte sinistra del disegno, quindi il riquadro di riferimento
+// è ristretto a 520 × 500 unità. Non è testo: vale per tutte le lingue.
 const OGGETTI = [
   { file: "tavola-da-surf", x: 110, y: 110, r: -30, s: 1 },
   { file: "portatile", x: 330, y: 90, r: 14, s: 1 },
-  { file: "segnaposto-logo", logo: "Claude", x: 520, y: 120, r: -10, s: 0.95 },
   { file: "fumetto-chat", x: 230, y: 250, r: -8, s: 1 },
   { file: "grafico", x: 80, y: 300, r: 12, s: 0.95 },
   { file: "imbuto", x: 420, y: 250, r: -14, s: 1 },
-  { file: "segnaposto-logo", logo: "n8n", x: 590, y: 290, r: 10, s: 0.95 },
   { file: "ingranaggio", x: 180, y: 400, r: 20, s: 0.8 },
   { file: "kite", x: 330, y: 410, r: -22, s: 0.9 },
-  { file: "segnaposto-logo", logo: "HubSpot", x: 500, y: 420, r: -6, s: 0.95 },
 ];
 
 const due = (n) => String(n).padStart(2, "0");
 
+const LARGHEZZA = 520;
+const ALTEZZA = 500;
+
 function oggetto(o) {
-  // Gli oggetti misurano 180 × 200 unità, i loghi 120 × 120.
-  const larghezza = ((o.logo ? 120 : 180) * o.s * 100) / 680;
-  const stile = `left:${((o.x * 100) / 680).toFixed(3)}%;top:${((o.y * 100) / 500).toFixed(3)}%;width:${larghezza.toFixed(3)}%;--r:${o.r}deg`;
-  const contenuto = o.logo
-    ? `<img src="brand/oggetti/segnaposto-logo.svg" alt="" width="120" height="120"><span class="oggetto__logo">Logo<br>${esc(o.logo)}</span>`
-    : `<img src="brand/oggetti/${o.file}.svg" alt="" width="180" height="200">`;
-  return `<div class="oggetto${o.logo ? " oggetto--logo" : ""}" style="${stile}"><div class="oggetto__forma">${contenuto}</div></div>`;
+  // Ogni oggetto misura 180 × 200 unità.
+  const larghezza = (180 * o.s * 100) / LARGHEZZA;
+  const stile = `left:${((o.x * 100) / LARGHEZZA).toFixed(3)}%;top:${((o.y * 100) / ALTEZZA).toFixed(3)}%;width:${larghezza.toFixed(3)}%;--r:${o.r}deg`;
+  return `<div class="oggetto" style="${stile}"><div class="oggetto__forma"><img src="brand/oggetti/${o.file}.svg" alt="" width="180" height="200"></div></div>`;
 }
 
 function apertura(t) {
@@ -39,7 +38,7 @@ function apertura(t) {
   return `
 <section class="apertura" id="apertura" aria-labelledby="apertura-titolo">
   <div class="apertura__scena">
-    <p class="scritta-gigante apertura__scritta" aria-hidden="true">${esc(t.sito.scrittaGigante)}</p>
+    ${t.sito.scrittaGigante ? `<p class="scritta-gigante apertura__scritta" aria-hidden="true">${esc(t.sito.scrittaGigante)}</p>` : ""}
     <h1 class="apertura__titolo testo-apertura" id="apertura-titolo">${esc(a.titolo)}</h1>
     <div class="apertura__palco">
       <div class="apertura__campo" aria-hidden="true">
@@ -139,7 +138,7 @@ function comeLavoro(t) {
   ${svg("onde/divisore", "sezione__onda")}
   <div class="contenitore">
     <h2 class="titolo-1" id="come-lavoro-titolo">${esc(c.titolo)}</h2>
-    <p class="testo-grande come-lavoro__intro">${esc(c.intro)}</p>
+    ${c.intro ? `<p class="testo-grande come-lavoro__intro">${esc(c.intro)}</p>` : ""}
     <ol class="passi">${passi}</ol>
   </div>
 </section>`;
@@ -164,9 +163,11 @@ function chiSono(t) {
 
 function contatti(t) {
   const c = t.home.contatti;
-  const f = c.campi;
-  const attivo = !segnaposto(t.sito.urlForm);
-  const azione = attivo ? ` action="${esc(t.sito.urlForm)}" method="post"` : ` data-non-attivo`;
+  // Contatti tramite Calendly: un link al servizio esterno, nessuno script
+  // e nessun form sul sito. Finché il link è un segnaposto, non è cliccabile.
+  const prenota = segnaposto(t.sito.urlCalendly)
+    ? `<span class="pillola pillola--mare segnaposto" data-segnaposto="${esc(t.sito.urlCalendly)}">${esc(c.prenota)}</span>`
+    : `<a class="pillola pillola--mare" href="${esc(t.sito.urlCalendly)}" target="_blank" rel="noopener">${esc(c.prenota)} ${svg("icone-ui/freccia-esterna", "icona")}<span class="nascosto"> (si apre in una nuova scheda)</span></a>`;
   const email = segnaposto(t.sito.email)
     ? `<span class="segnaposto">${esc(t.sito.email)}</span>`
     : `<a href="mailto:${esc(t.sito.email)}">${esc(t.sito.email)}</a>`;
@@ -178,28 +179,11 @@ function contatti(t) {
       <p class="testo-grande">${esc(c.intro)}</p>
       <img class="contatti__bottiglia" src="brand/illustrazioni/messaggio-in-bottiglia.svg" alt="" width="400" height="300" loading="lazy">
     </div>
-    <form class="modulo"${azione}>
-      <div class="modulo__campo">
-        <label for="campo-nome">${esc(f.nome)}</label>
-        <input id="campo-nome" name="nome" type="text" autocomplete="name" required>
-      </div>
-      <div class="modulo__campo">
-        <label for="campo-email">${esc(f.email)}</label>
-        <input id="campo-email" name="email" type="email" autocomplete="email" required>
-      </div>
-      <div class="modulo__campo">
-        <label for="campo-messaggio">${esc(f.messaggio)}</label>
-        <p class="modulo__aiuto" id="aiuto-messaggio">${esc(f.messaggioAiuto)}</p>
-        <textarea id="campo-messaggio" name="messaggio" rows="5" aria-describedby="aiuto-messaggio" required></textarea>
-      </div>
-      <div class="modulo__scelta">
-        <input id="campo-privacy" name="privacy" type="checkbox" required>
-        <label for="campo-privacy">${esc(f.privacyPrima)}${link(t.sito.urlPrivacy, f.privacyLink)}${esc(f.privacyDopo)}</label>
-      </div>
-      <button class="pillola pillola--mare" type="submit">${esc(c.invia)}</button>
-      <p class="modulo__stato" role="status" data-messaggio-non-attivo="${esc(c.nonAttivo)}"></p>
-      <p class="modulo__alternativa">${esc(c.oppure)} ${email}</p>
-    </form>
+    <div class="prenota">
+      <p class="prenota__azione">${prenota}</p>
+      <p class="prenota__nota">${esc(c.prenotaNota)}</p>
+      <p class="prenota__email">${esc(c.oppure)} ${email}</p>
+    </div>
   </div>
 </section>`;
 }
@@ -217,7 +201,7 @@ ${contatti(t)}`;
     inHome: true,
     classe: "pagina-home",
     stili: ["assets/css/home.css"],
-    script: ["assets/vendor/gsap.min.js", "assets/vendor/ScrollTrigger.min.js", "assets/js/apertura.js", "assets/js/percorso.js", "assets/js/modulo.js"],
+    script: ["assets/vendor/gsap.min.js", "assets/vendor/ScrollTrigger.min.js", "assets/js/apertura.js", "assets/js/percorso.js"],
     dati: [datiPersona(t), datiServizioProfessionale(t)],
     corpo,
   });
