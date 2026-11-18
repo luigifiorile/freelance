@@ -187,12 +187,25 @@
 }
 
 /* Elenco fisso a sinistra */
-.percorso__nav {
+.percorso__lato {
   position: sticky;
   top: calc(var(--altezza-testata) + 24px);
   align-self: start;
   z-index: 20;
+  display: grid;
+  gap: 40px;
 }
+.percorso__nav { position: relative; }
+/* Sotto l'elenco, un invito a prenotare: riempie la colonna mentre si scorre */
+.percorso__invito {
+  display: grid;
+  gap: 16px;
+  justify-items: start;
+  padding-top: 24px;
+  border-top: var(--tratto) solid var(--inchiostro);
+}
+.percorso__invito p { font: 600 19px/1.35 var(--font-testi); }
+.percorso__invito .pillola { white-space: nowrap; padding: 0 18px; gap: 8px; }
 .percorso__nav:focus { outline: none; }
 .percorso__nav ol { list-style: none; margin: 0; padding: 0; }
 .percorso__nav a {
@@ -239,17 +252,22 @@
 .tappa__onda-linea { color: var(--inchiostro); bottom: -1px !important; }
 .tappa:first-child .tappa__onda { display: none; }
 
-.tappa__testa { position: relative; }
+.tappa__testa {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(12px, 2vw, 28px);
+}
 .tappa__numero {
+  flex: none;
   font: var(--titolo-gigante);
-  font-size: clamp(140px, 22vw, 320px);
-  line-height: 0.8;
+  font-size: clamp(120px, 12vw, 200px);
+  line-height: 0.78;
   color: var(--schiuma);
   user-select: none;
 }
 .tappa__titolo {
   position: relative;
-  margin-top: -0.6em;
   max-width: 16ch;
 }
 
@@ -298,7 +316,10 @@
 /* Mobile: l'elenco diventa una riga di voci in alto che scorre in orizzontale */
 @media (max-width: 767px) {
   .percorso__griglia { display: block; padding-inline: 0; }
+  .percorso__lato { display: contents; }
+  .percorso__invito { display: none; }
   .percorso__nav {
+    position: sticky;
     top: var(--altezza-testata);
     background: var(--carta);
     border-bottom: 1px solid var(--linea);
@@ -317,7 +338,9 @@
   .percorso__nav a { padding: 0 10px; white-space: nowrap; align-items: center; }
   .percorso__puntini { display: none; }
   .percorso__tappe { padding-inline: var(--margine); }
-  .tappa__titolo { margin-top: -0.5em; }
+  .tappa__testa { display: block; }
+  .tappa__numero { font-size: clamp(110px, 32vw, 160px); }
+  .tappa__titolo { margin-top: -0.45em; }
   .tappa__visivo .scheda-demo { margin: -20px 0 0 12px; }
 }
 
