@@ -159,6 +159,7 @@ Comandi:
 - `calotta.svg` è inserita nella pagina con `overflow: visible`: il suo riquadro taglia la cima dei capelli, le forme non cambiano.
 - Gli oggetti finiscono nella disposizione di `oggetti-insieme.svg` (posizioni in `modelli/home.mjs`), senza i tre loghi: il riquadro di riferimento è ristretto a 520 × 500 unità.
 - Su mobile la calotta esce dall'alto invece di fermarsi, per non coprire il testo.
+- Su mobile la testa si dimensiona sullo spazio che resta sotto la frase (il palco ha `container-type: size`, larghezza in unità `cqh`), così il fumetto non sale mai sopra il testo anche quando le barre del browser riducono lo schermo. Altezza minima dell'apertura su mobile: 460 px. Provato su iPhone SE, 13, 14 Pro Max e Pixel 7 (18/11/2026).
 - La scritta gigante, se c'è, si riduce da sola se non entra nella larghezza (su mobile resta intera). Se è vuota non viene generata.
 - Senza JS: testa chiusa ferma, con fumetto ed elenco. Con "riduci animazioni": stato finale subito, senza pin.
 

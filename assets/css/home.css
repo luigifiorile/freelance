@@ -144,7 +144,7 @@
   .apertura__scena {
     display: flex;
     flex-direction: column;
-    min-height: 600px;
+    min-height: 460px;
   }
   .apertura__titolo {
     position: relative;
@@ -152,19 +152,21 @@
     left: auto;
     right: auto;
     padding: 12px var(--margine) 0;
-    font: 800 clamp(30px, 10.5vw, 46px)/0.95 var(--font-titoli);
+    font: 800 clamp(28px, 8.8vw, 40px)/0.95 var(--font-titoli);
   }
-  .apertura__palco { position: relative; flex: 1; }
+  /* Il palco è lo spazio che resta sotto la frase: la testa si dimensiona su quello
+     (unità cqh), così fumetto e testa non salgono mai sopra il testo. */
+  .apertura__palco { position: relative; flex: 1; container-type: size; }
   .apertura__scritta { top: 18%; }
   .apertura__personaggio {
     left: 0;
     right: 0;
     margin-inline: auto;
-    width: min(56vw, 260px, calc((100svh - var(--altezza-testata)) * 0.34));
+    width: min(56vw, 260px, calc(100cqh * 0.8 - 96px));
     bottom: 4%;
   }
   .apertura__fumetto { font-size: 17px; padding: 14px 18px; }
-  .apertura__campo { left: calc(var(--margine) + 12px); right: calc(var(--margine) + 28px); top: 2%; bottom: 252px; }
+  .apertura__campo { left: calc(var(--margine) + 12px); right: calc(var(--margine) + 28px); top: 2%; bottom: 190px; }
   .apertura__servizi { left: var(--margine); right: var(--margine); bottom: 8px; }
   .apertura__servizi a { font-size: 16px; }
 }
