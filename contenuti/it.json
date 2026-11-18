@@ -113,14 +113,11 @@
     "continuaTitolo": "Continua a leggere",
     "tornaPilastro": "Torna alla guida completa",
     "autoreEtichetta": "Chi scrive",
-    "autoreBackground": "[BACKGROUND PROFESSIONALE DA DEFINIRE]",
-    "autoreBio": "Freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese. Uso l'AI ogni giorno e ne scrivo da utilizzatore.",
+    "autoreBackground": "",
+    "autoreBio": "Luigi, appassionato da sempre di innovazione. Come tutti sento la parola AI troppe volte al giorno, e da un po' di tempo mi sono messo sotto a capirla e a prendere appunti per me stesso. Proprio da questi appunti ho cercato di costruire una sorta di \"AI for dummies\", qualcosa che mi avrebbe fatto comodo avere quando il dummies ero io.",
     "inviti": [
-      { "titolo": "Piaciuta questa guida?", "testo": "Ci hai capito effettivamente qualcosa? Se l'argomento ti incuriosisce, o hai bisogno di capire dove e come far entrare l'AI nel tuo lavoro, scrivimi.", "pulsante": "Scrivimi" },
-      { "titolo": "Arrivato fin qui? Allora parliamone.", "testo": "Se mentre leggevi ti è venuto in mente un pezzo del tuo lavoro che l'AI potrebbe alleggerire, raccontamelo. Ti dico se ha senso, e se non ce l'ha te lo dico lo stesso.", "pulsante": "Raccontamelo" },
-      { "titolo": "Ti è rimasto un dubbio?", "testo": "Capita, l'argomento è grosso. Scrivimi la domanda, oppure raccontami cosa fai: vediamo dove l'AI può darti una mano e dove è meglio lasciarla stare.", "pulsante": "Scrivimi" },
-      { "titolo": "Troppa teoria?", "testo": "Se preferisci vedere come funziona sul tuo lavoro, con i tuoi file e i tuoi clienti, scrivimi. Si parte da una chiacchierata.", "pulsante": "Scrivimi" },
-      { "titolo": "E adesso?", "testo": "Se hai voglia di provarci ma non sai da dove cominciare, scrivimi. Mi racconti come lavori e ti dico da dove partirei io.", "pulsante": "Scrivimi" }
+      { "titolo": "Ti è rimasto un dubbio?", "testo": "Se qualcosa non è chiaro, o pensi che abbia scritto una cosa sbagliata, scrivimi. Correggo volentieri: la guida si aggiorna anche così.", "pulsante": "Scrivimi" },
+      { "titolo": "Hai trovato un errore?", "testo": "L'AI cambia in fretta e qualche pagina invecchia prima di quanto vorrei. Se vedi un dato superato o una fonte che non regge, segnalamelo.", "pulsante": "Segnalamelo" }
     ],
     "llmsIntro": "Guida in italiano all'uso dell'intelligenza artificiale per liberi professionisti e piccole imprese, scritta da Luigi Fiorile. Ogni articolo cita le fonti originali: paper, documentazione ufficiale dei produttori, dati Istat ed Eurostat.",
     "capitoli": [
