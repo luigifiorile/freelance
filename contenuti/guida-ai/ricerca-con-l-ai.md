@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: usare
 ordine: 7
-servizio: marketing
+servizio: visibilita-sito-web-e-advertising
 correlati:
 - allucinazioni-ai
 - fonti-ai

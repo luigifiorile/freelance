@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: regole
 ordine: 11
-servizio: gestionale-interno
+servizio: gestionale-e-reporting-su-misura
 correlati:
 - privacy-e-ai
 - ai-per-piccole-imprese

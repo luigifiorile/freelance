@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: usare
 ordine: 6
-servizio: gestionale-interno
+servizio: gestionale-e-reporting-su-misura
 correlati:
 - come-scrivere-un-prompt
 - agenti-ai

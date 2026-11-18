@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: capire
 ordine: 3
-servizio: gestionale-interno
+servizio: gestionale-e-reporting-su-misura
 correlati:
 - ai-e-produttivita-studi
 - allucinazioni-ai

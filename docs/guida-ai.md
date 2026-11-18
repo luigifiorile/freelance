@@ -97,18 +97,18 @@ In ordine di priorità (ICE: impatto, fiducia, facilità). Ognuno ha un capitolo
 | # | Titolo di lavoro | Capitolo | Servizio | Note |
 |---|---|---|---|---|
 | 1 | Automazioni con l'AI: n8n, Make e Zapier per una piccola impresa | lavoro | go-to-market-e-automazioni | Alta intenzione commerciale |
-| 2 | L'AI per l'assistenza clienti: chatbot, WhatsApp e risposte suggerite | lavoro | vendite-e-assistenza-clienti | Citare Brynjolfsson; obbligo art. 50 AI Act |
+| 2 | L'AI per l'assistenza clienti: chatbot, WhatsApp e risposte suggerite | lavoro | go-to-market-e-automazioni | Citare Brynjolfsson; obbligo art. 50 AI Act |
 | 3 | L'AI nelle vendite: preventivi, follow-up e CRM | lavoro | go-to-market-e-automazioni | Anthropic Economic Index (uso per vendite B2B) |
-| 4 | Scrivere email e testi con l'AI senza sembrare un robot | usare | marketing | Lista dei segnali di testo da AI |
-| 5 | L'AI con Excel e i dati aziendali | usare | gestionale-interno | Analisi dati con esecuzione di codice |
+| 4 | Scrivere email e testi con l'AI senza sembrare un robot | usare | visibilita-sito-web-e-advertising | Lista dei segnali di testo da AI |
+| 5 | L'AI con Excel e i dati aziendali | usare | gestionale-e-reporting-su-misura | Analisi dati con esecuzione di codice |
 | 6 | Prompt injection e sicurezza: cosa sapere prima di collegare l'AI alla posta | regole | go-to-market-e-automazioni | Simon Willison, "Agents Rule of Two" di Meta |
-| 7 | RAG spiegato semplice: far rispondere l'AI sui documenti aziendali | capire | gestionale-interno | |
+| 7 | RAG spiegato semplice: far rispondere l'AI sui documenti aziendali | capire | gestionale-e-reporting-su-misura | |
 | 8 | Come formare il team sull'AI (e rispettare l'articolo 4 dell'AI Act) | regole | tutti | Corsi gratuiti, modello di regole interne |
-| 9 | SEO e GEO: farsi trovare da Google e dagli assistenti AI | lavoro | siti-web-e-visibilita | Paper GEO di Princeton |
-| 10 | L'AI per il marketing di una piccola impresa | lavoro | marketing | |
+| 9 | SEO e GEO: farsi trovare da Google e dagli assistenti AI | lavoro | visibilita-sito-web-e-advertising | Paper GEO di Princeton |
+| 10 | L'AI per il marketing di una piccola impresa | lavoro | visibilita-sito-web-e-advertising | |
 | 11 | Modalità vocale: usare l'AI parlando, in macchina e in cantiere | usare | | |
-| 12 | Immagini e video con l'AI per il lavoro: cosa si può fare e cosa dichiarare | usare | marketing | Deepfake, art. 50 AI Act |
-| 13 | Modelli open e AI in locale: quando ha senso per un'azienda | scegliere | gestionale-interno | Privacy, costi |
+| 12 | Immagini e video con l'AI per il lavoro: cosa si può fare e cosa dichiarare | usare | visibilita-sito-web-e-advertising | Deepfake, art. 50 AI Act |
+| 13 | Modelli open e AI in locale: quando ha senso per un'azienda | scegliere | gestionale-e-reporting-su-misura | Privacy, costi |
 | 14 | AI per commercialisti e consulenti | lavoro | | Legge 132/2025 art. 13 |
 | 15 | Come misurare se l'AI sta funzionando in azienda | lavoro | | Metriche, METR e la percezione |
 
