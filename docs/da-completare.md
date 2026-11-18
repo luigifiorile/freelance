@@ -33,9 +33,10 @@ Testi scritti da Claude a partire dal brief, da approvare o riscrivere. Sono tut
 | Per ogni servizio: sottotitolo, frase, descrizione, problema, cosa costruisco | `servizi[].sottotitolo` … `servizi[].costruisco` | bozza |
 | Testi dei cinque passi di Come lavoro (nomi decisi da Luigi il 18/11/2026) | `home.comeLavoro.passi` | bozza |
 | Chi sono: testo di Luigi del 18/11/2026, con piccole correzioni di grammatica | `home.chiSono.paragrafi` | da confermare |
-| Servizio Go to market e automazioni (ex CRM e automazioni) riscritto il 17/11/2026: tutti i testi e l'offerta | `servizi[0]` | bozza |
-| Servizio Marketing riscritto il 17/11/2026: sottotitolo, frase, problema, cosa costruisco, testi dei tre livelli (`offerta`) | `servizi[4]` | bozza |
-| Demo Marketing come report mensile: numeri, tabella e osservazioni inventati e dichiarati | `servizi[4].demo` | bozza |
+| Servizio 1, Go to market e automazioni: "Cosa costruisco" da riscrivere dopo aver costruito il servizio e la demo; frase scelta da Luigi il 18/11/2026 | `servizi[0]` | in attesa |
+| Servizio 2, Visibilità del sito web e advertising: sottotitolo, problema, descrizione e testi dei tre livelli scritti da Claude; frase e "Cosa costruisco" approvati da Luigi il 18/11/2026 | `servizi[1]` | bozza |
+| Servizio 3, Gestionale e reporting su misura: frase di Luigi portata al singolare; sottotitolo, problema e "Cosa costruisco" ancora quelli del vecchio "Gestionale interno" | `servizi[2]` | bozza |
+| Demo del servizio 2 (report mensile): numeri, tabella e osservazioni inventati e dichiarati | `servizi[1].demo` | bozza |
 | Testi della sezione Contatti (prenotazione su Cal.com) | `home.contatti` | bozza |
 | Testi delle pagine servizio (titoli di sezione, tre livelli dell'offerta, invito) | `servizioPagina` | bozza |
 | Testi delle pagine demo e dati di esempio (dichiarati in pagina come inventati) | `demoPagina`, `servizi[].demo` | bozza |

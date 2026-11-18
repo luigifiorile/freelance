@@ -19,28 +19,28 @@ Si lavora in italiano.
 - Brand personale: "Luigi Fiorile" (deciso il 18/11/2026). Niente racconto legato al surf o allo shaper nei testi (tolto il 18/11/2026): onde, tavola e illustrazioni restano solo come elementi visivi. Il surf compare solo tra le passioni in "Chi sono".
 - Personalità: umana, calma, concreta. Il protagonista è il cliente. Una persona, non un'agenzia.
 
-## Servizi (nomi da LEGGIMI.md)
+## Servizi
 
-1. Go to market e automazioni (prima "CRM e automazioni", rinominato il 17/11/2026)
-2. Gestionale interno
-3. Vendite e assistenza clienti
-4. Siti web e visibilità
-5. Marketing
+Tre servizi dal 18/11/2026 (prima erano cinque):
+
+1. Go to market e automazioni (`go-to-market-e-automazioni`): liste di contatti, outreach, CRM, funnel, risposte ai clienti su WhatsApp ed email, soddisfazione dei clienti. Ha assorbito "Vendite e assistenza clienti" e lo studio del funnel. "Cosa costruisco" è da riscrivere dopo aver costruito bene il servizio e la sua demo.
+2. Visibilità del sito web e advertising (`visibilita-sito-web-e-advertising`): sito, SEO, GEO, tracciamento con GA4 e Meta, coorti per il retargeting, campagne Google e Meta con report mensile dell'agente. Ha assorbito "Siti web e visibilità" e "Marketing".
+3. Gestionale e reporting su misura (`gestionale-e-reporting-su-misura`): il più su misura; gestionale, dashboard e report automatici anche con l'AI.
 
 Ogni servizio ha una pagina (modello unico) e una demo statica (modello unico). Offerta su tre livelli: diagnosi iniziale, progetto su misura, manutenzione mensile. **Niente prezzi sul sito.**
 
-Demo (cartelle `demo/<nome>/`): `crm-follow-up`, `gestionale-report`, `vendite-whatsapp`, `siti-visibilita`, `marketing-funnel`.
+Demo (cartelle `demo/<nome>/`): `crm-follow-up` (servizio 1), `marketing-funnel` (servizio 2, report mensile), `gestionale-report` (servizio 3). Le demo `vendite-whatsapp` e `siti-visibilita` sono state tolte con i loro servizi (restano nella cronologia di git).
 
 ## Struttura del sito
 
 Home (pagina lunga):
 1. Apertura: la testa che si apre (GSAP ScrollTrigger, pin e scrub).
-2. Percorso tra i cinque servizi (struttura Shopify Editions Winter '26, non lo stile).
+2. Percorso tra i servizi (struttura Shopify Editions Winter '26, non lo stile).
 3. Come lavoro: ascoltare, leggere i dati, costruire, testare, formare (finché il cliente non diventa indipendente). Nessuna introduzione, solo i cinque passi con le illustrazioni di `brand/metodo/`.
 4. Chi sono: breve, con la testa e la tavola in piedi.
 5. Contatti: messaggio in bottiglia, pulsante per prenotare una chiamata su Cal.com ed email.
 
-Altre pagine: cinque pagine servizio, cinque pagine demo, Guida AI (pagina pilastro + articoli), privacy, 404.
+Altre pagine: tre pagine servizio, tre pagine demo, Guida AI (pagina pilastro + articoli), privacy, 404.
 
 Guida AI (`guida-ai/`): pagina pilastro sull'uso dell'AI per professionisti e piccole imprese, con articoli satellite divisi in capitoli (Capire, Scegliere, Usare, Portarla nel lavoro, Regole e rischi, Risorse). Strategia SEO/GEO, mappa delle parole chiave e piano editoriale in `docs/guida-ai.md`.
 
@@ -136,15 +136,16 @@ Comandi:
 - Testi separati dal codice con un piccolo build in Node (vedi "Architettura") e pubblicazione con GitHub Actions.
 - Niente prezzi sul sito. Le pagine servizio non contengono esempi: descrivono solo il servizio.
 - I testi possono essere scritti in bozza a partire dal brief: ogni bozza è segnata in `docs/da-completare.md`. Fatti, contatti e dati personali restano segnaposto.
-- Nomi delle demo: `crm-follow-up`, `gestionale-report`, `vendite-whatsapp`, `siti-visibilita`, `marketing-funnel`.
 - La sezione "Lavori e demo" del brief non si fa ora: è un promemoria per quando il progetto sarà finito.
 - Privacy: alla fine si userà un servizio come iubenda (è uno script di terze parti, già approvato per quel momento). Fino ad allora link segnaposto. Partita IVA nel piè di pagina come segnaposto.
 - Anteprima social: un PNG 1200×630 generato una volta componendo SVG esistenti e testo (tappa g).
 - Servizio Marketing (17/11/2026), dai metodi del master (skill `competenze-marketing-luigi`): analisi del funnel, tracciamento (GA4, Meta), campagne Google Ads e Meta Ads, e un unico agente AI che ogni mese incrocia GA4, Google Ads e Meta e produce un report rivisto da Luigi. Sulle campagne: si lavora su quelle esistenti o si creano da zero, con l'obiettivo di dare autonomia al cliente (non gestione continua). Grafica e social esclusi. I tre livelli: diagnosi = analisi; progetto = funnel + tracciamento + campagne + agente; manutenzione = report mensile rivisto. La demo `marketing-funnel` è un esempio di report mensile.
 - Servizio 1 rinominato "Go to market e automazioni" (17/11/2026), indirizzo `servizi/go-to-market-e-automazioni/`. Contenuti ispirati al ruolo di GTM engineer: piano di go to market, liste di potenziali clienti arricchite in automatico, primi contatti personalizzati con l'AI, CRM e follow-up, collegamenti tra strumenti, misura della soddisfazione dei clienti (questionari, recensioni, avviso di abbandono). Divisione con il servizio 3: la soddisfazione si misura nel servizio 1, le risposte ai clienti (WhatsApp, assistenza) restano nel servizio 3. La demo resta `crm-follow-up`.
-- Il posizionamento generale di Luigi non va costruito attorno al GTM: la comunicazione complessiva verrà definita a parte. Go to market è uno dei cinque servizi.
+- Il posizionamento generale di Luigi non va costruito attorno al GTM: la comunicazione complessiva verrà definita a parte. Go to market è uno dei servizi.
 - SEO e GEO restano nel servizio "Siti web e visibilità", non in Marketing.
 - Modelli unici con campi facoltativi: `servizi[].offerta` (testi propri dei tre livelli, nomi invariati) e `servizi[].demo.osservazioni` (elenco di letture dei dati nella demo).
+- Apertura (18/11/2026, variante C): la frase in blu usa il carattere dei titoli (Bricolage Grotesque 800), molto grande e a tutta larghezza, senza punto finale; la testa sta in basso a destra (centrata su mobile). Testa, calotta e oggetti passano sopra il testo quando la testa si apre.
+- Riduzione a tre servizi (18/11/2026): vedi la sezione "Servizi". Le decisioni precedenti su "Marketing" e "Siti web e visibilità" valgono ora per il servizio 2.
 - Finché ci sono segnaposto il sito non si fa indicizzare: `sito.indicizzabile` è `false` e tutte le pagine hanno `<meta name="robots" content="noindex">`. Al lancio va messo a `true`.
 - Il sito è pubblicato su GitHub Pages da un repository pubblico (Pages su repository privati richiede un piano a pagamento).
 - Guida AI (novembre 2026): pilastro + articoli satellite in `guida-ai/`, voce "Guida AI" nel menu. Ogni numero ha fonte primaria linkata (paper, Istat, Eurostat, documentazione di OpenAI, Anthropic, Google). Niente fonti come aggregatori di tool. Voce di Luigi in prima persona, ma episodi personali solo da lui (segnaposto `[[ESEMPIO DI LUIGI: ...]]`). Ogni articolo rimanda a un servizio.
