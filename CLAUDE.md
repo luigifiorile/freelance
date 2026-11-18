@@ -145,6 +145,7 @@ Comandi:
 - SEO e GEO restano nel servizio "Siti web e visibilità", non in Marketing.
 - Modelli unici con campi facoltativi: `servizi[].offerta` (testi propri dei tre livelli, nomi invariati) e `servizi[].demo.osservazioni` (elenco di letture dei dati nella demo).
 - Apertura (18/11/2026, variante C): la frase in blu usa il carattere dei titoli (Bricolage Grotesque 800), molto grande e a tutta larghezza, senza punto finale; la testa sta in basso a destra (centrata su mobile). Testa, calotta e oggetti passano sopra il testo quando la testa si apre.
+- Percorso (18/11/2026, contro gli spazi vuoti): il numero gigante sta accanto al titolo della tappa, allineato in basso (su mobile resta sopra). Sotto l'elenco fisso a sinistra c'è un invito a prenotare una chiamata (`home.servizi.invitoTesto`, link a Cal.com) che resta visibile mentre si scorre; su mobile non compare.
 - Riduzione a tre servizi (18/11/2026): vedi la sezione "Servizi". Le decisioni precedenti su "Marketing" e "Siti web e visibilità" valgono ora per il servizio 2.
 - Finché ci sono segnaposto il sito non si fa indicizzare: `sito.indicizzabile` è `false` e tutte le pagine hanno `<meta name="robots" content="noindex">`. Al lancio va messo a `true`.
 - Il sito è pubblicato su GitHub Pages da un repository pubblico (Pages su repository privati richiede un piano a pagamento).
