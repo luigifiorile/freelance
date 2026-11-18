@@ -23,7 +23,7 @@ Decisione del 17/11/2026: i loghi non vengono usati nell'apertura. `oggetti/segn
 
 - Fondo `--carta`, tutto il resto in `--inchiostro` e `--schiuma`. `--mare` è l'unico accento.
 - I disegni hanno contorno nero spesso e ombre a retino. Niente foto, niente sfumature.
-- Dietro la testa può esserci una scritta gigante in `--schiuma`. In prova: "GTM" (17/11/2026).
+- Dietro la testa può esserci una scritta gigante in `--schiuma`. Per ora nessuna (18/11/2026).
 - I testi di interfaccia in evidenza sono in maiuscolo.
 - Dalla testa escono oggetti, non il mare (il brief diceva il contrario: è superato). Le onde restano un elemento del brand: linee, divisori di sezione, mare a fasce.
 - La palette marina del brief è superata: `--laguna` e `--sabbia` servono solo per forme e fondi.
@@ -55,11 +55,13 @@ Tra una tappa e l'altra, il divisore d'onda della tappa successiva sale dal bass
 
 ## Come lavoro
 
-1. Ascoltare
-2. Leggere il mare
-3. Costruire
-4. Mettere in acqua
-5. Seguire nel tempo
+1. Ascoltare (`01-ascoltare.svg`)
+2. Leggere i dati (`02-leggere-il-mare.svg`)
+3. Costruire (`03-costruire.svg`)
+4. Testare (`04-mettere-in-acqua.svg`)
+5. Formare, finché il cliente non diventa indipendente (`05-seguire-nel-tempo.svg`)
+
+Nomi aggiornati il 18/11/2026; le illustrazioni restano le stesse.
 
 ## Servizi
 

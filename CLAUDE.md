@@ -16,7 +16,7 @@ Si lavora in italiano.
 - Luigi Fiorile, freelance con sede a Milano. Costruisce strumenti AI e digitali su misura per il business del cliente, più consulenza su processi, vendite e marketing.
 - Background: consulenza (Accenture) e Chief of Staff in una startup.
 - Clienti: liberi professionisti e PMI italiane, comprese micro imprese e startup. Persone pratiche, spesso non tecniche, con poco tempo. Devono capire in pochi secondi cosa faccio e come posso aiutarle.
-- Metafora del brand: lo shaper, l'artigiano che costruisce la tavola su misura. L'onda è il business del cliente: io la leggo e costruisco lo strumento per cavalcarla.
+- Brand personale: "Luigi Fiorile" (deciso il 18/11/2026). Niente racconto legato al surf o allo shaper nei testi (tolto il 18/11/2026): onde, tavola e illustrazioni restano solo come elementi visivi. Il surf compare solo tra le passioni in "Chi sono".
 - Personalità: umana, calma, concreta. Il protagonista è il cliente. Una persona, non un'agenzia.
 
 ## Servizi (nomi da LEGGIMI.md)
@@ -36,9 +36,9 @@ Demo (cartelle `demo/<nome>/`): `crm-follow-up`, `gestionale-report`, `vendite-w
 Home (pagina lunga):
 1. Apertura: la testa che si apre (GSAP ScrollTrigger, pin e scrub).
 2. Percorso tra i cinque servizi (struttura Shopify Editions Winter '26, non lo stile).
-3. Come lavoro: ascoltare, leggere il mare, costruire, mettere in acqua, seguire nel tempo.
+3. Come lavoro: ascoltare, leggere i dati, costruire, testare, formare (finché il cliente non diventa indipendente). Nessuna introduzione, solo i cinque passi con le illustrazioni di `brand/metodo/`.
 4. Chi sono: breve, con la testa e la tavola in piedi.
-5. Contatti: messaggio in bottiglia e form semplice.
+5. Contatti: messaggio in bottiglia, pulsante per prenotare una chiamata su Calendly ed email.
 
 Altre pagine: cinque pagine servizio, cinque pagine demo, Guida AI (pagina pilastro + articoli), privacy, 404.
 
@@ -95,7 +95,7 @@ Comandi:
 - Sito statico HTML, CSS, JS. Niente framework pesanti. Pubblicato su GitHub Pages in sottocartella (`luigifiorile.github.io/freelance/`): solo percorsi relativi per pagine, stili, script e immagini. Gli URL assoluti servono solo dove li richiede lo standard (canonical, sitemap, anteprima social) e partono da un'unica variabile.
 - Font ospitati nel repository, non collegati a Google Fonts.
 - Una sola libreria esterna: GSAP con ScrollTrigger, copiata nel repository. Altre librerie solo dopo aver chiesto.
-- Form contatti: nessuna funzione lato server, servizio esterno con segnaposto. Nessuna chiave o credenziale nel repository.
+- Contatti: link pubblico a Calendly (`sito.urlCalendly`), senza script né form sul sito. Nessuna chiave o credenziale nel repository.
 - Nessun tracciamento, nessun cookie, nessuno script di terze parti senza chiedere.
 - "Riduci animazioni": nessun blocco dello scroll, stato aperto subito.
 - Accessibilità WCAG AA, tutto navigabile da tastiera, testo alternativo per le illustrazioni che portano significato (le decorative hanno `alt=""` o `aria-hidden`).
@@ -122,7 +122,11 @@ Comandi:
 - L'espressione cambia mentre la testa si apre: calma (`testa-chiusa.svg`), sorpresa (`testa-a-meta.svg`), felice (`testa-aperta.svg`: occhi a scintilla e sorriso largo).
 - Oggetti che escono: tavola da surf, kite, portatile, fumetto di chat, grafico, imbuto, ingranaggio. I loghi di Claude, n8n e HubSpot sono stati tolti (decisione del 17/11/2026).
 - Animazione di apertura come in LEGGIMI.md: pin per circa tre schermate; 0–30% il fumetto sparisce e la testa passa a "a metà"; 30–80% la testa scende ed esce dal basso, la calotta sale in alto, gli oggetti escono uno alla volta ruotando; 80–100% compare a sinistra l'elenco dei servizi. Testa aperta e calotta sono due livelli separati, cambia solo l'espressione.
-- Scritta gigante: "GTM" (prova del 17/11/2026, prima era "LUIGI"). Se `sito.scrittaGigante` è vuoto l'elemento non viene generato. Nome del brand ("Luigi Fiorile") e frase nel fumetto sono segnaposto. Ciascuno sta in un'unica variabile.
+- Scritta gigante: nessuna (18/11/2026; prima "LUIGI", poi "GTM" in prova). `sito.scrittaGigante` è vuoto e l'elemento non viene generato.
+- Frase nel fumetto: "Scorri per scoprire cosa ho in testa" (18/11/2026).
+- Email pubblica: luigi.fiorile@gmail.com (18/11/2026). Prima di pubblicare su un dominio proprio si valuta un indirizzo sul dominio.
+- Contatti con Calendly al posto del form (18/11/2026): niente dati raccolti dal sito. Serve il link pubblico di prenotazione (`calendly.com/<nome>/<evento>`), non quello dell'area di amministrazione.
+- "Chi sono" con il testo di Luigi del 18/11/2026 (solo piccole correzioni di grammatica).
 - Percorso tra i servizi: struttura di Shopify Editions Winter '26, non lo stile. Elenco fisso a sinistra con numero e riga di puntini (attiva in nero, le altre in grigio); tappe con numero gigante in `--schiuma` e titolo grande; sottotitolo in grassetto, frase grande, link a pillola con freccia esterna; scheda interfaccia ruotata di 3 gradi; scheda demo numerata ("1 / crm-follow-up"); a fine tappa linea d'onda e "Torna alla navigazione" con freccia su; il divisore d'onda della tappa successiva sale e copre la precedente.
 - Font: Bricolage Grotesque per titoli e scritte giganti, Inter per i testi.
 - In design sono stati fatti solo gli elementi visivi: le pagine si compongono in codice.
@@ -158,10 +162,9 @@ Comandi:
 - Dominio definitivo (cambiare solo `sito.urlBase`; `llms.txt` e `robots.txt` alla radice diventano utili).
 - Link ai profili LinkedIn e Substack (`sito.profili`).
 
-- Nome definitivo del brand.
-- Scritta gigante dietro la testa (in prova: "GTM").
-- Frase nel fumetto e testi definitivi delle sezioni.
-- Servizio esterno per il form (Formspree, Tally o link a un calendario).
+- Testi definitivi delle sezioni.
+- Link pubblico di Calendly.
+- Email su dominio proprio, da valutare prima di pubblicare su un dominio.
 - Servizio per privacy e cookie (es. iubenda), da fare alla fine.
 
 ## Promemoria per progetto finito

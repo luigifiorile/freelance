@@ -8,13 +8,13 @@ Quasi tutti i valori si cambiano in `contenuti/it.json`. Nel sito i segnaposto s
 
 | Segnaposto | Cosa serve | Dove compare | Stato |
 |---|---|---|---|
-| `brand`: "Luigi Fiorile" | Nome definitivo del brand | testata, piè di pagina, titoli delle pagine, anteprima social | provvisorio |
-| `scrittaGigante`: "GTM" | Scritta gigante dietro la testa (in prova). Se si lascia vuota, non compare | home, apertura; anteprima social | in prova |
-| `fumetto`: `[FRASE DEL FUMETTO]` | Frase sopra la testa chiusa | home, apertura | aperto |
-| `email`: `[EMAIL]` | Indirizzo email pubblico | piè di pagina, sezione Contatti | aperto |
+| `brand`: "Luigi Fiorile" | Nome del brand (personale) | testata, piè di pagina, titoli delle pagine, anteprima social | fatto |
+| `scrittaGigante`: vuota | Scritta gigante dietro la testa: per ora nessuna | home, apertura; anteprima social | fatto |
+| `fumetto` | "Scorri per scoprire cosa ho in testa" | home, apertura | fatto |
+| `email` | luigi.fiorile@gmail.com. Prima di pubblicare su un dominio proprio, valutare un indirizzo sul dominio | piè di pagina, Contatti, dati strutturati | fatto (da rivedere al dominio) |
 | `partitaIva` | Partita IVA (obbligatoria per legge) | piè di pagina | fatto |
-| `urlPrivacy`: `[LINK PRIVACY]` | Informativa privacy (es. iubenda, a fine progetto) | piè di pagina, casella del form | aperto |
-| `urlForm`: `[URL_SERVIZIO_FORM]` | Indirizzo del servizio per il form (Formspree, Tally o calendario). Finché manca, il form mostra "non ancora attivo" | sezione Contatti | aperto |
+| `urlPrivacy`: `[LINK PRIVACY]` | Informativa privacy (es. iubenda, a fine progetto) | piè di pagina | aperto |
+| `urlCalendly`: `[LINK PUBBLICO CALENDLY]` | Link pubblico di prenotazione (`calendly.com/<nome>/<evento>`). Finché manca, il pulsante non è cliccabile | sezione Contatti | aperto |
 | `indicizzabile`: `false` | Blocca l'indicizzazione dei motori di ricerca (`noindex` su tutte le pagine). Va messo a `true` al lancio, quando i segnaposto sono completati | tutte le pagine | da cambiare al lancio |
 | `urlBase` | Indirizzo pubblico del sito. Va cambiato solo se cambia il dominio | canonical, sitemap, anteprima social, dati strutturati | ok |
 
@@ -31,12 +31,12 @@ Testi scritti da Claude a partire dal brief, da approvare o riscrivere. Sono tut
 | Frase di apertura (h1, testo blu in alto) | `home.apertura.titolo` | bozza |
 | Introduzione Servizi | `home.servizi.intro` | bozza |
 | Per ogni servizio: sottotitolo, frase, descrizione, problema, cosa costruisco | `servizi[].sottotitolo` … `servizi[].costruisco` | bozza |
-| Introduzione Come lavoro (metafora dello shaper) e testi dei cinque passi | `home.comeLavoro` | bozza |
-| Chi sono (fatti dal brief: Milano, Accenture, Chief of Staff, surf e kitesurf) | `home.chiSono.paragrafi` | bozza |
+| Testi dei cinque passi di Come lavoro (nomi decisi da Luigi il 18/11/2026) | `home.comeLavoro.passi` | bozza |
+| Chi sono: testo di Luigi del 18/11/2026, con piccole correzioni di grammatica | `home.chiSono.paragrafi` | da confermare |
 | Servizio Go to market e automazioni (ex CRM e automazioni) riscritto il 17/11/2026: tutti i testi e l'offerta | `servizi[0]` | bozza |
 | Servizio Marketing riscritto il 17/11/2026: sottotitolo, frase, problema, cosa costruisco, testi dei tre livelli (`offerta`) | `servizi[4]` | bozza |
 | Demo Marketing come report mensile: numeri, tabella e osservazioni inventati e dichiarati | `servizi[4].demo` | bozza |
-| Testi della sezione Contatti e del form | `home.contatti` | bozza |
+| Testi della sezione Contatti (prenotazione su Calendly) | `home.contatti` | bozza |
 | Testi delle pagine servizio (titoli di sezione, tre livelli dell'offerta, invito) | `servizioPagina` | bozza |
 | Testi delle pagine demo e dati di esempio (dichiarati in pagina come inventati) | `demoPagina`, `servizi[].demo` | bozza |
 | Descrizione nel piè di pagina | `comune.piede.descrizione` | bozza |
