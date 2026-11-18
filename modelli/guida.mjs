@@ -68,7 +68,8 @@ function autore(t, g, r) {
 // Le varianti ruotano da un articolo all'altro (la pilastro usa la prima).
 function invito(t, g, r, servizioId, n = 0) {
   const v = g.inviti[n % g.inviti.length];
-  const secondario = "";
+  const linkedin = (t.sito.profili || []).find((u) => u.includes("linkedin.com"));
+  const secondario = linkedin ? `<a class="pillola" href="${esc(linkedin)}" target="_blank" rel="noopener">${esc(g.seguimi)} ${svg("icone-ui/freccia-esterna", "icona")}</a>` : "";
   return `
 <section class="sezione-pagina invito" aria-labelledby="invito-titolo">
   ${svg("onde/divisore", "invito__onda")}
@@ -76,7 +77,7 @@ function invito(t, g, r, servizioId, n = 0) {
     <h2 class="titolo-1" id="invito-titolo">${esc(v.titolo)}</h2>
     <p class="testo-grande">${esc(v.testo)}</p>
     <p class="invito__azioni">
-      <a class="pillola pillola--mare" href="${r}#contatti">${esc(v.pulsante)}</a>
+      <a class="pillola" href="${r}#contatti">${esc(v.pulsante)}</a>
       ${secondario}
     </p>
   </div>

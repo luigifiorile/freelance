@@ -147,6 +147,7 @@ Comandi:
 - Apertura (18/11/2026, variante C): la frase in blu usa il carattere dei titoli (Bricolage Grotesque 800), molto grande e a tutta larghezza, senza punto finale; la testa sta in basso a destra (centrata su mobile). Testa, calotta e oggetti passano sopra il testo quando la testa si apre.
 - Percorso (18/11/2026, contro gli spazi vuoti): il numero gigante sta accanto al titolo della tappa, allineato in basso (su mobile resta sopra). Sotto l'elenco fisso a sinistra c'è un invito a prenotare una chiamata (`home.servizi.invitoTesto`, link a Cal.com) che resta visibile mentre si scorre; su mobile non compare.
 - Riduzione a tre servizi (18/11/2026): vedi la sezione "Servizi". Le decisioni precedenti su "Marketing" e "Siti web e visibilità" valgono ora per il servizio 2.
+- Un solo invito all'azione in tutto il sito (18/11/2026): il pulsante di prenotazione su Cal.com, con il testo in `comune.cta.testo` (per ora "Prenota 30 minuti", da confermare) e la rassicurazione "30 minuti, gratis e senza impegno" (`comune.cta.nota`). Funzione unica `bottonePrenota()` in `modelli/struttura.mjs`. Il pulsante colorato (`--mare`) è solo quello in testata, a destra di "Contatti"; gli altri sono pillole normali. Per chi non è pronto: rimandi alla Guida AI e a LinkedIn (`comune.altroPasso`). I link "Guarda la demo" restano.
 - Finché ci sono segnaposto il sito non si fa indicizzare: `sito.indicizzabile` è `false` e tutte le pagine hanno `<meta name="robots" content="noindex">`. Al lancio va messo a `true`.
 - Il sito è pubblicato su GitHub Pages da un repository pubblico (Pages su repository privati richiede un piano a pagamento).
 - Guida AI (novembre 2026): pilastro + articoli satellite in `guida-ai/`, voce "Guida AI" nel menu. Ogni numero ha fonte primaria linkata (paper, Istat, Eurostat, documentazione di OpenAI, Anthropic, Google). Niente fonti come aggregatori di tool. Voce di Luigi in prima persona, ma episodi personali solo da lui (segnaposto `[[ESEMPIO DI LUIGI: ...]]`). Dal 18/11/2026 la guida informa e non vende: niente rimandi ai servizi negli articoli, invito finale che chiede un parere o segnala errori, "Chi scrive" con il testo di Luigi. Regole di voce in `docs/guida-ai.md`.
@@ -171,6 +172,12 @@ Comandi:
 - Servizio per privacy e cookie (es. iubenda), da fare alla fine.
 
 ## Promemoria per progetto finito
+
+- Dominio su Cloudflare, poi GA4 e Pixel Meta (decisione del 18/11/2026). Usano cookie: servono banner di consenso e informativa (es. iubenda) prima di attivarli, e va aggiornata la regola "nessun tracciamento" in questo file. Collegare anche i link con parametri UTM da LinkedIn e Substack e il conteggio delle prenotazioni di Cal.com. North Star proposta: chiamate prenotate al mese.
+- Demo interattiva come calcolatore (inserisci visite, richieste e clienti e vedi dove si perdono): spunto per quando si costruiscono le demo.
+- Newsletter Substack: non esiste ancora. Quando c'è, aggiungere l'iscrizione tra i rimandi per chi non è pronto a prenotare (Guida AI, LinkedIn).
+- Riprova sociale ed esempi da Spill (lavoro attuale, casi concreti): solo quando sito, demo e servizi sono finiti, e con il permesso di Luigi.
+- Pagine servizio più rassicuranti ("Per chi è", "Cosa succede dopo la chiamata", domande frequenti): quando ci sarà materiale.
 
 - Valutare la sezione "Lavori e demo" del brief, quando ci saranno casi reali.
 - Versione inglese (`contenuti/en.json`, `hreflang`).

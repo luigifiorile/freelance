@@ -23,6 +23,18 @@
     "saltaAlContenuto": "Vai al contenuto",
     "homeLink": "Torna alla home",
     "menuEtichetta": "Menu principale",
+    "cta": {
+      "testo": "Prenota 30 minuti",
+      "nota": "30 minuti, gratis e senza impegno.",
+      "servizio": "Si apre Cal.com, il servizio che uso per gli appuntamenti.",
+      "nuovaScheda": "si apre in una nuova scheda"
+    },
+    "altroPasso": {
+      "prima": "Non è ancora il momento? Intanto puoi leggere la",
+      "guida": "Guida AI",
+      "mezzo": "o seguirmi su",
+      "linkedin": "LinkedIn"
+    },
     "menu": [
       { "testo": "Servizi", "ancora": "servizi" },
       { "testo": "Guida AI", "percorso": "guida-ai/" },
@@ -65,8 +77,7 @@
       "scopri": "Scopri il servizio",
       "provaDemo": "Guarda la demo",
       "tornaNav": "Torna alla navigazione",
-      "invitoTesto": "Non sai quale fa per te? Parliamone in una chiamata di 30 minuti.",
-      "invitoPulsante": "Prenota una chiamata"
+      "invitoTesto": "Non sai quale fa per te? Parliamone in una chiamata di 30 minuti."
     },
     "comeLavoro": {
       "titolo": "Come lavoro",
@@ -92,9 +103,6 @@
       "titolo": "Contatti",
       "intro": "Prenota una chiamata nel momento che ti è più comodo. Mi racconti il tuo lavoro e cosa vorresti cambiare, e ti dico se e come posso aiutarti.",
       "bottigliaAlt": "",
-      "prenota": "Prenota una chiamata",
-      "prenotaNota": "Si apre Cal.com, il servizio che uso per gli appuntamenti.",
-      "nuovaScheda": "si apre in una nuova scheda",
       "oppure": "Preferisci scrivere? La mia email è"
     }
   },
@@ -115,6 +123,7 @@
     "autoreEtichetta": "Chi scrive",
     "autoreBackground": "",
     "autoreBio": "Luigi, appassionato da sempre di innovazione. Come tutti sento la parola AI troppe volte al giorno, e da un po' di tempo mi sono messo sotto a capirla e a prendere appunti per me stesso. Proprio da questi appunti ho cercato di costruire una sorta di \"AI for dummies\", qualcosa che mi avrebbe fatto comodo avere quando il dummies ero io.",
+    "seguimi": "Seguimi su LinkedIn",
     "inviti": [
       { "titolo": "Ti è rimasto un dubbio?", "testo": "Se qualcosa non è chiaro, o pensi che abbia scritto una cosa sbagliata, scrivimi. Correggo volentieri: la guida si aggiorna anche così.", "pulsante": "Scrivimi" },
       { "titolo": "Hai trovato un errore?", "testo": "L'AI cambia in fretta e qualche pagina invecchia prima di quanto vorrei. Se vedi un dato superato o una fonte che non regge, segnalamelo.", "pulsante": "Segnalamelo" }
@@ -146,7 +155,6 @@
     "demoTesto": "Una demo con dati di esempio, per farti un'idea dello strumento.",
     "contattoTitolo": "Ne parliamo?",
     "contattoTesto": "Raccontami il tuo lavoro: capisco se posso esserti utile e ti dico come.",
-    "contattoPulsante": "Scrivimi",
     "prossimo": "Servizio successivo",
     "titoloPagina": "{nome} | {brand}"
   },
@@ -161,7 +169,6 @@
     "tornaServizio": "Torna al servizio",
     "contattoTitolo": "Ti serve qualcosa di simile?",
     "contattoTesto": "Ogni strumento lo costruisco sul tuo lavoro. Raccontami cosa ti serve.",
-    "contattoPulsante": "Scrivimi",
     "titoloPagina": "Demo: {nome} | {brand}"
   },
 

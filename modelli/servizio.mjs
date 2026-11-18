@@ -3,7 +3,7 @@
 // (senza prezzi), la demo e il contatto. I nomi dei tre livelli sono comuni;
 // un servizio può avere testi propri per ogni livello (campo facoltativo "offerta").
 import { esc, svg, compila, prefisso } from "./aiuti.mjs";
-import { struttura, datiPersona } from "./struttura.mjs";
+import { struttura, datiPersona, bottonePrenota } from "./struttura.mjs";
 
 export function servizio(t, s) {
   const p = t.servizioPagina;
@@ -80,9 +80,10 @@ export function servizio(t, s) {
       <h2 class="titolo-1" id="contatto-titolo">${esc(p.contattoTitolo)}</h2>
       <p class="testo-grande">${esc(p.contattoTesto)}</p>
       <p class="invito__azioni">
-        <a class="pillola pillola--mare" href="${r}#contatti">${esc(p.contattoPulsante)}</a>
+        ${bottonePrenota(t)}
         <a class="pillola" href="${r}servizi/${esc(prossimo.id)}/">${esc(p.prossimo)}: ${esc(prossimo.nome)} ${svg("icone-ui/freccia-esterna", "icona")}</a>
       </p>
+      <p class="invito__nota">${esc(t.comune.cta.nota)}</p>
     </div>
   </section>
 </article>`;
