@@ -166,7 +166,9 @@
     bottom: 4%;
   }
   .apertura__fumetto { font-size: 17px; padding: 14px 18px; }
-  .apertura__campo { left: calc(var(--margine) + 12px); right: calc(var(--margine) + 28px); top: 2%; bottom: 190px; }
+  /* Gli oggetti usano tutta la larghezza e salgono sopra la frase (come la testa),
+     fermandosi sopra l'elenco dei servizi: altrimenti su telefono restano minuscoli. */
+  .apertura__campo { left: calc(var(--margine) + 16px); right: calc(var(--margine) + 32px); top: -34%; bottom: 178px; }
   .apertura__servizi { left: var(--margine); right: var(--margine); bottom: 8px; }
   .apertura__servizi a { font-size: 16px; }
 }
