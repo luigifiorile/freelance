@@ -1,5 +1,5 @@
 // Struttura comune a tutte le pagine: <head>, testata, piè di pagina.
-import { esc, prefisso, link, segnaposto, svg } from "./aiuti.mjs";
+import { esc, prefisso, link, segnaposto, svg, versione } from "./aiuti.mjs";
 
 function testata(t, r, inHome, paginaAttiva) {
   const base = inHome ? "" : r || "./";
@@ -99,10 +99,10 @@ export function struttura(t, pagina) {
   // sito.urlBase (es. "/freelance/"), così funziona anche nell'anteprima locale.
   const base = pagina.base ? `<base href="${esc(new URL(t.sito.urlBase).pathname)}">\n  ` : "";
   const stili = ["assets/css/tokens.css", "assets/css/base.css", ...(pagina.stili || [])]
-    .map((s) => `<link rel="stylesheet" href="${r}${s}">`)
+    .map((s) => `<link rel="stylesheet" href="${r}${s}${versione(s) ? "?v=" + versione(s) : ""}">`)
     .join("\n  ");
   const script = ["assets/js/menu.js", ...(pagina.script || [])]
-    .map((s) => `<script src="${r}${s}" defer></script>`)
+    .map((s) => `<script src="${r}${s}${versione(s) ? "?v=" + versione(s) : ""}" defer></script>`)
     .join("\n  ");
   const immagineSocial = `${t.sito.urlBase}assets/img/anteprima-social.png`;
   const dati = pagina.dati

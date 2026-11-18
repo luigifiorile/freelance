@@ -54,3 +54,27 @@ export function svg(nome, classe = "", extra = "") {
 export function compila(testo, valori) {
   return String(testo).replace(/\{(\w+)\}/g, (_, k) => (k in valori ? valori[k] : `{${k}}`));
 }
+
+// ---------- Versione dei file (contro la cache del browser) ----------
+import { createHash } from "node:crypto";
+
+const radiceProgetto = join(dirname(fileURLToPath(import.meta.url)), "..");
+const versioni = new Map();
+
+// Restituisce un codice breve che cambia quando cambia il contenuto del file.
+// Si aggiunge agli indirizzi di CSS e JS ("?v=..."): così dopo una pubblicazione
+// il browser non mescola una pagina nuova con uno script vecchio rimasto in cache.
+export function versione(percorso) {
+  if (!versioni.has(percorso)) {
+    // tokens.css viene copiato da brand/ durante la costruzione del sito.
+    const sorgente = percorso === "assets/css/tokens.css" ? "brand/tokens.css" : percorso;
+    let codice = "";
+    try {
+      codice = createHash("sha1").update(readFileSync(join(radiceProgetto, sorgente))).digest("hex").slice(0, 8);
+    } catch {
+      codice = "";
+    }
+    versioni.set(percorso, codice);
+  }
+  return versioni.get(percorso);
+}
