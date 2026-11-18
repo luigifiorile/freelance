@@ -65,11 +65,13 @@ Nomi aggiornati il 18/11/2026; le illustrazioni restano le stesse.
 
 ## Servizi
 
-1. Go to market e automazioni (prima "CRM e automazioni", rinominato il 17/11/2026)
-2. Gestionale interno
-3. Vendite e assistenza clienti
-4. Siti web e visibilità
-5. Marketing
+Dal 18/11/2026 i servizi sono tre (vedi `CLAUDE.md`):
+
+1. Go to market e automazioni
+2. Visibilità del sito web e advertising
+3. Gestionale e reporting su misura
+
+Le icone e le interfacce non più usate (`03-vendite`, `05-marketing`) restano nel repository.
 
 ## Da decidere
 

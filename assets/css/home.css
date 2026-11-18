@@ -27,10 +27,13 @@
 
 .apertura__titolo {
   position: absolute;
-  z-index: 3;
+  z-index: 1; /* sotto la testa e gli oggetti: quando la testa si apre, passa sopra il testo */
   left: var(--margine);
+  right: var(--margine);
   top: 24px;
-  max-width: min(22ch, calc(50% - min(200px, 15vw) - var(--margine) - 24px));
+  /* Carattere dei titoli, molto grande (variante scelta da Luigi il 18/11/2026) */
+  font: 800 clamp(30px, 6.4vw, 104px)/0.92 var(--font-titoli);
+  letter-spacing: -0.02em;
 }
 
 .apertura__palco { position: absolute; inset: 0; }
@@ -38,12 +41,10 @@
 /* Personaggio: fumetto e testa, centrati in basso */
 .apertura__personaggio {
   position: absolute;
-  z-index: 1;
-  left: 0;
-  right: 0;
+  z-index: 2;
+  right: var(--margine);
   bottom: 3%;
-  margin-inline: auto;
-  width: min(400px, 30vw, calc((100svh - var(--altezza-testata)) * 0.5));
+  width: min(340px, 24vw, calc((100svh - var(--altezza-testata)) * 0.42));
 }
 .testa {
   position: relative;
@@ -85,8 +86,8 @@
 /* Campo degli oggetti: riquadro 520 × 500 (vedi modelli/home.mjs) */
 .apertura__campo {
   position: absolute;
-  z-index: 2;
-  top: 9%;
+  z-index: 3;
+  top: 40%;
   bottom: 5%;
   left: calc(var(--margine) + 300px);
   right: var(--margine);
@@ -135,7 +136,6 @@
 .movimento .apertura__servizi { visibility: hidden; }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-  .apertura__titolo { font-size: 21px; }
   .apertura__campo { left: calc(var(--margine) + 220px); }
 }
 
@@ -150,13 +150,17 @@
     position: relative;
     top: auto;
     left: auto;
-    max-width: none;
+    right: auto;
     padding: 12px var(--margine) 0;
+    font: 800 clamp(30px, 10.5vw, 46px)/0.95 var(--font-titoli);
   }
   .apertura__palco { position: relative; flex: 1; }
   .apertura__scritta { top: 18%; }
   .apertura__personaggio {
-    width: min(62vw, 300px, calc((100svh - var(--altezza-testata)) * 0.36));
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: min(56vw, 260px, calc((100svh - var(--altezza-testata)) * 0.34));
     bottom: 4%;
   }
   .apertura__fumetto { font-size: 17px; padding: 14px 18px; }

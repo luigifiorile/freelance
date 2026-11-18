@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: lavoro
 ordine: 9
-servizio: gestionale-interno
+servizio: gestionale-e-reporting-su-misura
 correlati:
 - frontiera-frastagliata
 - ai-per-piccole-imprese

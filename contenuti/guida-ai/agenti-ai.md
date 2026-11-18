@@ -45,7 +45,7 @@ La stessa guida descrive alcuni schemi ricorrenti. Li riporto perché aiutano a 
 - **Coordinatore e esecutori** (_orchestrator-workers_): un modello divide il lavoro e lo affida ad altri.
 - **Valutatore e correttore** (_evaluator-optimizer_): un modello produce, un altro giudica e chiede correzioni, finché il risultato va bene.
 
-Nel lavoro con le piccole imprese, i primi due coprono la grande maggioranza dei casi. Una richiesta che arriva, viene capita, smistata e preparata per una persona: è lo schema dietro molti degli strumenti che costruisco nei servizi [go to market e automazioni](servizio:go-to-market-e-automazioni) e [vendite e assistenza clienti](servizio:vendite-e-assistenza-clienti).
+Nel lavoro con le piccole imprese, i primi due coprono la grande maggioranza dei casi. Una richiesta che arriva, viene capita, smistata e preparata per una persona: è lo schema dietro molti degli strumenti che costruisco nel servizio [go to market e automazioni](servizio:go-to-market-e-automazioni).
 
 ## Cosa sanno fare gli agenti oggi
 

@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: usare
 ordine: 5
-servizio: marketing
+servizio: visibilita-sito-web-e-advertising
 correlati:
 - dare-contesto-all-ai
 - allucinazioni-ai

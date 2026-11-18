@@ -16,7 +16,7 @@
     "email": "luigi.fiorile@gmail.com",
     "partitaIva": "10521731215",
     "urlPrivacy": "[LINK PRIVACY]",
-    "urlCalendly": "[LINK PUBBLICO CALENDLY]"
+    "urlPrenotazione": "https://cal.com/luigi-fiorile-oe5jll/30min"
   },
 
   "comune": {
@@ -41,7 +41,7 @@
 
   "pagine": {
     "home": {
-      "titolo": "Luigi Fiorile — strumenti AI e digitali su misura per il tuo lavoro",
+      "titolo": "Luigi Fiorile | Strumenti AI e digitali su misura per il tuo lavoro",
       "descrizione": "Sono Luigi, freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese: CRM, gestionali, vendite, siti e marketing."
     },
     "nonTrovata": {
@@ -54,13 +54,13 @@
 
   "home": {
     "apertura": {
-      "titolo": "Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese.",
-      "elencoEtichetta": "I cinque servizi",
+      "titolo": "Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese",
+      "elencoEtichetta": "I tre servizi",
       "scorri": "Scorri"
     },
     "servizi": {
       "titolo": "Servizi",
-      "intro": "Cinque strumenti che posso costruire per il tuo lavoro. Ognuno parte da un problema concreto e ha una demo con dati di esempio.",
+      "intro": "Tre servizi per il tuo lavoro. Ognuno parte da un problema concreto e ha una demo con dati di esempio.",
       "navEtichetta": "Servizi",
       "scopri": "Scopri il servizio",
       "provaDemo": "Guarda la demo",
@@ -91,7 +91,8 @@
       "intro": "Prenota una chiamata nel momento che ti è più comodo. Mi racconti il tuo lavoro e cosa vorresti cambiare, e ti dico se e come posso aiutarti.",
       "bottigliaAlt": "",
       "prenota": "Prenota una chiamata",
-      "prenotaNota": "Si apre Calendly, il servizio che uso per gli appuntamenti.",
+      "prenotaNota": "Si apre Cal.com, il servizio che uso per gli appuntamenti.",
+      "nuovaScheda": "si apre in una nuova scheda",
       "oppure": "Preferisci scrivere? La mia email è"
     }
   },
@@ -148,7 +149,7 @@
     "contattoTesto": "Raccontami il tuo lavoro: capisco se posso esserti utile e ti dico come.",
     "contattoPulsante": "Scrivimi",
     "prossimo": "Servizio successivo",
-    "titoloPagina": "{nome} — {brand}"
+    "titoloPagina": "{nome} | {brand}"
   },
 
   "demoPagina": {
@@ -162,7 +163,7 @@
     "contattoTitolo": "Ti serve qualcosa di simile?",
     "contattoTesto": "Ogni strumento lo costruisco sul tuo lavoro. Raccontami cosa ti serve.",
     "contattoPulsante": "Scrivimi",
-    "titoloPagina": "Demo: {nome} — {brand}"
+    "titoloPagina": "Demo: {nome} | {brand}"
   },
 
   "servizi": [
@@ -174,7 +175,7 @@
       "interfaccia": "01-crm",
       "interfacciaAlt": "Schema di un CRM con un elenco di contatti e un promemoria",
       "sottotitolo": "Per chi trova clienti un po' per caso",
-      "frase": "Costruisco il sistema che ti porta i clienti giusti e li segue nel tempo: dal primo contatto alla vendita, fino a quando tornano da te.",
+      "frase": "Liste di contatti, messaggi, CRM e risposte ai clienti: un unico sistema che lavora mentre tu fai il tuo lavoro.",
       "descrizione": "Go to market su misura: liste di potenziali clienti, contatti personalizzati, CRM, follow-up automatici e misura della soddisfazione dei clienti. Per liberi professionisti e piccole imprese.",
       "problema": "I clienti arrivano dal passaparola o da un contatto fortunato, ma non c'è un metodo per trovarne altri. I lead finiscono tra email e fogli di calcolo, i follow-up dipendono dalla memoria, e dopo la vendita nessuno chiede ai clienti come è andata. Così si perdono vendite a portata di mano, e clienti che potevano tornare.",
       "costruisco": [
@@ -199,33 +200,169 @@
           "Se nessuno risponde entro due giorni, parte un promemoria."
         ],
         "numeri": [
-          { "etichetta": "Lead nuovi questa settimana", "valore": "12" },
-          { "etichetta": "Follow-up da fare oggi", "valore": "4" },
-          { "etichetta": "Senza risposta da più di 2 giorni", "valore": "2" }
+          {
+            "etichetta": "Lead nuovi questa settimana",
+            "valore": "12"
+          },
+          {
+            "etichetta": "Follow-up da fare oggi",
+            "valore": "4"
+          },
+          {
+            "etichetta": "Senza risposta da più di 2 giorni",
+            "valore": "2"
+          }
         ],
         "tabella": {
           "didascalia": "Lead in arrivo (dati di esempio)",
-          "colonne": ["Lead", "Da dove arriva", "Ultimo contatto", "Prossimo passo"],
+          "colonne": [
+            "Lead",
+            "Da dove arriva",
+            "Ultimo contatto",
+            "Prossimo passo"
+          ],
           "righe": [
-            ["Giulia B.", "Modulo sul sito", "Oggi", "Chiamata conoscitiva"],
-            ["Marco T.", "Email", "Ieri", "Inviare preventivo"],
-            ["Sara L.", "Instagram", "3 giorni fa", "Promemoria inviato"],
-            ["Paolo R.", "Telefono", "Oggi", "Fissare appuntamento"],
-            ["Elena C.", "Modulo sul sito", "4 giorni fa", "Promemoria inviato"]
+            [
+              "Giulia B.",
+              "Modulo sul sito",
+              "Oggi",
+              "Chiamata conoscitiva"
+            ],
+            [
+              "Marco T.",
+              "Email",
+              "Ieri",
+              "Inviare preventivo"
+            ],
+            [
+              "Sara L.",
+              "Instagram",
+              "3 giorni fa",
+              "Promemoria inviato"
+            ],
+            [
+              "Paolo R.",
+              "Telefono",
+              "Oggi",
+              "Fissare appuntamento"
+            ],
+            [
+              "Elena C.",
+              "Modulo sul sito",
+              "4 giorni fa",
+              "Promemoria inviato"
+            ]
           ]
         }
       }
     },
     {
       "numero": 2,
-      "id": "gestionale-interno",
-      "nome": "Gestionale interno",
+      "id": "visibilita-sito-web-e-advertising",
+      "nome": "Visibilità del sito web e advertising",
+      "icona": "04-siti-web",
+      "interfaccia": "04-siti",
+      "interfacciaAlt": "Schema di una pagina web con un'immagine, del testo e una lente di ricerca",
+      "sottotitolo": "Per chi ha un sito e fa pubblicità, ma non sa cosa porta clienti",
+      "frase": "Ti faccio trovare su Google e negli assistenti AI, e sistemo il tracciamento perché nessun contatto vada perso e ogni euro di pubblicità vada dove rende.",
+      "descrizione": "Siti chiari e veloci, SEO e GEO, tracciamento con Google Analytics 4 e campagne Google e Meta ottimizzate sui dati. Per liberi professionisti e piccole imprese.",
+      "problema": "Il sito c'è, ma porta poche richieste: non compare quando qualcuno cerca quello che fai, e gli assistenti AI citano altri. Intanto fai pubblicità su Google e su Meta, ma i numeri delle piattaforme non coincidono e non sai da dove arrivano i contatti. Così si perdono lead e si spende dove non rende.",
+      "costruisco": [
+        "Un sito chiaro e veloce, oppure sistemo quello che hai.",
+        "SEO e GEO: farti trovare su Google e farti citare dagli assistenti AI.",
+        "Tracciamento completo con Google Analytics 4 e Meta, perché ogni richiesta venga registrata.",
+        "Gruppi di visitatori con comportamenti simili (coorti) da ricontattare con la pubblicità (retargeting).",
+        "Campagne Google e Meta ottimizzate sui dati veri, con un report mensile."
+      ],
+      "offerta": [
+        "Guardo il sito, le campagne e i dati che hai già. Ti dico se il tracciamento è affidabile, dove si perdono i contatti e cosa sistemare per primo. Alla fine hai un quadro chiaro e una proposta concreta.",
+        "Sistemo il sito e il tracciamento, lavoro su SEO e GEO e sulle tue campagne Google e Meta, o le creo da zero. Preparo i gruppi di visitatori da ricontattare e l'agente che ogni mese prepara il report.",
+        "Ogni mese l'agente prepara il report e io lo rivedo prima che arrivi a te. Se serve, ti aiuto a correggere sito e campagne. L'obiettivo è darti autonomia, non legarti a me."
+      ],
+      "demo": {
+        "id": "marketing-funnel",
+        "nome": "Report mensile del funnel",
+        "descrizione": "Un esempio del report che l'agente prepara ogni mese: i numeri di Google Analytics, Google Ads e Meta messi in fila, con i punti in cui si perdono i clienti.",
+        "passi": [
+          "All'inizio del mese l'agente legge i dati di Google Analytics 4, Google Ads e Meta Ads.",
+          "Li mette in fila, passaggio per passaggio, e li confronta con il mese prima.",
+          "Scrive un report con i punti in cui si perdono più persone e cosa provare. Lo rivedo io prima che arrivi a te."
+        ],
+        "numeri": [
+          {
+            "etichetta": "Spesa pubblicitaria del mese",
+            "valore": "1.200 €"
+          },
+          {
+            "etichetta": "Richieste di contatto",
+            "valore": "64"
+          },
+          {
+            "etichetta": "Costo per richiesta",
+            "valore": "18,75 €"
+          }
+        ],
+        "tabella": {
+          "didascalia": "Il funnel di ottobre confrontato con settembre (dati di esempio)",
+          "colonne": [
+            "Passaggio",
+            "Ottobre",
+            "Settembre",
+            "Variazione"
+          ],
+          "righe": [
+            [
+              "Persone raggiunte dagli annunci",
+              "48.000",
+              "52.000",
+              "−8%"
+            ],
+            [
+              "Clic sugli annunci",
+              "1.150",
+              "1.090",
+              "+6%"
+            ],
+            [
+              "Visite alla pagina dei servizi",
+              "820",
+              "790",
+              "+4%"
+            ],
+            [
+              "Richieste di contatto",
+              "64",
+              "71",
+              "−10%"
+            ],
+            [
+              "Nuovi clienti",
+              "9",
+              "9",
+              "0%"
+            ]
+          ]
+        },
+        "osservazioni": {
+          "titolo": "Cosa dice il report",
+          "voci": [
+            "Gli annunci portano più clic di settembre, ma le richieste calano del 10%. Il punto debole è la pagina dei servizi, non gli annunci.",
+            "Da telefono arriva il 70% delle visite, ma solo il 40% delle richieste. Da provare: un modulo più corto e il pulsante di contatto in alto. Il mese prossimo guardo le richieste da telefono.",
+            "Google e Meta contano insieme 81 conversioni, Google Analytics 64. È normale: ogni piattaforma conta a modo suo. Per le decisioni uso il numero di Google Analytics."
+          ]
+        }
+      }
+    },
+    {
+      "numero": 3,
+      "id": "gestionale-e-reporting-su-misura",
+      "nome": "Gestionale e reporting su misura",
       "icona": "02-gestionale-interno",
       "interfaccia": "02-gestionale",
       "interfacciaAlt": "Schema di un gestionale con tre riquadri, un grafico a barre e una linea di andamento",
       "sottotitolo": "Per chi tiene l'attività in tanti fogli di calcolo",
-      "frase": "Costruisco con l'AI un gestionale sul tuo modo di lavorare, con i report che ti servono davvero.",
-      "descrizione": "Un gestionale costruito sul tuo lavoro, con report su vendite, costi e scadenze. Per liberi professionisti e piccole imprese.",
+      "frase": "È il servizio più su misura: parto da cosa ti serve e da cosa usi già, e costruisco con te un gestionale con dashboard e report che si aggiornano da soli, anche con il supporto dell'AI. Così hai tutto sotto controllo, e bene.",
+      "descrizione": "Un gestionale su misura, con dashboard e report che si aggiornano da soli, anche con l'AI. Per liberi professionisti e piccole imprese.",
       "problema": "Ordini, clienti, fatture e scadenze stanno in file diversi. Per sapere come sta andando il mese bisogna mettere insieme i numeri a mano, e ci vuole tempo ogni volta.",
       "costruisco": [
         "Un gestionale con le sezioni che usi ogni giorno, e solo quelle.",
@@ -243,163 +380,52 @@
           "A fine mese hai i numeri pronti da leggere."
         ],
         "numeri": [
-          { "etichetta": "Incassato questo mese", "valore": "18.400 €" },
-          { "etichetta": "Ordini aperti", "valore": "23" },
-          { "etichetta": "Fatture da incassare", "valore": "6" }
+          {
+            "etichetta": "Incassato questo mese",
+            "valore": "18.400 €"
+          },
+          {
+            "etichetta": "Ordini aperti",
+            "valore": "23"
+          },
+          {
+            "etichetta": "Fatture da incassare",
+            "valore": "6"
+          }
         ],
         "tabella": {
           "didascalia": "Andamento degli ultimi mesi (dati di esempio)",
-          "colonne": ["Mese", "Incassato", "Costi", "Margine"],
+          "colonne": [
+            "Mese",
+            "Incassato",
+            "Costi",
+            "Margine"
+          ],
           "righe": [
-            ["Gennaio", "15.200 €", "9.800 €", "5.400 €"],
-            ["Febbraio", "16.100 €", "10.200 €", "5.900 €"],
-            ["Marzo", "17.300 €", "10.900 €", "6.400 €"],
-            ["Aprile", "18.400 €", "11.300 €", "7.100 €"]
-          ]
-        }
-      }
-    },
-    {
-      "numero": 3,
-      "id": "vendite-e-assistenza-clienti",
-      "nome": "Vendite e assistenza clienti",
-      "icona": "03-vendite-e-assistenza",
-      "interfaccia": "03-vendite",
-      "interfacciaAlt": "Schema di una chat con messaggi del cliente e risposte",
-      "sottotitolo": "Per chi risponde ogni giorno alle stesse domande",
-      "frase": "Preparo automazioni che rispondono ai clienti, anche su WhatsApp, e passano a te solo le richieste che contano.",
-      "descrizione": "Risposte automatiche ai clienti su WhatsApp ed email, con passaggio a una persona quando serve. Per liberi professionisti e piccole imprese.",
-      "problema": "Le richieste arrivano a ogni ora e spesso sono le stesse: orari, prezzi, disponibilità. Rispondere a tutte toglie tempo al lavoro vero, ma non rispondere fa perdere clienti.",
-      "costruisco": [
-        "Risposte automatiche alle domande frequenti, su WhatsApp e via email.",
-        "Un assistente che raccoglie le informazioni prima di passarti la richiesta.",
-        "Il passaggio a una persona quando la domanda lo richiede.",
-        "Un riepilogo delle richieste, per capire cosa chiedono i clienti."
-      ],
-      "demo": {
-        "id": "vendite-whatsapp",
-        "nome": "Risposte su WhatsApp",
-        "descrizione": "Le richieste di una giornata: quali hanno avuto una risposta automatica e quali sono passate a una persona.",
-        "passi": [
-          "Il cliente scrive su WhatsApp.",
-          "L'assistente risponde alle domande frequenti.",
-          "Se la richiesta è particolare, la passa a te con un riassunto."
-        ],
-        "numeri": [
-          { "etichetta": "Messaggi ricevuti oggi", "valore": "37" },
-          { "etichetta": "Risposte automatiche", "valore": "29" },
-          { "etichetta": "Passati a una persona", "valore": "8" }
-        ],
-        "tabella": {
-          "didascalia": "Richieste di oggi (dati di esempio)",
-          "colonne": ["Ora", "Richiesta", "Risposta", "Gestita da"],
-          "righe": [
-            ["09:12", "Siete aperti il sabato?", "Orari inviati", "Assistente"],
-            ["10:40", "Quanto costa una consulenza?", "Listino inviato", "Assistente"],
-            ["11:05", "Vorrei spostare l'appuntamento", "Nuova data proposta", "Assistente"],
-            ["14:30", "Ho un problema con un ordine", "Passata con riassunto", "Persona"],
-            ["18:22", "Fate preventivi per aziende?", "Passata con riassunto", "Persona"]
-          ]
-        }
-      }
-    },
-    {
-      "numero": 4,
-      "id": "siti-web-e-visibilita",
-      "nome": "Siti web e visibilità",
-      "icona": "04-siti-web",
-      "interfaccia": "04-siti",
-      "interfacciaAlt": "Schema di una pagina web con un'immagine, del testo e una lente di ricerca",
-      "sottotitolo": "Per chi ha un sito che nessuno trova",
-      "frase": "Costruisco o sistemo il tuo sito perché ti trovino su Google e nelle risposte degli assistenti AI.",
-      "descrizione": "Siti chiari e veloci, pensati per farsi trovare su Google e negli assistenti AI. Per liberi professionisti e piccole imprese.",
-      "problema": "Il sito c'è, ma porta poche richieste. Non compare quando qualcuno cerca quello che fai, e gli assistenti AI, quando qualcuno chiede un consiglio, citano altri.",
-      "costruisco": [
-        "Un sito chiaro e veloce, anche da telefono.",
-        "Testi e struttura pensati per i motori di ricerca (SEO).",
-        "Contenuti che gli assistenti AI riescono a leggere e citare (GEO).",
-        "Un modulo di contatto collegato agli strumenti che usi."
-      ],
-      "demo": {
-        "id": "siti-visibilita",
-        "nome": "Controllo della visibilità",
-        "descrizione": "Un controllo delle pagine del sito: cosa le rende difficili da trovare e cosa fare per prima cosa.",
-        "passi": [
-          "Analizzo le pagine del sito.",
-          "Segno i problemi che le nascondono a Google e agli assistenti AI.",
-          "Ordino le correzioni, dalla più utile alla meno urgente."
-        ],
-        "numeri": [
-          { "etichetta": "Pagine controllate", "valore": "14" },
-          { "etichetta": "Pagine con problemi", "valore": "5" },
-          { "etichetta": "Correzioni urgenti", "valore": "2" }
-        ],
-        "tabella": {
-          "didascalia": "Pagine da sistemare (dati di esempio)",
-          "colonne": ["Pagina", "Problema", "Cosa fare", "Priorità"],
-          "righe": [
-            ["Home", "Il titolo non dice cosa fai", "Riscrivere il titolo", "Alta"],
-            ["Servizi", "Pagina lenta da telefono", "Alleggerire le immagini", "Alta"],
-            ["Chi siamo", "Manca l'indirizzo", "Aggiungere città e contatti", "Media"],
-            ["Blog", "Articoli senza data", "Aggiungere le date", "Bassa"],
-            ["Contatti", "Modulo poco visibile", "Spostarlo in alto", "Media"]
-          ]
-        }
-      }
-    },
-    {
-      "numero": 5,
-      "id": "marketing",
-      "nome": "Marketing",
-      "icona": "05-marketing",
-      "interfaccia": "05-marketing",
-      "interfacciaAlt": "Schema di un imbuto di vendita diviso in tre fasce",
-      "sottotitolo": "Per chi fa pubblicità e non sa cosa porta clienti",
-      "frase": "Ti mostro dove si perdono i clienti, dal primo annuncio alla richiesta di contatto, e preparo uno strumento che ogni mese lo controlla per te.",
-      "descrizione": "Analisi del funnel, campagne Google Ads e Meta Ads e un report mensile che incrocia Google Analytics, Google e Meta. Per liberi professionisti e piccole imprese.",
-      "problema": "Fai pubblicità su Google e su Meta, il sito riceve visite, ma i clienti sono pochi. Ogni piattaforma mostra i suoi numeri, e non coincidono mai. Così è difficile capire cosa funziona, in quale passaggio le persone si fermano e dove conviene spendere il prossimo euro.",
-      "costruisco": [
-        "Una mappa del percorso dei tuoi clienti (il funnel), dal primo contatto alla richiesta, con i numeri di ogni passaggio.",
-        "Il tracciamento sistemato su sito, Google Analytics 4 e Meta, perché i numeri siano affidabili.",
-        "Campagne Google Ads e Meta Ads: lavoro su quelle che hai già o le creo da zero, e ti insegno a gestirle in autonomia.",
-        "Uno strumento basato sull'AI (un agente) che ogni mese legge i dati di Google Analytics, Google Ads e Meta, li incrocia e ti dice dove si perdono i clienti e cosa provare a cambiare."
-      ],
-      "offerta": [
-        "Guardo le tue campagne, il sito e i dati che hai già. Ti dico dove si perdono i clienti e se i numeri sono affidabili. Alla fine hai un quadro chiaro e una proposta concreta.",
-        "Costruisco il funnel e sistemo il tracciamento. Lavoro sulle tue campagne Google e Meta, o le creo da zero, e ti mostro come gestirle. Poi preparo l'agente che farà l'analisi ogni mese.",
-        "Ogni mese l'agente prepara il report e io lo rivedo prima che arrivi a te. Se serve, ti aiuto a correggere le campagne. L'obiettivo è darti autonomia, non legarti a me."
-      ],
-      "demo": {
-        "id": "marketing-funnel",
-        "nome": "Report mensile del funnel",
-        "descrizione": "Un esempio del report che l'agente prepara ogni mese: i numeri di Google Analytics, Google Ads e Meta messi in fila, con i punti in cui si perdono i clienti.",
-        "passi": [
-          "All'inizio del mese l'agente legge i dati di Google Analytics 4, Google Ads e Meta Ads.",
-          "Li mette in fila, passaggio per passaggio, e li confronta con il mese prima.",
-          "Scrive un report con i punti in cui si perdono più persone e cosa provare. Lo rivedo io prima che arrivi a te."
-        ],
-        "numeri": [
-          { "etichetta": "Spesa pubblicitaria del mese", "valore": "1.200 €" },
-          { "etichetta": "Richieste di contatto", "valore": "64" },
-          { "etichetta": "Costo per richiesta", "valore": "18,75 €" }
-        ],
-        "tabella": {
-          "didascalia": "Il funnel di ottobre confrontato con settembre (dati di esempio)",
-          "colonne": ["Passaggio", "Ottobre", "Settembre", "Variazione"],
-          "righe": [
-            ["Persone raggiunte dagli annunci", "48.000", "52.000", "−8%"],
-            ["Clic sugli annunci", "1.150", "1.090", "+6%"],
-            ["Visite alla pagina dei servizi", "820", "790", "+4%"],
-            ["Richieste di contatto", "64", "71", "−10%"],
-            ["Nuovi clienti", "9", "9", "0%"]
-          ]
-        },
-        "osservazioni": {
-          "titolo": "Cosa dice il report",
-          "voci": [
-            "Gli annunci portano più clic di settembre, ma le richieste calano del 10%. Il punto debole è la pagina dei servizi, non gli annunci.",
-            "Da telefono arriva il 70% delle visite, ma solo il 40% delle richieste. Da provare: un modulo più corto e il pulsante di contatto in alto. Il mese prossimo guardo le richieste da telefono.",
-            "Google e Meta contano insieme 81 conversioni, Google Analytics 64. È normale: ogni piattaforma conta a modo suo. Per le decisioni uso il numero di Google Analytics."
+            [
+              "Gennaio",
+              "15.200 €",
+              "9.800 €",
+              "5.400 €"
+            ],
+            [
+              "Febbraio",
+              "16.100 €",
+              "10.200 €",
+              "5.900 €"
+            ],
+            [
+              "Marzo",
+              "17.300 €",
+              "10.900 €",
+              "6.400 €"
+            ],
+            [
+              "Aprile",
+              "18.400 €",
+              "11.300 €",
+              "7.100 €"
+            ]
           ]
         }
       }

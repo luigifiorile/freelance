@@ -8,7 +8,7 @@ pubblicato: 2026-11-17
 aggiornato: 2026-11-17
 capitolo: capire
 ordine: 2
-servizio: gestionale-interno
+servizio: gestionale-e-reporting-su-misura
 correlati:
 - ricerca-con-l-ai
 - come-funziona-l-ai
