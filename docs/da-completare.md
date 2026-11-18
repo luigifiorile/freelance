@@ -21,6 +21,13 @@ Quasi tutti i valori si cambiano in `contenuti/it.json`. Nel sito i segnaposto s
 Dopo aver cambiato `brand`, `scrittaGigante` o `home.apertura.titolo`, rigenerare l'anteprima social con `node script/anteprima-social.mjs`.
 
 
+## Da scegliere
+
+| Cosa | Dove | Stato |
+|---|---|---|
+| Testo del pulsante unico di prenotazione (per ora "Prenota 30 minuti") | `comune.cta.testo` | da scegliere |
+| Frase d'apertura in blu (varianti proposte il 18/11/2026) | `home.apertura.titolo` | da scegliere |
+
 ## Bozze da rivedere
 
 Testi scritti da Claude a partire dal brief, da approvare o riscrivere. Sono tutti in `contenuti/it.json`.
