@@ -110,9 +110,17 @@ function percorso(t) {
     <p class="testo-grande">${esc(h.intro)}</p>
   </div>
   <div class="percorso__griglia">
-    <nav class="percorso__nav" id="navigazione-servizi" aria-label="${esc(h.navEtichetta)}" tabindex="-1">
-      <ol>${voci}</ol>
-    </nav>
+    <div class="percorso__lato">
+      <nav class="percorso__nav" id="navigazione-servizi" aria-label="${esc(h.navEtichetta)}" tabindex="-1">
+        <ol>${voci}</ol>
+      </nav>
+      <div class="percorso__invito">
+        <p>${esc(h.invitoTesto)}</p>
+        ${segnaposto(t.sito.urlPrenotazione)
+          ? `<span class="pillola segnaposto">${esc(h.invitoPulsante)}</span>`
+          : `<a class="pillola" href="${esc(t.sito.urlPrenotazione)}" target="_blank" rel="noopener">${esc(h.invitoPulsante)} ${svg("icone-ui/freccia-esterna", "icona")}<span class="nascosto"> (${esc(t.home.contatti.nuovaScheda)})</span></a>`}
+      </div>
+    </div>
     <div class="percorso__tappe">
       ${t.servizi.map((s) => tappa(t, s)).join("")}
     </div>
