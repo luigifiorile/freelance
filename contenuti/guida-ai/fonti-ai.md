@@ -54,7 +54,7 @@ Quando leggi un numero sull'AI, cerca di risalire a una di queste fonti.
 
 ## Le persone da conoscere
 
-Non serve seguirle tutte. Serve sapere chi sono quando le senti citare.
+Non è necessario seguirle tutte: basta sapere chi sono quando le senti citare.
 
 - **Andrej Karpathy.** Tra i fondatori di OpenAI, poi responsabile dell'AI di Tesla. I suoi video, come [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g), sono le spiegazioni più chiare in circolazione. Ha reso popolari espressioni come _vibe coding_ e _context engineering_.
 - **Ethan Mollick.** Vedi sopra.
@@ -68,7 +68,7 @@ Non serve seguirle tutte. Serve sapere chi sono quando le senti citare.
 
 ## I paper che vale la pena conoscere
 
-Non serve leggerli per intero. Serve sapere che esistono e cosa hanno dimostrato, perché vengono citati di continuo.
+Non c'è bisogno di leggerli per intero: basta sapere che esistono e cosa hanno dimostrato, perché vengono citati di continuo.
 
 | Paper | Anno | Perché conta |
 |---|---|---|

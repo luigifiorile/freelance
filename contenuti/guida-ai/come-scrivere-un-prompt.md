@@ -23,7 +23,7 @@ inBreve:
 
 Per un paio d'anni il _prompt engineering_ è stato presentato come una specie di arte segreta, con liste di "prompt magici" da copiare e corsi che promettevano di svelare la formula. Una parte di quella roba aveva senso con i modelli del 2023. Con quelli di oggi conta molto meno.
 
-La buona notizia è che chi i modelli li costruisce ha scritto guide ufficiali, gratuite e piuttosto chiare: [Anthropic](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/be-clear-and-direct) per Claude, [OpenAI](https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide) per ChatGPT, [Google](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf) per Gemini. Vale la pena leggerle, e leggendole una dopo l'altra si nota una cosa: dicono, con parole diverse, quasi le stesse cose. Qui sotto c'è il succo, con esempi presi dal lavoro di tutti i giorni.
+Chi i modelli li costruisce ha scritto guide ufficiali, gratuite e piuttosto chiare: [Anthropic](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/be-clear-and-direct) per Claude, [OpenAI](https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide) per ChatGPT, [Google](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf) per Gemini. Vale la pena leggerle, e leggendole una dopo l'altra si nota una cosa: dicono, con parole diverse, quasi le stesse cose. Qui sotto c'è il succo, con esempi presi dal lavoro di tutti i giorni.
 
 ## La regola del collega appena arrivato
 

@@ -23,7 +23,7 @@ inBreve:
 
 C'è un momento, quando si inizia a usare l'AI per lavoro, in cui ci si accorge di scrivere sempre le stesse cose. "Sono il titolare di un'azienda che fa...", "i nostri clienti sono soprattutto...", "scrivi dando del lei, senza frasi fatte...". Ogni volta, in ogni chat.
 
-È il segnale che il problema non è più il prompt. È il contesto.
+A quel punto il prompt va già bene: manca un posto dove il contesto resti salvato, invece di riscriverlo ogni volta.
 
 ## Cosa vuol dire contesto
 
@@ -103,9 +103,9 @@ Anche dentro una singola conversazione si può gestire il contesto meglio. Alcun
 
 Un progetto ben fatto è il primo passo verso qualcosa di più. Quando le istruzioni sono stabili e i compiti si ripetono, il passo successivo è collegare il modello direttamente ai dati veri: il CRM, il gestionale, la casella email. Lì il contesto non lo carichi più a mano, arriva da solo, aggiornato.
 
-È quello che fanno gli strumenti su misura che costruisco, e gli [agenti](guida:agenti-ai) in generale. Lo standard più usato per questi collegamenti è il [Model Context Protocol](https://modelcontextprotocol.io), presentato da Anthropic nel novembre 2024 e adottato poi anche da OpenAI, Google e Microsoft. Il nome dice già tutto: è un protocollo per dare contesto ai modelli.
+È quello che fanno gli [agenti](guida:agenti-ai) e gli strumenti collegati ai dati di un'azienda. Lo standard più usato per questi collegamenti è il [Model Context Protocol](https://modelcontextprotocol.io), presentato da Anthropic nel novembre 2024 e adottato poi anche da OpenAI, Google e Microsoft. Il nome dice già tutto: è un protocollo per dare contesto ai modelli.
 
-Ma si parte sempre da qui: sapere quali informazioni servono davvero, e scriverle bene una volta.
+Il primo passo resta lo stesso: capire quali informazioni servono davvero e scriverle bene una volta.
 
 ## Domande frequenti
 
