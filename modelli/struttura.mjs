@@ -1,6 +1,23 @@
 // Struttura comune a tutte le pagine: <head>, testata, piè di pagina.
 import { esc, prefisso, link, segnaposto, svg, versione } from "./aiuti.mjs";
 
+// Pulsante unico di prenotazione (Cal.com), uguale in tutto il sito.
+// Testo in comune.cta. Il pulsante colorato (--mare) è solo quello in testata.
+export function bottonePrenota(t, classe = "pillola") {
+  const c = t.comune.cta;
+  if (segnaposto(t.sito.urlPrenotazione)) {
+    return `<span class="${classe} segnaposto">${esc(c.testo)}</span>`;
+  }
+  return `<a class="${classe}" href="${esc(t.sito.urlPrenotazione)}" target="_blank" rel="noopener">${esc(c.testo)} ${svg("icone-ui/freccia-esterna", "icona")}<span class="nascosto"> (${esc(c.nuovaScheda)})</span></a>`;
+}
+
+// Invito leggero per chi non è pronto a prenotare: Guida AI e LinkedIn.
+export function altroPasso(t, r) {
+  const a = t.comune.altroPasso;
+  const linkedin = (t.sito.profili || []).find((u) => u.includes("linkedin.com"));
+  return `${esc(a.prima)} <a href="${r}guida-ai/">${esc(a.guida)}</a>${linkedin ? ` ${esc(a.mezzo)} <a href="${esc(linkedin)}" target="_blank" rel="noopener">${esc(a.linkedin)}</a>` : ""}.`;
+}
+
 function testata(t, r, inHome, paginaAttiva) {
   const base = inHome ? "" : r || "./";
   // Una voce ha un'ancora della home ("servizi") o un percorso ("guida-ai/").
@@ -19,7 +36,7 @@ function testata(t, r, inHome, paginaAttiva) {
   </a>
   <button class="testata__menu" type="button" aria-expanded="false" aria-controls="menu-principale" hidden>Menu</button>
   <nav class="testata__nav" id="menu-principale" aria-label="${esc(t.comune.menuEtichetta)}">
-    <ul>${voci}</ul>
+    <ul>${voci}<li class="testata__cta">${bottonePrenota(t, "pillola pillola--mare")}</li></ul>
   </nav>
 </header>`;
 }

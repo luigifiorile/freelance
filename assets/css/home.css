@@ -415,7 +415,10 @@
   border: var(--tratto) solid var(--inchiostro);
   border-radius: var(--raggio-card);
 }
-.prenota__nota { font-size: 16px; color: var(--scoglio); }
+.prenota__nota-forte { font: 600 17px/1.4 var(--font-testi); margin-top: -4px; }
+.prenota__nota { font-size: 15px; color: var(--scoglio); }
+.prenota__altro { padding-top: 16px; border-top: 1px solid var(--linea); font-size: 16px; color: var(--scoglio); }
+.prenota__altro a { color: var(--inchiostro); }
 .prenota__email { font-size: 17px; }
 .prenota__email a { color: var(--inchiostro); }
 

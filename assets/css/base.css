@@ -190,6 +190,19 @@ main:focus { outline: none; }
 }
 .testata__menu[aria-expanded="true"] { background: var(--inchiostro); color: var(--schiuma); }
 
+/* Pulsante di prenotazione in testata, a destra di "Contatti": l'unico colorato */
+.testata__nav .testata__cta { display: flex; align-items: center; margin-left: 8px; }
+.testata__nav .testata__cta .pillola {
+  min-height: var(--altezza-tocco);
+  padding: 0 18px;
+  gap: 8px;
+  font: 600 15px/1 var(--font-testi);
+  text-transform: none;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.testata__nav .testata__cta .pillola:hover { color: var(--schiuma); }
+
 @media (min-width: 768px) {
   .testata__menu { display: none; }
 }
@@ -201,6 +214,8 @@ main:focus { outline: none; }
   .testata[data-menu] .testata__nav { width: 100%; }
   .testata[data-menu] .testata__nav ul { flex-direction: column; padding-bottom: 12px; }
   .testata[data-menu] .testata__nav a { width: 100%; font-size: 15px; padding: 0 4px; }
+  .testata[data-menu] .testata__nav .testata__cta { margin: 8px 0 0; }
+  .testata[data-menu] .testata__nav .testata__cta .pillola { width: auto; padding: 0 20px; }
 }
 
 /* ---------- Scritta gigante ---------- */
@@ -276,3 +291,6 @@ main:focus { outline: none; }
   height: auto;
   margin-bottom: -1px;
 }
+
+/* Rassicurazione accanto al pulsante di prenotazione */
+.invito__nota { margin-top: 12px; max-width: 46ch; font-weight: 600; }

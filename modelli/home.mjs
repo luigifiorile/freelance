@@ -1,6 +1,6 @@
 // Home: apertura, percorso tra i servizi, come lavoro, chi sono, contatti.
 import { esc, link, segnaposto, svg } from "./aiuti.mjs";
-import { struttura, datiPersona, datiServizioProfessionale } from "./struttura.mjs";
+import { struttura, datiPersona, datiServizioProfessionale, bottonePrenota, altroPasso } from "./struttura.mjs";
 
 // Disposizione finale degli oggetti, presa da brand/oggetti/oggetti-insieme.svg.
 // I tre loghi (Claude, n8n, HubSpot) sono stati tolti: senza di loro gli oggetti
@@ -116,9 +116,7 @@ function percorso(t) {
       </nav>
       <div class="percorso__invito">
         <p>${esc(h.invitoTesto)}</p>
-        ${segnaposto(t.sito.urlPrenotazione)
-          ? `<span class="pillola segnaposto">${esc(h.invitoPulsante)}</span>`
-          : `<a class="pillola" href="${esc(t.sito.urlPrenotazione)}" target="_blank" rel="noopener">${esc(h.invitoPulsante)} ${svg("icone-ui/freccia-esterna", "icona")}<span class="nascosto"> (${esc(t.home.contatti.nuovaScheda)})</span></a>`}
+        ${bottonePrenota(t)}
       </div>
     </div>
     <div class="percorso__tappe">
@@ -171,11 +169,6 @@ function chiSono(t) {
 
 function contatti(t) {
   const c = t.home.contatti;
-  // Prenotazione su Cal.com: un link al servizio esterno, nessuno script
-  // e nessun form sul sito. Finché il link è un segnaposto, non è cliccabile.
-  const prenota = segnaposto(t.sito.urlPrenotazione)
-    ? `<span class="pillola pillola--mare segnaposto" data-segnaposto="${esc(t.sito.urlPrenotazione)}">${esc(c.prenota)}</span>`
-    : `<a class="pillola pillola--mare" href="${esc(t.sito.urlPrenotazione)}" target="_blank" rel="noopener">${esc(c.prenota)} ${svg("icone-ui/freccia-esterna", "icona")}<span class="nascosto"> (${esc(c.nuovaScheda)})</span></a>`;
   const email = segnaposto(t.sito.email)
     ? `<span class="segnaposto">${esc(t.sito.email)}</span>`
     : `<a href="mailto:${esc(t.sito.email)}">${esc(t.sito.email)}</a>`;
@@ -188,9 +181,11 @@ function contatti(t) {
       <img class="contatti__bottiglia" src="brand/illustrazioni/messaggio-in-bottiglia.svg" alt="" width="400" height="300" loading="lazy">
     </div>
     <div class="prenota">
-      <p class="prenota__azione">${prenota}</p>
-      <p class="prenota__nota">${esc(c.prenotaNota)}</p>
+      <p class="prenota__azione">${bottonePrenota(t)}</p>
+      <p class="prenota__nota-forte">${esc(t.comune.cta.nota)}</p>
+      <p class="prenota__nota">${esc(t.comune.cta.servizio)}</p>
       <p class="prenota__email">${esc(c.oppure)} ${email}</p>
+      <p class="prenota__altro">${altroPasso(t, "")}</p>
     </div>
   </div>
 </section>`;

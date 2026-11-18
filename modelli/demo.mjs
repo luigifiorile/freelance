@@ -2,7 +2,7 @@
 // Demo statica con dati di esempio, dichiarati come tali in cima alla pagina.
 // Campo facoltativo "osservazioni": un elenco di letture dei dati (es. il report mensile).
 import { esc, svg, compila, prefisso } from "./aiuti.mjs";
-import { struttura } from "./struttura.mjs";
+import { struttura, bottonePrenota } from "./struttura.mjs";
 
 export function demo(t, s) {
   const p = t.demoPagina;
@@ -71,7 +71,8 @@ ${d.osservazioni ? `
     <div class="contenitore">
       <h2 class="titolo-1" id="contatto-titolo">${esc(p.contattoTitolo)}</h2>
       <p class="testo-grande">${esc(p.contattoTesto)}</p>
-      <p class="invito__azioni"><a class="pillola pillola--mare" href="${r}#contatti">${esc(p.contattoPulsante)}</a></p>
+      <p class="invito__azioni">${bottonePrenota(t)}</p>
+      <p class="invito__nota">${esc(t.comune.cta.nota)}</p>
     </div>
   </section>
 </article>`;
