@@ -17,11 +17,11 @@ inBreve:
 - Nelle versioni personali degli assistenti le conversazioni possono essere usate per addestrare i modelli, a seconda delle impostazioni: vanno controllate.
 - Nei piani business ed enterprise di OpenAI, Anthropic, Google e Microsoft i dati, per contratto, non vengono usati per l'addestramento.
 - Il GDPR vale anche per l'AI: per dati personali dei clienti servono una base giuridica, un fornitore con un accordo sul trattamento e il minimo indispensabile di dati.
-- La regola pratica: niente dati personali di clienti in account personali; anonimizza quando puoi; per i dati sensibili, chiedi prima.
+- Niente dati personali di clienti in account personali; anonimizza quando puoi; per i dati sensibili, chiedi prima.
 - Il Garante italiano è stato tra i più attivi d'Europa: ha bloccato ChatGPT nel 2023 e DeepSeek nel 2025.
 ---
 
-Una delle domande più frequenti, dopo "quale AI uso?", è questa: "ma posso metterci dentro i dati dei miei clienti?". La risposta breve è: dipende da quale account usi e da quali dati. La risposta lunga è questo articolo.
+Dopo "quale AI uso?", la domanda che viene più naturale è: "ma posso metterci dentro i dati dei miei clienti?". La risposta breve è: dipende da quale account usi e da quali dati. La risposta lunga è questo articolo.
 
 Premessa doverosa, come per l'[articolo sull'AI Act](guida:ai-act-piccole-imprese): non sono un avvocato né un consulente privacy. Qui trovi i principi e le impostazioni da conoscere. Per trattamenti complessi o dati delicati serve un professionista, e spesso il tuo DPO o consulente privacy, se ce l'hai.
 
@@ -33,7 +33,7 @@ Quasi tutto dipende da una distinzione.
 
 **Piani business ed enterprise** (ChatGPT Business ed Enterprise, Claude per i team, Gemini dentro Google Workspace, Microsoft 365 Copilot, e l'uso tramite API): qui i fornitori si impegnano per contratto a **non usare i dati per addestrare i modelli**, offrono un accordo sul trattamento dei dati ai sensi del GDPR e strumenti di amministrazione per l'azienda. Le condizioni sono pubbliche: per esempio la pagina di [OpenAI sulla privacy enterprise](https://openai.com/enterprise-privacy/).
 
-Se in azienda qualcuno incolla email, preventivi e documenti di clienti in un account ChatGPT personale, il problema non è l'AI. È che dati dell'azienda e dei clienti stanno passando per un servizio con cui l'azienda non ha nessun contratto.
+Se in azienda qualcuno incolla email, preventivi e documenti di clienti in un account ChatGPT personale, il problema è che dati dell'azienda e dei clienti stanno passando per un servizio con cui l'azienda non ha nessun contratto.
 
 ## Le impostazioni da controllare negli account personali
 
@@ -76,7 +76,7 @@ E per i documenti riservati dell'azienda (bilanci non pubblici, strategie, contr
 
 ## Quando i dati li legge un agente
 
-Quando l'AI non si limita a leggere quello che incolli ma è collegata direttamente alla posta, al CRM o all'archivio (come succede con gli [agenti](guida:agenti-ai)), la questione si allarga. Non conta solo dove vanno i dati, ma anche cosa l'agente può farci e chi può dargli istruzioni. È il problema della prompt injection, e la difesa principale è dare solo gli accessi strettamente necessari.
+Quando l'AI non si limita a leggere quello che incolli ma è collegata direttamente alla posta, al CRM o all'archivio (come succede con gli [agenti](guida:agenti-ai)), la questione si allarga. Oltre a dove vanno i dati, conta cosa l'agente può farci e chi può dargli istruzioni. È il problema della prompt injection, e la difesa principale è dare solo gli accessi strettamente necessari.
 
 ## Domande frequenti
 

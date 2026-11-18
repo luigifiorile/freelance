@@ -149,7 +149,7 @@ Comandi:
 - Riduzione a tre servizi (18/11/2026): vedi la sezione "Servizi". Le decisioni precedenti su "Marketing" e "Siti web e visibilità" valgono ora per il servizio 2.
 - Finché ci sono segnaposto il sito non si fa indicizzare: `sito.indicizzabile` è `false` e tutte le pagine hanno `<meta name="robots" content="noindex">`. Al lancio va messo a `true`.
 - Il sito è pubblicato su GitHub Pages da un repository pubblico (Pages su repository privati richiede un piano a pagamento).
-- Guida AI (novembre 2026): pilastro + articoli satellite in `guida-ai/`, voce "Guida AI" nel menu. Ogni numero ha fonte primaria linkata (paper, Istat, Eurostat, documentazione di OpenAI, Anthropic, Google). Niente fonti come aggregatori di tool. Voce di Luigi in prima persona, ma episodi personali solo da lui (segnaposto `[[ESEMPIO DI LUIGI: ...]]`). Ogni articolo rimanda a un servizio.
+- Guida AI (novembre 2026): pilastro + articoli satellite in `guida-ai/`, voce "Guida AI" nel menu. Ogni numero ha fonte primaria linkata (paper, Istat, Eurostat, documentazione di OpenAI, Anthropic, Google). Niente fonti come aggregatori di tool. Voce di Luigi in prima persona, ma episodi personali solo da lui (segnaposto `[[ESEMPIO DI LUIGI: ...]]`). Dal 18/11/2026 la guida informa e non vende: niente rimandi ai servizi negli articoli, invito finale che chiede un parere o segnala errori, "Chi scrive" con il testo di Luigi. Regole di voce in `docs/guida-ai.md`.
 - Su mobile i titoli con misura fissa nei token (`--titolo-1`, `--titolo-2`, `--apertura`) si riducono con `clamp()`; su desktop restano identici ai token.
 ## Come è fatta l'apertura
 

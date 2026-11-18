@@ -58,18 +58,17 @@ function autore(t, g, r) {
     <img src="${r}brand/logo/marchio.svg" alt="" width="56" height="56">
     <div>
       <p class="etichetta">${esc(g.autoreEtichetta)}</p>
-      <p><strong>${esc(t.sito.persona)}</strong>. ${esc(g.autoreBio)}${g.autoreBackground ? " " + (segnaposto(g.autoreBackground) ? `<span class="segnaposto">${esc(g.autoreBackground)}</span>` : esc(g.autoreBackground)) : ""}</p>
+      <p>${esc(g.autoreBio)}${g.autoreBackground ? " " + (segnaposto(g.autoreBackground) ? `<span class="segnaposto">${esc(g.autoreBackground)}</span>` : esc(g.autoreBackground)) : ""}</p>
     </div>
   </aside>`;
 }
 
-// Invito finale informale: le varianti ruotano da un articolo all'altro (la pilastro usa la prima).
+// Invito finale: la guida informa e non vende (decisione del 18/11/2026).
+// Chiede un parere o la segnalazione di un errore; niente rimando ai servizi.
+// Le varianti ruotano da un articolo all'altro (la pilastro usa la prima).
 function invito(t, g, r, servizioId, n = 0) {
   const v = g.inviti[n % g.inviti.length];
-  const s = t.servizi.find((x) => x.id === servizioId);
-  const secondario = s
-    ? `<a class="pillola" href="${r}servizi/${esc(s.id)}/">${esc(s.nome)} ${svg("icone-ui/freccia-esterna", "icona")}</a>`
-    : "";
+  const secondario = "";
   return `
 <section class="sezione-pagina invito" aria-labelledby="invito-titolo">
   ${svg("onde/divisore", "invito__onda")}

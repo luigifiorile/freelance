@@ -29,7 +29,7 @@ Non è nessuna di queste tre cose. Proviamo a vedere cos'è, con il minimo indis
 
 Un **modello linguistico di grandi dimensioni** (_large language model_, LLM) è un programma che, dato un testo, calcola quale pezzo di testo è più probabile che venga dopo. Poi aggiunge quel pezzo e ricomincia. Lo fa migliaia di volte per scrivere una risposta.
 
-Detta così sembra il completamento automatico della tastiera del telefono, e in effetti il principio è parente. La differenza è la scala. I modelli di oggi sono reti neurali con centinaia di miliardi di parametri (i "numeri" che il modello regola durante l'addestramento), addestrate su una porzione enorme di tutto il testo scritto disponibile: libri, siti, codice, articoli scientifici. Per prevedere bene la parola successiva in testi così diversi, il modello finisce per costruirsi delle rappresentazioni interne di grammatica, fatti, stili, perfino di alcuni passaggi logici.
+Detta così sembra il completamento automatico della tastiera del telefono, e in effetti il principio è parente, ma su una scala enormemente più grande. I modelli di oggi sono reti neurali con centinaia di miliardi di parametri (i "numeri" che il modello regola durante l'addestramento), addestrate su una porzione enorme di tutto il testo scritto disponibile: libri, siti, codice, articoli scientifici. Per prevedere bene la parola successiva in testi così diversi, il modello finisce per costruirsi delle rappresentazioni interne di grammatica, fatti, stili, perfino di alcuni passaggi logici.
 
 Una precisazione che negli ultimi anni è diventata importante: "parola per parola" non vuol dire che il modello non abbia nessun piano. Una ricerca di Anthropic sul funzionamento interno di Claude ([Tracing the thoughts of a large language model](https://www.anthropic.com/research/tracing-thoughts-language-model), 2025) ha mostrato che quando scrive una poesia in rima il modello "sceglie" la parola finale del verso prima di arrivarci. Cosa succeda davvero là dentro è ancora in buona parte un mistero, anche per chi i modelli li costruisce.
 
@@ -86,7 +86,7 @@ Rimettiamo insieme i pezzi. Un sistema che costruisce la risposta più plausibil
 - se il contesto è confuso o contraddittorio, la risposta lo sarà altrettanto;
 - se il compito richiede lettere, cifre esatte o conteggi, senza uno strumento è in difficoltà.
 
-Niente di questo vuol dire che non funzioni. Vuol dire che funziona in un modo preciso, e conoscerlo aiuta a capire quando fidarsi.
+Funziona, ma in un modo preciso, e conoscerlo aiuta a capire quando fidarsi.
 
 ## Domande frequenti
 

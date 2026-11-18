@@ -21,7 +21,7 @@ inBreve:
 - Il rischio principale è la "prompt injection": istruzioni nascoste in un'email o in una pagina web che l'agente esegue come se fossero tue.
 ---
 
-Nel 2025 "agente" è diventata la parola che si mette davanti a qualsiasi prodotto per farlo sembrare più nuovo. Il chatbot sul sito è diventato un agente, l'automazione che manda le email pure, il modulo di contatto quasi. Il risultato è che quando un cliente mi chiede "mi serve un agente?" la prima cosa da fare è capire cosa intende.
+Nel 2025 "agente" è diventata la parola che si mette davanti a qualsiasi prodotto per farlo sembrare più nuovo. Il chatbot sul sito è diventato un agente, l'automazione che manda le email pure, il modulo di contatto quasi. Così, quando qualcuno chiede "mi serve un agente?", la prima cosa da fare è capire cosa intende.
 
 La definizione più utile che conosco è quella di Anthropic, in una guida del dicembre 2024 che è diventata un riferimento per chi costruisce questi sistemi: [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents), di Erik Schluntz e Barry Zhang.
 
@@ -45,7 +45,7 @@ La stessa guida descrive alcuni schemi ricorrenti. Li riporto perché aiutano a 
 - **Coordinatore e esecutori** (_orchestrator-workers_): un modello divide il lavoro e lo affida ad altri.
 - **Valutatore e correttore** (_evaluator-optimizer_): un modello produce, un altro giudica e chiede correzioni, finché il risultato va bene.
 
-Nel lavoro con le piccole imprese, i primi due coprono la grande maggioranza dei casi. Una richiesta che arriva, viene capita, smistata e preparata per una persona: è lo schema dietro molti degli strumenti che costruisco nel servizio [go to market e automazioni](servizio:go-to-market-e-automazioni).
+Per una piccola impresa, secondo me, i primi due bastano quasi sempre: una richiesta arriva, l'AI la capisce, la smista e la prepara per una persona.
 
 ## Cosa sanno fare gli agenti oggi
 
@@ -53,7 +53,7 @@ Gli agenti sono passati in pochi anni da esperimenti fragili a strumenti di uso 
 
 Il modo più interessante di misurare questi progressi è quello di [METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/), un'organizzazione di ricerca indipendente. Invece di chiedere "quanto è intelligente il modello", chiede: quanto è lungo, in tempo di una persona esperta, un compito che il modello riesce a completare da solo nella metà dei casi? Tra il 2019 e il 2025 questa durata è raddoppiata circa ogni sette mesi; nell'[aggiornamento di inizio 2026](https://metr.org/blog/2026-01-29-time-horizon-1-1/) il ritmo sui modelli più recenti risulta ancora più veloce, con stime che METR stessa invita a prendere con cautela.
 
-Tradotto: compiti che due anni fa richiedevano una persona per un pomeriggio, oggi un buon agente li porta a termine spesso da solo. Spesso, non sempre. E la parte "non sempre" è quella che conta in azienda.
+In pratica, compiti che due anni fa richiedevano una persona per un pomeriggio oggi un buon agente li porta a termine spesso da solo, ma non sempre: in azienda conta soprattutto quante volte sbaglia e come te ne accorgi.
 
 ## Collegare gli agenti ai tuoi strumenti
 
@@ -85,7 +85,7 @@ Qualche domanda per capirlo:
 3. **Cosa succede se sbaglia?** Se l'errore costa poco ed è facile da correggere, si può dare autonomia. Se costa molto, serve una persona nel mezzo.
 4. **Il compito si ripete abbastanza da valere lo sviluppo?** Un agente fatto bene richiede tempo per essere costruito, provato e mantenuto.
 
-La mia esperienza è che nove volte su dieci, in una piccola impresa, la risposta giusta è un flusso semplice con una persona che approva. L'agente arriva dopo, quando il flusso funziona e si vede dove serve più flessibilità.
+Secondo me, in una piccola impresa, la risposta giusta il più delle volte è un flusso semplice con una persona che approva. L'agente arriva dopo, quando il flusso funziona e si vede dove serve più flessibilità.
 
 ## Domande frequenti
 

@@ -82,7 +82,7 @@ Seguendo le skill `pezzo-substack-luigi` e `post-linkedin-luigi`:
 
 ## Come si aggiunge o aggiorna un articolo
 
-1. Creare `contenuti/guida-ai/<slug>.md` con l'intestazione (vedi un articolo esistente). Campi obbligatori: `titolo`, `descrizione`, `pubblicato`. Gli altri: `titoloBreve`, `titoloSeo`, `sottotitolo`, `aggiornato`, `capitolo` (id da `it.json → guida.capitoli`), `ordine`, `servizio` (id del servizio per l'invito finale), `correlati`, `inBreve`.
+1. Creare `contenuti/guida-ai/<slug>.md` con l'intestazione (vedi un articolo esistente). Campi obbligatori: `titolo`, `descrizione`, `pubblicato`. Gli altri: `titoloBreve`, `titoloSeo`, `sottotitolo`, `aggiornato`, `capitolo` (id da `it.json → guida.capitoli`), `ordine`, `servizio` (id del servizio collegato; dal 18/11/2026 non compare più nell'invito finale, che non vende), `correlati`, `inBreve`.
 2. Link interni: `[testo](guida:slug)`, `[testo](guida:slug#ancora)`, `[testo](servizio:id)`, `[testo](demo:id)`, `[testo](home:#contatti)`. Un link a un articolo non ancora pubblicato resta testo semplice, senza link rotti.
 3. Segnaposto: `[[TESTO]]`, sottolineato in pagina come gli altri segnaposto.
 4. Esempi di prompt: blocco con tre apici inversi; il testo dopo gli apici è l'etichetta del riquadro.
@@ -117,3 +117,9 @@ In ordine di priorità (ICE: impatto, fiducia, facilità). Ognuno ha un capitolo
 - **Ogni tre mesi**: rileggere `quale-ai-scegliere` (cambia più in fretta di tutti), controllare i link esterni, aggiornare i dati se Istat o Eurostat pubblicano nuovi numeri.
 - **Ogni anno**: Istat Imprese e ICT (di solito a dicembre), Stanford AI Index (primavera), Osservatorio PoliMi (febbraio).
 - **A ogni cambio normativo**: AI Act (linee guida della Commissione), decreti attuativi della legge 132/2025.
+
+## Voce e tono (18/11/2026)
+
+- La guida informa e non vende: niente frasi che spingono verso i servizi dentro gli articoli, e un invito finale che chiede un parere o la segnalazione di un errore.
+- La voce è quella delle skill di scrittura di Luigi (`pezzo-substack-luigi`, `post-linkedin-luigi`): niente frasi a effetto, negazioni contrastive ("non è X, è Y"), frasi che annunciano la struttura ("fino a qui ho riferito…"), due punti teatrali ("Tradotto:", "La regola pratica:"), chiuse ad aforisma.
+- Nessuna esperienza con clienti attribuita a Luigi se non l'ha raccontata lui.

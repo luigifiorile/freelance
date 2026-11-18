@@ -81,7 +81,7 @@ Fin qui ho riferito. Ora la mia lettura, che è un'opinione.
 
 **Il guadagno sta nel compito, non nello strumento.** Tutti gli studi con risultati forti misurano compiti precisi, dentro la frontiera. Nessuno misura "dare ChatGPT a tutti e vedere cosa succede". Per una piccola impresa vuol dire scegliere bene i compiti da cui partire, come spiego in [da dove partire](guida:ai-per-piccole-imprese).
 
-**I meno esperti guadagnano di più.** È il risultato più solido e torna in quasi tutte le ricerche. In una piccola impresa, dove ognuno fa anche lavori che non sono il suo mestiere, è un argomento forte.
+**I meno esperti guadagnano di più.** È il risultato più solido e torna in quasi tutte le ricerche. In una piccola impresa ognuno fa anche lavori che non sono il suo mestiere, quindi mi aspetto che lì l'effetto si senta di più.
 
 **Misura, non fidarti della sensazione.** METR lo dimostra in modo quasi crudele. Un foglio con il tempo prima e dopo, per un mese, vale più di qualsiasi impressione.
 

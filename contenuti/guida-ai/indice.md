@@ -13,9 +13,9 @@ inBreve:
 - Dal 10 ottobre 2025 in Italia i professionisti devono dire ai clienti se usano l'AI nel loro lavoro (legge 132/2025).
 ---
 
-Questa guida esiste per un motivo abbastanza semplice. Le guide migliori sull'intelligenza artificiale sono in inglese e sono scritte per chi lavora in grandi aziende americane: quella di [Ethan Mollick](https://www.oneusefulthing.org/p/using-ai-right-now-a-quick-guide), professore a Wharton, i corsi di [Google](https://ai.google/learn-ai-skills/), le risorse di [OpenAI per le aziende](https://openai.com/it-IT/business/learn/). Sono ottime. Ma se hai uno studio di cinque persone a Bergamo, o fai la commercialista da sola, o gestisci un negozio con un e-commerce che va avanti a fatica, ti lasciano con una domanda: sì, ma io da dove comincio?
+Questa guida nasce dai miei appunti. Come tutti sento la parola AI troppe volte al giorno, e da un po' mi sono messo a capirla davvero, prendendo note per me stesso. Le guide migliori sull'intelligenza artificiale sono in inglese e sono scritte per chi lavora in grandi aziende americane: quella di [Ethan Mollick](https://www.oneusefulthing.org/p/using-ai-right-now-a-quick-guide), professore a Wharton, i corsi di [Google](https://ai.google/learn-ai-skills/), le risorse di [OpenAI per le aziende](https://openai.com/it-IT/business/learn/). Sono ottime. Ma se hai uno studio di cinque persone a Bergamo, o fai la commercialista da sola, o gestisci un negozio con un e-commerce che va avanti a fatica, ti lasciano con una domanda: sì, ma io da dove comincio?
 
-Io lavoro con liberi professionisti e piccole imprese e costruisco strumenti AI su misura per loro. [[BACKGROUND PROFESSIONALE DA DEFINIRE]] L'AI la uso ogni giorno (anche per cose poco nobili, come l'asta del fantacalcio di un amico) e ne scrivo da utilizzatore, senza farne una religione.
+L'AI la uso ogni giorno (anche per cose poco nobili, come l'asta del fantacalcio di un amico) e ne scrivo da utilizzatore.
 
 Ogni capitolo qui sotto ha un riassunto e un link all'articolo che lo approfondisce. Ogni numero ha una fonte, quasi sempre quella originale: il paper, il comunicato Istat, la documentazione di chi i modelli li costruisce. Quando una cosa non la so, o gli studi non sono d'accordo, lo scrivo.
 
@@ -25,13 +25,11 @@ Ogni capitolo qui sotto ha un riassunto e un link all'articolo che lo approfondi
 
 Il cuore di questi strumenti è un **modello linguistico di grandi dimensioni** (in inglese _large language model_, LLM). Semplificando molto: è un programma addestrato su una quantità enorme di testi a prevedere quale pezzo di parola viene dopo. Fatto su abbastanza testi e con abbastanza potenza di calcolo, questo trucco apparentemente banale produce qualcosa che riassume contratti, scrive email, traduce, ragiona su un foglio Excel e programma.
 
-La tecnologia alla base, il _transformer_, è descritta in un paper di Google del 2017 con un titolo che è diventato un meme: [Attention Is All You Need](https://arxiv.org/abs/1706.03762). Non serve leggerlo. Serve però capire due conseguenze pratiche: il modello non "cerca" la risposta in un archivio, la costruisce parola per parola, e non sa quando sta sbagliando.
+La tecnologia alla base, il _transformer_, è descritta in un paper di Google del 2017 con un titolo che è diventato un meme: [Attention Is All You Need](https://arxiv.org/abs/1706.03762). Non serve leggerlo, ma due conseguenze pratiche sono utili da capire: il modello non "cerca" la risposta in un archivio, la costruisce parola per parola, e non sa quando sta sbagliando.
 
 Approfondimento: [Come funziona un modello linguistico, spiegato a chi non è un tecnico](guida:come-funziona-l-ai).
 
 ## Quanto la usano davvero le imprese italiane
-
-Meno di quanto sembri dai titoli dei giornali, più di quanto pensino i tuoi concorrenti.
 
 Secondo il rapporto [Imprese e ICT di Istat](https://www.istat.it/comunicato-stampa/imprese-e-ict-anno-2025/), nel 2025 il 16,4% delle imprese italiane con almeno 10 addetti usava almeno una tecnologia di intelligenza artificiale. Nel 2024 era l'8,2%, nel 2023 il 5%: in due anni il dato è più che triplicato. La media europea, secondo [Eurostat](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20251211-2), è il 20%, con la Danimarca oltre il 40%. Tra le grandi imprese europee la quota supera il 55%.
 
@@ -39,13 +37,13 @@ Due cose da tenere a mente leggendo questi numeri. La prima: le micro imprese (s
 
 Sul lato del mercato, l'[Osservatorio Artificial Intelligence del Politecnico di Milano](https://www.lapresse.it/economia/2026/02/05/cresce-il-mercato-dellai-in-italia-raggiunto-il-valore-di-18-miliardi/) stima che nel 2025 la spesa in AI in Italia abbia raggiunto 1,8 miliardi di euro, circa il 50% in più dell'anno prima, con l'AI generativa come motore principale.
 
-E le persone? Il dato più interessante viene da OpenAI stessa: uno [studio pubblicato con il National Bureau of Economic Research](https://www.nber.org/papers/w34255) su 1,5 milioni di conversazioni mostra che a metà 2025 oltre il 70% dei messaggi inviati a ChatGPT riguardava la vita privata, non il lavoro. Tradotto: moltissime persone la usano già, a casa. Il salto da fare è portarla in ufficio con un minimo di metodo.
+E le persone? Il dato più interessante viene da OpenAI stessa: uno [studio pubblicato con il National Bureau of Economic Research](https://www.nber.org/papers/w34255) su 1,5 milioni di conversazioni mostra che a metà 2025 oltre il 70% dei messaggi inviati a ChatGPT riguardava la vita privata, non il lavoro. Molte persone, quindi, la usano già a casa, prima ancora che al lavoro.
 
 Approfondimento: [AI in una piccola impresa: da dove partire](guida:ai-per-piccole-imprese).
 
 ## Cosa sa fare bene, e dove ti frega
 
-Se dovessi tenere un solo concetto di tutta questa guida, sarebbe questo. Nel 2023 un gruppo di ricercatori di Harvard, Wharton e MIT ha fatto un esperimento con 758 consulenti di Boston Consulting Group. Su compiti adatti all'AI, chi la usava ha completato il 12,2% di compiti in più, il 25,1% più in fretta e con una qualità giudicata molto più alta. Su un compito che sembrava simile ma stava appena fuori dalle capacità del modello, chi usava l'AI ha dato la risposta giusta **19 punti percentuali meno spesso** di chi lavorava da solo.
+Nel 2023 un gruppo di ricercatori di Harvard, Wharton e MIT ha fatto un esperimento con 758 consulenti di Boston Consulting Group. Su compiti adatti all'AI, chi la usava ha completato il 12,2% di compiti in più, il 25,1% più in fretta e con una qualità giudicata molto più alta. Su un compito che sembrava simile ma stava appena fuori dalle capacità del modello, chi usava l'AI ha dato la risposta giusta **19 punti percentuali meno spesso** di chi lavorava da solo.
 
 I ricercatori l'hanno chiamata [frontiera tecnologica frastagliata](https://papers.ssrn.com/abstract=4573321): il confine tra quello che l'AI fa bene e quello che sbaglia non è una linea dritta, e non è dove ti aspetteresti. Un modello può scrivere un'ottima analisi di mercato e poi sbagliare una somma in una tabella.
 
@@ -58,9 +56,9 @@ Approfondimenti:
 
 ## Quale assistente scegliere
 
-La risposta onesta è che i tre grandi (ChatGPT, Claude e Gemini) sono abbastanza vicini da far sì che la scelta dipenda più da dove lavori che da chi è "il migliore" questo mese. Se la tua azienda vive dentro Google Workspace, Gemini è già lì. Se vivi dentro Outlook, Word ed Excel, Copilot è integrato. Se scrivi molto e lavori su documenti lunghi, vale la pena provare Claude. ChatGPT è il più diffuso e quello con più funzioni accessorie.
+Secondo me i tre grandi (ChatGPT, Claude e Gemini) sono abbastanza vicini da far sì che la scelta dipenda più da dove lavori che da chi è "il migliore" questo mese. Se la tua azienda vive dentro Google Workspace, Gemini è già lì. Se vivi dentro Outlook, Word ed Excel, Copilot è integrato. Se scrivi molto e lavori su documenti lunghi, vale la pena provare Claude. ChatGPT è il più diffuso e quello con più funzioni accessorie.
 
-Due consigli che danno anche Mollick e quasi tutti quelli che ci lavorano seriamente. Il primo: per il lavoro vero, usa il modello più capace che hai a disposizione, non quello veloce e gratuito. La differenza su compiti complessi è grande. Il secondo: paga un abbonamento per almeno un mese prima di giudicare. Valutare l'AI con la versione gratuita è un po' come provare un'auto senza togliere il freno a mano.
+Due consigli di Mollick che condivido. Il primo: per il lavoro vero, usa il modello più capace che hai a disposizione, non quello veloce e gratuito. La differenza su compiti complessi è grande. Il secondo: paga un abbonamento per almeno un mese prima di giudicare. Valutare l'AI con la versione gratuita è un po' come provare un'auto senza togliere il freno a mano.
 
 Approfondimento: [ChatGPT, Claude, Gemini o Copilot: quale usare per lavorare](guida:quale-ai-scegliere).
 
@@ -81,20 +79,20 @@ Approfondimenti:
 
 Gli assistenti oggi cercano sul web e citano le fonti, e le funzioni di "ricerca approfondita" (_deep research_) leggono decine di pagine e scrivono un rapporto in pochi minuti. Sono strumenti notevoli. Sono anche strumenti che sbagliano spesso le citazioni: in un test del [Tow Center della Columbia University](https://www.cjr.org/tow_center/we-compared-eight-ai-search-engines-theyre-all-bad-at-citing-news.php) del 2025 otto motori di ricerca AI hanno sbagliato la fonte in più del 60% dei casi. Uno [studio coordinato da EBU e BBC](https://aib.org.uk/ai-assistants-misrepresent-news-content-says-major-study/) su oltre 3.000 risposte ha trovato almeno un problema serio nel 45%.
 
-La regola pratica: usala per orientarti e per trovare le fonti, poi apri le fonti.
+In pratica conviene usarla per orientarsi e trovare le fonti, e poi aprire le fonti.
 
 Approfondimento: [Fare ricerche con l'AI senza farsi ingannare](guida:ricerca-con-l-ai).
 
 ## Cosa dicono gli studi sulla produttività
 
-Qui le cose si fanno interessanti, perché gli studi seri non dicono tutti la stessa cosa.
+Gli studi seri non dicono tutti la stessa cosa.
 
 - Su compiti di scrittura professionale, un esperimento pubblicato su [Science](https://www.science.org/doi/10.1126/science.adh2586) con 453 professionisti ha misurato il 40% di tempo in meno e il 18% di qualità in più.
 - In un call center con oltre 5.000 operatori, [Brynjolfsson, Li e Raymond](https://www.nber.org/papers/w31161) hanno misurato circa il 14% di problemi risolti in più all'ora, e il 34% in più per gli operatori meno esperti.
 - In Procter & Gamble, il [Cybernetic Teammate](https://www.nber.org/papers/w33641) ha mostrato che una persona sola con l'AI arriva al livello di una squadra di due persone senza.
 - Ma in uno [studio di METR del 2025](https://arxiv.org/abs/2507.09089) programmatori esperti, al lavoro su codice che conoscevano benissimo, sono andati il 19% più lenti con l'AI. E intanto erano convinti di essere andati più veloci.
 
-Il filo comune: i guadagni più grandi vanno a chi è meno esperto in un compito e a chi la usa su cose adatte. Chi è già bravissimo guadagna meno, e a volte perde.
+Quello che torna in quasi tutti è che i guadagni più grandi vanno a chi è meno esperto in un compito e a chi la usa su cose adatte. Chi è già bravissimo guadagna meno, e a volte perde.
 
 Approfondimento: [L'AI rende davvero più produttivi? Cosa dicono gli studi](guida:ai-e-produttivita-studi).
 
@@ -102,15 +100,13 @@ Approfondimento: [L'AI rende davvero più produttivi? Cosa dicono gli studi](gui
 
 "Agente" è la parola del momento, e come tutte le parole del momento viene usata per qualsiasi cosa. Anthropic, in una guida diventata un riferimento ([Building effective agents](https://www.anthropic.com/engineering/building-effective-agents)), fa una distinzione utile. Un **flusso di lavoro** (_workflow_) è una sequenza di passaggi decisa da una persona, in cui l'AI fa alcuni pezzi. Un **agente** è un sistema in cui è il modello a decidere quali passi fare e quali strumenti usare, finché il compito è finito.
 
-Il consiglio della stessa Anthropic è di partire dalla soluzione più semplice possibile e aggiungere complessità solo quando serve. Per una piccola impresa, nove volte su dieci, la cosa giusta è un flusso: una richiesta che arriva dal sito, l'AI che la legge e la classifica, una bozza di risposta, una persona che la approva. È esattamente il tipo di cosa che costruisco nel servizio [go to market e automazioni](servizio:go-to-market-e-automazioni).
+Il consiglio della stessa Anthropic è di partire dalla soluzione più semplice possibile e aggiungere complessità solo quando serve. Per una piccola impresa, nove volte su dieci, la cosa giusta è un flusso: una richiesta che arriva dal sito, l'AI che la legge e la classifica, una bozza di risposta, una persona che la approva.
 
 Le capacità degli agenti però crescono in fretta. [METR](https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/) misura la lunghezza dei compiti che un modello riesce a portare a termine da solo, in tempo umano: tra il 2019 e il 2025 è raddoppiata circa ogni sette mesi, e nei dati più recenti anche più in fretta.
 
 Approfondimento: [Agenti AI: cosa sono davvero e quando servono](guida:agenti-ai).
 
 ## Le regole: AI Act, legge italiana e privacy
-
-Tre cose da sapere, senza allarmismi.
 
 **L'AI Act europeo** ([Regolamento UE 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj)) classifica i sistemi di AI per livello di rischio. Per chi usa ChatGPT per scrivere email o riassumere documenti, gli obblighi sono leggeri. Uno però riguarda quasi tutti: dal 2 febbraio 2025 chi usa sistemi di AI in azienda deve adottare misure perché il personale abbia un'alfabetizzazione adeguata (articolo 4). Gli obblighi per i sistemi ad alto rischio, come quelli usati per selezionare il personale, sono stati rinviati al dicembre 2027 con il pacchetto di semplificazione chiamato Digital Omnibus.
 
@@ -125,17 +121,15 @@ Approfondimenti:
 
 ## La mia opinione, per quel che vale
 
-Fino a qui ho riferito. Adesso dico cosa ne penso, così sai su quale piano siamo.
+Credo che per una piccola impresa il rischio più grande oggi sia aspettare che l'AI "si stabilizzi", cosa che a breve non succederà: ogni sei mesi i modelli fanno cose che sei mesi prima non facevano. Mollick ha una regola che riassume bene il punto: dai per scontato che l'AI che stai usando oggi sia la peggiore che userai mai.
 
-Credo che per una piccola impresa il rischio più grande oggi non sia usare male l'AI. È aspettare che "si stabilizzi", perché non si stabilizzerà a breve: ogni sei mesi i modelli fanno cose che sei mesi prima non facevano. Mollick ha una regola che riassume bene il punto: dai per scontato che l'AI che stai usando oggi sia la peggiore che userai mai.
+Allo stesso tempo diffido di chi promette di "rivoluzionare" un'azienda con un chatbot. In un'azienda piccola mi aspetto che i guadagni veri arrivino da cose noiose: una risposta ai clienti che parte in dieci minuti invece che il giorno dopo, un preventivo che non va riscritto da zero, un report che si compila da solo il lunedì mattina.
 
-Allo stesso tempo, diffido di chiunque prometta di "rivoluzionare" un'azienda con un chatbot. Nelle realtà piccole i guadagni veri che vedo arrivano da cose noiose: una risposta ai clienti che parte in dieci minuti invece che il giorno dopo, un preventivo che non va riscritto da zero, un report che si compila da solo il lunedì mattina. Nessuna di queste cose finisce su un palco. Tutte liberano ore.
-
-E c'è una cosa che gli studi dicono e che si dimentica spesso: l'AI aiuta di più chi è meno esperto in un compito. Per una piccola impresa, dove ognuno fa tre lavori e due li fa da autodidatta, è una buona notizia.
+Poi c'è un dato degli studi che mi sembra si citi poco: l'AI aiuta di più chi è meno esperto in un compito. In una piccola impresa, dove ognuno fa tre lavori e due li fa da autodidatta, è una buona notizia.
 
 ## Da dove partire questa settimana
 
-Se non hai mai usato l'AI per lavoro, o l'hai usata poco, ecco un percorso che porta via qualche ora e non costa quasi niente.
+Se non hai mai usato l'AI per lavoro, o l'hai usata poco, questo è un percorso che porta via qualche ora e non costa quasi niente.
 
 1. **Scegli un assistente e paga un mese.** Uno solo. Va bene quello integrato negli strumenti che usi già.
 2. **Usalo per tutto, per una settimana.** Ogni volta che stai per scrivere un'email, leggere un documento lungo o fare una tabella, chiedi prima a lui. Molte cose non funzioneranno: è il modo più veloce per scoprire dove sta la tua frontiera.
@@ -143,7 +137,7 @@ Se non hai mai usato l'AI per lavoro, o l'hai usata poco, ecco un percorso che p
 4. **Scegli un compito ripetitivo** che fai ogni settimana e prova a farlo con l'AI per un mese. Misura quanto tempo ci mettevi prima e quanto ci metti dopo.
 5. **Decidi le regole minime**: cosa si può incollare, cosa si verifica sempre, chi controlla prima che qualcosa arrivi a un cliente. Mezza pagina basta, ed è anche un primo passo verso l'obbligo di alfabetizzazione dell'AI Act.
 
-Se dopo un mese hai trovato un compito in cui l'AI ti fa risparmiare ore, quello è il candidato per uno strumento vero, collegato ai tuoi dati. È il punto in cui di solito entro in gioco io.
+Se dopo un mese hai trovato un compito in cui l'AI ti fa risparmiare ore, quello è il candidato per uno strumento vero, collegato ai tuoi dati.
 
 ## Domande frequenti
 

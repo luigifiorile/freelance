@@ -35,7 +35,7 @@ Il primo gruppo di compiti stava **dentro la frontiera**, cioè tra le cose che 
 
 Il secondo compito stava **appena fuori dalla frontiera**: analizzare un caso aziendale incrociando dati di un foglio di calcolo con interviste ai dipendenti, dove la risposta giusta richiedeva di notare un dettaglio che il modello tendeva a perdere. Qui chi usava l'AI ha dato la risposta corretta 19 punti percentuali meno spesso di chi lavorava senza.
 
-Il punto è che i due tipi di compiti, visti dall'esterno, sembravano simili. Erano lavori da consulente, con dati e testo, del tipo che quelle persone fanno ogni giorno. Nessun cartello diceva "qui l'AI funziona, qui no".
+I due tipi di compiti, visti dall'esterno, sembravano simili. Erano lavori da consulente, con dati e testo, del tipo che quelle persone fanno ogni giorno. Nessun cartello diceva "qui l'AI funziona, qui no".
 
 ## Perché "frastagliata"
 
@@ -82,7 +82,7 @@ Il metodo più semplice è anche il più noioso: provare l'AI su tutto, per qual
 4. **Segna dove sbaglia e come.** Gli errori dell'AI tendono a ripetersi per tipo di compito, non a caso.
 5. **Rifai la prova a ogni nuovo modello** sui compiti dove prima falliva.
 
-Alla fine avrai tre liste: cose che delego quasi del tutto, cose che faccio con l'AI controllando a ogni passo, cose che continuo a fare da solo. È la mappa più utile che tu possa avere, ed è diversa per ogni lavoro.
+Alla fine avrai tre liste: cose che delego quasi del tutto, cose che faccio con l'AI controllando a ogni passo, cose che continuo a fare da solo. Le liste cambiano da un lavoro all'altro, e anche nel tempo, man mano che i modelli migliorano.
 
 ## Domande frequenti
 

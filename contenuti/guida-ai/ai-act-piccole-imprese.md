@@ -2,7 +2,7 @@
 titolo: AI Act e legge italiana: cosa deve fare una piccola impresa
 titoloBreve: AI Act e legge italiana
 titoloSeo: AI Act e legge 132/2025: obblighi per PMI e professionisti, spiegati semplici
-sottotitolo: Alfabetizzazione del personale, trasparenza, informativa ai clienti per i professionisti. Le scadenze aggiornate dopo il Digital Omnibus, senza allarmismi.
+sottotitolo: Alfabetizzazione del personale, trasparenza, informativa ai clienti per i professionisti. Le scadenze aggiornate dopo il Digital Omnibus.
 descrizione: Cosa prevedono l'AI Act europeo e la legge italiana 132/2025 per piccole imprese e professionisti: obbligo di alfabetizzazione, trasparenza, informativa al cliente, scadenze 2026-2028 e sanzioni.
 pubblicato: 2026-11-17
 aggiornato: 2026-11-17
@@ -21,9 +21,9 @@ inBreve:
 - La legge italiana 132/2025, in vigore dal 10 ottobre 2025, obbliga i professionisti a informare i clienti dell'uso dell'AI e limita l'AI a un ruolo di supporto.
 ---
 
-Una premessa onesta: non sono un avvocato, e questo articolo non è una consulenza legale. È una mappa per orientarsi, scritta da chi aiuta piccole imprese a usare l'AI e deve quindi sapere dove stanno i paletti. Per i casi concreti, soprattutto se usi l'AI per decidere su persone, serve un professionista.
+Non sono un avvocato e questo articolo serve solo a orientarsi: l'ho scritto per capire io per primo dove stanno i paletti. Per i casi concreti, soprattutto se usi l'AI per decidere su persone, serve un professionista.
 
-La buona notizia è che per la grande maggioranza delle piccole imprese gli obblighi sono pochi e ragionevoli.
+Per la grande maggioranza delle piccole imprese gli obblighi sono pochi e ragionevoli.
 
 ## L'AI Act in due minuti
 
