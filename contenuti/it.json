@@ -16,7 +16,7 @@
     "email": "luigi.fiorile@gmail.com",
     "partitaIva": "10521731215",
     "urlPrivacy": "[LINK PRIVACY]",
-    "urlCalendly": "[LINK PUBBLICO CALENDLY]"
+    "urlPrenotazione": "https://cal.com/luigi-fiorile-oe5jll/30min"
   },
 
   "comune": {
@@ -41,7 +41,7 @@
 
   "pagine": {
     "home": {
-      "titolo": "Luigi Fiorile — strumenti AI e digitali su misura per il tuo lavoro",
+      "titolo": "Luigi Fiorile | Strumenti AI e digitali su misura per il tuo lavoro",
       "descrizione": "Sono Luigi, freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese: CRM, gestionali, vendite, siti e marketing."
     },
     "nonTrovata": {
@@ -91,7 +91,8 @@
       "intro": "Prenota una chiamata nel momento che ti è più comodo. Mi racconti il tuo lavoro e cosa vorresti cambiare, e ti dico se e come posso aiutarti.",
       "bottigliaAlt": "",
       "prenota": "Prenota una chiamata",
-      "prenotaNota": "Si apre Calendly, il servizio che uso per gli appuntamenti.",
+      "prenotaNota": "Si apre Cal.com, il servizio che uso per gli appuntamenti.",
+      "nuovaScheda": "si apre in una nuova scheda",
       "oppure": "Preferisci scrivere? La mia email è"
     }
   },
@@ -148,7 +149,7 @@
     "contattoTesto": "Raccontami il tuo lavoro: capisco se posso esserti utile e ti dico come.",
     "contattoPulsante": "Scrivimi",
     "prossimo": "Servizio successivo",
-    "titoloPagina": "{nome} — {brand}"
+    "titoloPagina": "{nome} | {brand}"
   },
 
   "demoPagina": {
@@ -162,7 +163,7 @@
     "contattoTitolo": "Ti serve qualcosa di simile?",
     "contattoTesto": "Ogni strumento lo costruisco sul tuo lavoro. Raccontami cosa ti serve.",
     "contattoPulsante": "Scrivimi",
-    "titoloPagina": "Demo: {nome} — {brand}"
+    "titoloPagina": "Demo: {nome} | {brand}"
   },
 
   "servizi": [

@@ -163,11 +163,11 @@ function chiSono(t) {
 
 function contatti(t) {
   const c = t.home.contatti;
-  // Contatti tramite Calendly: un link al servizio esterno, nessuno script
+  // Prenotazione su Cal.com: un link al servizio esterno, nessuno script
   // e nessun form sul sito. Finché il link è un segnaposto, non è cliccabile.
-  const prenota = segnaposto(t.sito.urlCalendly)
-    ? `<span class="pillola pillola--mare segnaposto" data-segnaposto="${esc(t.sito.urlCalendly)}">${esc(c.prenota)}</span>`
-    : `<a class="pillola pillola--mare" href="${esc(t.sito.urlCalendly)}" target="_blank" rel="noopener">${esc(c.prenota)} ${svg("icone-ui/freccia-esterna", "icona")}<span class="nascosto"> (si apre in una nuova scheda)</span></a>`;
+  const prenota = segnaposto(t.sito.urlPrenotazione)
+    ? `<span class="pillola pillola--mare segnaposto" data-segnaposto="${esc(t.sito.urlPrenotazione)}">${esc(c.prenota)}</span>`
+    : `<a class="pillola pillola--mare" href="${esc(t.sito.urlPrenotazione)}" target="_blank" rel="noopener">${esc(c.prenota)} ${svg("icone-ui/freccia-esterna", "icona")}<span class="nascosto"> (${esc(c.nuovaScheda)})</span></a>`;
   const email = segnaposto(t.sito.email)
     ? `<span class="segnaposto">${esc(t.sito.email)}</span>`
     : `<a href="mailto:${esc(t.sito.email)}">${esc(t.sito.email)}</a>`;
