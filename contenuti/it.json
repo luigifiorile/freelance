@@ -24,9 +24,8 @@
     "homeLink": "Torna alla home",
     "menuEtichetta": "Menu principale",
     "cta": {
-      "testo": "Prenota 30 minuti",
+      "testo": "Raccontami il tuo lavoro",
       "nota": "30 minuti, gratis e senza impegno.",
-      "servizio": "Si apre Cal.com, il servizio che uso per gli appuntamenti.",
       "nuovaScheda": "si apre in una nuova scheda"
     },
     "altroPasso": {
@@ -54,7 +53,7 @@
   "pagine": {
     "home": {
       "titolo": "Luigi Fiorile | Strumenti AI e digitali su misura per il tuo lavoro",
-      "descrizione": "Sono Luigi, freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese: CRM, gestionali, vendite, siti e marketing."
+      "descrizione": "Sono Luigi, freelance a Milano. Costruisco strumenti AI e digitali su misura per liberi professionisti e piccole imprese: per trovare e seguire i clienti, farsi trovare online e avere i numeri sotto controllo."
     },
     "nonTrovata": {
       "titolo": "Pagina non trovata",
@@ -77,14 +76,14 @@
       "scopri": "Scopri il servizio",
       "provaDemo": "Guarda la demo",
       "tornaNav": "Torna alla navigazione",
-      "invitoTesto": "Non sai quale fa per te? Parliamone in una chiamata di 30 minuti."
+      "invitoTesto": "Non sai quale fa per te? Te lo dico in mezz'ora."
     },
     "comeLavoro": {
       "titolo": "Come lavoro",
       "passi": [
         { "nome": "Ascoltare", "immagine": "01-ascoltare", "testo": "Parto da una chiacchierata. Mi racconti il tuo lavoro, i tuoi clienti, gli strumenti che usi e cosa ti fa perdere tempo." },
         { "nome": "Leggere i dati", "immagine": "02-leggere-il-mare", "testo": "Guardo i numeri e i passaggi del tuo lavoro. Capisco dove si perdono tempo e clienti, prima di proporti qualcosa." },
-        { "nome": "Costruire", "immagine": "03-costruire", "testo": "Costruisco lo strumento su misura, partendo da quello che usi già. Niente di più complicato del necessario." },
+        { "nome": "Costruire", "immagine": "03-costruire", "testo": "Costruisco lo strumento su misura partendo da quello che usi già, senza complicarlo più del necessario." },
         { "nome": "Testare", "immagine": "04-mettere-in-acqua", "testo": "Provo lo strumento con te sul lavoro di tutti i giorni e lo sistemo finché non funziona come serve." },
         { "nome": "Formare", "immagine": "05-seguire-nel-tempo", "testo": "Ti insegno a usare lo strumento e a cambiarlo da solo, finché non diventi indipendente." }
       ]
@@ -101,7 +100,7 @@
     },
     "contatti": {
       "titolo": "Contatti",
-      "intro": "Prenota una chiamata nel momento che ti è più comodo. Mi racconti il tuo lavoro e cosa vorresti cambiare, e ti dico se e come posso aiutarti.",
+      "intro": "Scegli un orario per una chiamata: capisco cosa vorresti cambiare e ti dico se e come posso aiutarti.",
       "bottigliaAlt": "",
       "oppure": "Preferisci scrivere? La mia email è"
     }
@@ -153,8 +152,8 @@
     ],
     "demoTitolo": "Prova a vedere come funziona",
     "demoTesto": "Una demo con dati di esempio, per farti un'idea dello strumento.",
-    "contattoTitolo": "Ne parliamo?",
-    "contattoTesto": "Raccontami il tuo lavoro: capisco se posso esserti utile e ti dico come.",
+    "contattoTitolo": "È quello che ti serve?",
+    "contattoTesto": "Ti dico se posso esserti utile e come.",
     "prossimo": "Servizio successivo",
     "titoloPagina": "{nome} | {brand}"
   },
@@ -168,7 +167,7 @@
     "schermataTitolo": "La schermata",
     "tornaServizio": "Torna al servizio",
     "contattoTitolo": "Ti serve qualcosa di simile?",
-    "contattoTesto": "Ogni strumento lo costruisco sul tuo lavoro. Raccontami cosa ti serve.",
+    "contattoTesto": "Ogni strumento lo costruisco sul tuo lavoro, partendo da quello che usi già.",
     "titoloPagina": "Demo: {nome} | {brand}"
   },
 
@@ -283,7 +282,7 @@
       "offerta": [
         "Guardo il sito, le campagne e i dati che hai già. Ti dico se il tracciamento è affidabile, dove si perdono i contatti e cosa sistemare per primo. Alla fine hai un quadro chiaro e una proposta concreta.",
         "Sistemo il sito e il tracciamento, lavoro su SEO e GEO e sulle tue campagne Google e Meta, o le creo da zero. Preparo i gruppi di visitatori da ricontattare e l'agente che ogni mese prepara il report.",
-        "Ogni mese l'agente prepara il report e io lo rivedo prima che arrivi a te. Se serve, ti aiuto a correggere sito e campagne. L'obiettivo è darti autonomia, non legarti a me."
+        "Ogni mese l'agente prepara il report e io lo rivedo prima che arrivi a te. Se serve, ti aiuto a correggere sito e campagne. L'obiettivo è che tu possa farlo in autonomia."
       ],
       "demo": {
         "id": "marketing-funnel",
