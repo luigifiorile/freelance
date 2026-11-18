@@ -205,7 +205,7 @@
   border-top: var(--tratto) solid var(--inchiostro);
 }
 .percorso__invito p { font: 600 19px/1.35 var(--font-testi); }
-.percorso__invito .pillola { white-space: nowrap; padding: 0 18px; gap: 8px; }
+.percorso__invito .pillola { white-space: nowrap; padding: 0 14px; gap: 6px; font-size: 15px; }
 .percorso__nav:focus { outline: none; }
 .percorso__nav ol { list-style: none; margin: 0; padding: 0; }
 .percorso__nav a {

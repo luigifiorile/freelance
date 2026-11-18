@@ -25,7 +25,7 @@ Dopo aver cambiato `brand`, `scrittaGigante` o `home.apertura.titolo`, rigenerar
 
 | Cosa | Dove | Stato |
 |---|---|---|
-| Testo del pulsante unico di prenotazione (per ora "Prenota 30 minuti") | `comune.cta.testo` | da scegliere |
+| Testo del pulsante unico di prenotazione: "Raccontami il tuo lavoro" | `comune.cta.testo` | fatto |
 | Frase d'apertura in blu (varianti proposte il 18/11/2026) | `home.apertura.titolo` | da scegliere |
 
 ## Bozze da rivedere

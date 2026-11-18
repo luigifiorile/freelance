@@ -203,12 +203,16 @@ main:focus { outline: none; }
 }
 .testata__nav .testata__cta .pillola:hover { color: var(--schiuma); }
 
-@media (min-width: 768px) {
+/* Il menu a comparsa vale fino a 1149 px: sotto quella larghezza
+   cinque voci più il pulsante di prenotazione non stanno su una riga. */
+@media (min-width: 1150px) {
   .testata__menu { display: none; }
 }
 @media (max-width: 767px) {
   .testata__marchio img { width: 34px; height: 34px; }
   .testata__nome { font-size: 19px; }
+}
+@media (max-width: 1149px) {
   /* Con JS attivo il menu si apre col pulsante; senza JS resta visibile */
   .testata[data-menu="chiuso"] .testata__nav { display: none; }
   .testata[data-menu] .testata__nav { width: 100%; }

@@ -183,7 +183,6 @@ function contatti(t) {
     <div class="prenota">
       <p class="prenota__azione">${bottonePrenota(t)}</p>
       <p class="prenota__nota-forte">${esc(t.comune.cta.nota)}</p>
-      <p class="prenota__nota">${esc(t.comune.cta.servizio)}</p>
       <p class="prenota__email">${esc(c.oppure)} ${email}</p>
       <p class="prenota__altro">${altroPasso(t, "")}</p>
     </div>
