@@ -38,7 +38,7 @@ Home (pagina lunga):
 2. Percorso tra i cinque servizi (struttura Shopify Editions Winter '26, non lo stile).
 3. Come lavoro: ascoltare, leggere i dati, costruire, testare, formare (finché il cliente non diventa indipendente). Nessuna introduzione, solo i cinque passi con le illustrazioni di `brand/metodo/`.
 4. Chi sono: breve, con la testa e la tavola in piedi.
-5. Contatti: messaggio in bottiglia, pulsante per prenotare una chiamata su Calendly ed email.
+5. Contatti: messaggio in bottiglia, pulsante per prenotare una chiamata su Cal.com ed email.
 
 Altre pagine: cinque pagine servizio, cinque pagine demo, Guida AI (pagina pilastro + articoli), privacy, 404.
 
@@ -96,7 +96,7 @@ Comandi:
 - Sito statico HTML, CSS, JS. Niente framework pesanti. Pubblicato su GitHub Pages in sottocartella (`luigifiorile.github.io/freelance/`): solo percorsi relativi per pagine, stili, script e immagini. Gli URL assoluti servono solo dove li richiede lo standard (canonical, sitemap, anteprima social) e partono da un'unica variabile.
 - Font ospitati nel repository, non collegati a Google Fonts.
 - Una sola libreria esterna: GSAP con ScrollTrigger, copiata nel repository. Altre librerie solo dopo aver chiesto.
-- Contatti: link pubblico a Calendly (`sito.urlCalendly`), senza script né form sul sito. Nessuna chiave o credenziale nel repository.
+- Contatti: link pubblico a Cal.com (`sito.urlPrenotazione`), senza script né form sul sito. Il widget "Copy Prompt" di Cal.com non è usato (carica immagini e script da cal.com). Nessuna chiave o credenziale nel repository.
 - Nessun tracciamento, nessun cookie, nessuno script di terze parti senza chiedere.
 - "Riduci animazioni": nessun blocco dello scroll, stato aperto subito.
 - Accessibilità WCAG AA, tutto navigabile da tastiera, testo alternativo per le illustrazioni che portano significato (le decorative hanno `alt=""` o `aria-hidden`).
@@ -126,7 +126,8 @@ Comandi:
 - Scritta gigante: nessuna (18/11/2026; prima "LUIGI", poi "GTM" in prova). `sito.scrittaGigante` è vuoto e l'elemento non viene generato.
 - Frase nel fumetto: "Scorri per scoprire cosa ho in testa" (18/11/2026).
 - Email pubblica: luigi.fiorile@gmail.com (18/11/2026). Prima di pubblicare su un dominio proprio si valuta un indirizzo sul dominio.
-- Contatti con Calendly al posto del form (18/11/2026): niente dati raccolti dal sito. Serve il link pubblico di prenotazione (`calendly.com/<nome>/<evento>`), non quello dell'area di amministrazione.
+- Contatti con Cal.com al posto del form (18/11/2026, prima Calendly, a pagamento): https://cal.com/luigi-fiorile-oe5jll/30min. Niente dati raccolti dal sito.
+- Niente trattini lunghi (—) in tutto il sito (18/11/2026): nei titoli delle pagine si usa "|".
 - "Chi sono" con il testo di Luigi del 18/11/2026 (solo piccole correzioni di grammatica).
 - Percorso tra i servizi: struttura di Shopify Editions Winter '26, non lo stile. Elenco fisso a sinistra con numero e riga di puntini (attiva in nero, le altre in grigio); tappe con numero gigante in `--schiuma` e titolo grande; sottotitolo in grassetto, frase grande, link a pillola con freccia esterna; scheda interfaccia ruotata di 3 gradi; scheda demo numerata ("1 / crm-follow-up"); a fine tappa linea d'onda e "Torna alla navigazione" con freccia su; il divisore d'onda della tappa successiva sale e copre la precedente.
 - Font: Bricolage Grotesque per titoli e scritte giganti, Inter per i testi.
@@ -164,7 +165,6 @@ Comandi:
 - Link ai profili LinkedIn e Substack (`sito.profili`).
 
 - Testi definitivi delle sezioni.
-- Link pubblico di Calendly.
 - Email su dominio proprio, da valutare prima di pubblicare su un dominio.
 - Servizio per privacy e cookie (es. iubenda), da fare alla fine.
 

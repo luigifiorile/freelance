@@ -14,7 +14,7 @@ Quasi tutti i valori si cambiano in `contenuti/it.json`. Nel sito i segnaposto s
 | `email` | luigi.fiorile@gmail.com. Prima di pubblicare su un dominio proprio, valutare un indirizzo sul dominio | piè di pagina, Contatti, dati strutturati | fatto (da rivedere al dominio) |
 | `partitaIva` | Partita IVA (obbligatoria per legge) | piè di pagina | fatto |
 | `urlPrivacy`: `[LINK PRIVACY]` | Informativa privacy (es. iubenda, a fine progetto) | piè di pagina | aperto |
-| `urlCalendly`: `[LINK PUBBLICO CALENDLY]` | Link pubblico di prenotazione (`calendly.com/<nome>/<evento>`). Finché manca, il pulsante non è cliccabile | sezione Contatti | aperto |
+| `urlPrenotazione` | Link di prenotazione su Cal.com | sezione Contatti | fatto |
 | `indicizzabile`: `false` | Blocca l'indicizzazione dei motori di ricerca (`noindex` su tutte le pagine). Va messo a `true` al lancio, quando i segnaposto sono completati | tutte le pagine | da cambiare al lancio |
 | `urlBase` | Indirizzo pubblico del sito. Va cambiato solo se cambia il dominio | canonical, sitemap, anteprima social, dati strutturati | ok |
 
@@ -36,7 +36,7 @@ Testi scritti da Claude a partire dal brief, da approvare o riscrivere. Sono tut
 | Servizio Go to market e automazioni (ex CRM e automazioni) riscritto il 17/11/2026: tutti i testi e l'offerta | `servizi[0]` | bozza |
 | Servizio Marketing riscritto il 17/11/2026: sottotitolo, frase, problema, cosa costruisco, testi dei tre livelli (`offerta`) | `servizi[4]` | bozza |
 | Demo Marketing come report mensile: numeri, tabella e osservazioni inventati e dichiarati | `servizi[4].demo` | bozza |
-| Testi della sezione Contatti (prenotazione su Calendly) | `home.contatti` | bozza |
+| Testi della sezione Contatti (prenotazione su Cal.com) | `home.contatti` | bozza |
 | Testi delle pagine servizio (titoli di sezione, tre livelli dell'offerta, invito) | `servizioPagina` | bozza |
 | Testi delle pagine demo e dati di esempio (dichiarati in pagina come inventati) | `demoPagina`, `servizi[].demo` | bozza |
 | Descrizione nel piè di pagina | `comune.piede.descrizione` | bozza |
