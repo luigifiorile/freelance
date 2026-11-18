@@ -138,7 +138,7 @@ function comeLavoro(t) {
   ${svg("onde/divisore", "sezione__onda")}
   <div class="contenitore">
     <h2 class="titolo-1" id="come-lavoro-titolo">${esc(c.titolo)}</h2>
-    <p class="testo-grande come-lavoro__intro">${esc(c.intro)}</p>
+    ${c.intro ? `<p class="testo-grande come-lavoro__intro">${esc(c.intro)}</p>` : ""}
     <ol class="passi">${passi}</ol>
   </div>
 </section>`;
@@ -163,9 +163,11 @@ function chiSono(t) {
 
 function contatti(t) {
   const c = t.home.contatti;
-  const f = c.campi;
-  const attivo = !segnaposto(t.sito.urlForm);
-  const azione = attivo ? ` action="${esc(t.sito.urlForm)}" method="post"` : ` data-non-attivo`;
+  // Contatti tramite Calendly: un link al servizio esterno, nessuno script
+  // e nessun form sul sito. Finché il link è un segnaposto, non è cliccabile.
+  const prenota = segnaposto(t.sito.urlCalendly)
+    ? `<span class="pillola pillola--mare segnaposto" data-segnaposto="${esc(t.sito.urlCalendly)}">${esc(c.prenota)}</span>`
+    : `<a class="pillola pillola--mare" href="${esc(t.sito.urlCalendly)}" target="_blank" rel="noopener">${esc(c.prenota)} ${svg("icone-ui/freccia-esterna", "icona")}<span class="nascosto"> (si apre in una nuova scheda)</span></a>`;
   const email = segnaposto(t.sito.email)
     ? `<span class="segnaposto">${esc(t.sito.email)}</span>`
     : `<a href="mailto:${esc(t.sito.email)}">${esc(t.sito.email)}</a>`;
@@ -177,28 +179,11 @@ function contatti(t) {
       <p class="testo-grande">${esc(c.intro)}</p>
       <img class="contatti__bottiglia" src="brand/illustrazioni/messaggio-in-bottiglia.svg" alt="" width="400" height="300" loading="lazy">
     </div>
-    <form class="modulo"${azione}>
-      <div class="modulo__campo">
-        <label for="campo-nome">${esc(f.nome)}</label>
-        <input id="campo-nome" name="nome" type="text" autocomplete="name" required>
-      </div>
-      <div class="modulo__campo">
-        <label for="campo-email">${esc(f.email)}</label>
-        <input id="campo-email" name="email" type="email" autocomplete="email" required>
-      </div>
-      <div class="modulo__campo">
-        <label for="campo-messaggio">${esc(f.messaggio)}</label>
-        <p class="modulo__aiuto" id="aiuto-messaggio">${esc(f.messaggioAiuto)}</p>
-        <textarea id="campo-messaggio" name="messaggio" rows="5" aria-describedby="aiuto-messaggio" required></textarea>
-      </div>
-      <div class="modulo__scelta">
-        <input id="campo-privacy" name="privacy" type="checkbox" required>
-        <label for="campo-privacy">${esc(f.privacyPrima)}${link(t.sito.urlPrivacy, f.privacyLink)}${esc(f.privacyDopo)}</label>
-      </div>
-      <button class="pillola pillola--mare" type="submit">${esc(c.invia)}</button>
-      <p class="modulo__stato" role="status" data-messaggio-non-attivo="${esc(c.nonAttivo)}"></p>
-      <p class="modulo__alternativa">${esc(c.oppure)} ${email}</p>
-    </form>
+    <div class="prenota">
+      <p class="prenota__azione">${prenota}</p>
+      <p class="prenota__nota">${esc(c.prenotaNota)}</p>
+      <p class="prenota__email">${esc(c.oppure)} ${email}</p>
+    </div>
   </div>
 </section>`;
 }
@@ -216,7 +201,7 @@ ${contatti(t)}`;
     inHome: true,
     classe: "pagina-home",
     stili: ["assets/css/home.css"],
-    script: ["assets/vendor/gsap.min.js", "assets/vendor/ScrollTrigger.min.js", "assets/js/apertura.js", "assets/js/percorso.js", "assets/js/modulo.js"],
+    script: ["assets/vendor/gsap.min.js", "assets/vendor/ScrollTrigger.min.js", "assets/js/apertura.js", "assets/js/percorso.js"],
     dati: [datiPersona(t), datiServizioProfessionale(t)],
     corpo,
   });
